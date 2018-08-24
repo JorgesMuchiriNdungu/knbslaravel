@@ -25,3 +25,10 @@ Route::get('Agriculture/get_agriculture_chemical_med_feed_input', 'Agriculture@g
 Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('get_cooperatives');
 //Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
+
+// @Charles Ndirangu
+// CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
+
+
+Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
+
