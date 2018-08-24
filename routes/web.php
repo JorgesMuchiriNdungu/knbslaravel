@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
+
 //Agriclture sugar route @George Kagwe
 Route::get('Agriculture/sugar', 'Agriculture@get_sugar')->name('sugar');
 //Agriclture categories_of_land route @George Kagwe
