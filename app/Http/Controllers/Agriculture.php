@@ -19,7 +19,7 @@ class Agriculture extends Controller
 			$year['name'] = 'year';
 				 
 		
-			 
+	 
 			$series1 = array();
 			$series1['name'] = 'Area under cane ha';
 			
