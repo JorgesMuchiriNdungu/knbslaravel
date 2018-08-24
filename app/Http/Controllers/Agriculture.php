@@ -15,7 +15,7 @@ class Agriculture extends Controller
     public function get_sugar(){
     	$data = DB::table('agriculture_area_under_sugarcane_harvested_production_avg_yield')->get();
 
-            $year = array();
+    	    $year = array();
 			$year['name'] = 'year';
 				 
 		
@@ -108,7 +108,8 @@ class Agriculture extends Controller
 					
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
-
+     
+     //fetches agriculture_chemical_med_feed_input
     public function get_agriculture_chemical_med_feed_input(){
     		$data = DB::table('agriculture_chemical_med_feed_input')->get();
 

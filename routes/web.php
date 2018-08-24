@@ -14,12 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+//Agriclture sugar route @George Kagwe
 Route::get('Agriculture/sugar', 'Agriculture@get_sugar')->name('sugar');
+//Agriclture categories_of_land route @George Kagwe
 Route::get('Agriculture/categories_of_land', 'Agriculture@get_categories_of_land')->name('categories');
-Route::get('Agriculture/chemical_input', 'Agriculture@get_agriculture_chemical_med_feed_input')->name('chemical_input');
+//Agriclture get_agriculture_chemical_med_feed_input route @George Kagwe
+Route::get('Agriculture/get_agriculture_chemical_med_feed_input', 'Agriculture@get_agriculture_chemical_med_feed_input')->name('chemical_input');
 
-
+//Agriclture get_cooperatives route @George Kagwe
 Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('get_cooperatives');
-
+//Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
