@@ -33,12 +33,73 @@ Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
 
-// CPI get cpi_consumer_price_index route
+// @Charles Ndirangu
+// CPI  cpi_consumer_price_index route
 Route::get('CPI/cpi_consumer_price_index', 'Endpoints\CPI@get_cpi_consumer_price_index')->name('cpi_consumer_price_index');
 
-// CPI get cpi_elementary_aggregates_weights_in_the_cpi_baskets route
+// @Charles Ndirangu
+// CPI  cpi_elementary_aggregates_weights_in_the_cpi_baskets route
 Route::get('CPI/cpi_elementary_aggregates_weights_in_the_cpi_baskets', 'Endpoints\CPI@get_cpi_elementary_aggregates_weights_in_the_cpi_baskets')->name('cpi_elementary_aggregates_weights_in_the_cpi_baskets');
 
-// CPI get cpi_group_weights_for_kenya_cpi_october_base_1997 route
-Route::get('CPI/cpi_group_weights_for_kenya_cpi_october_base_1997', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_october_base_1997')->name('cpi_group_weights_for_kenya_cpi_febuary_base_2009');
 
+// @Charles Ndirangu
+// CPI  cpi_group_weights_for_kenya_cpi_febuary_base_2009 route
+Route::get('CPI/cpi_group_weights_for_kenya_cpi_febuary_base_2009', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_febuary_base_2009')->name('cpi_group_weights_for_kenya_cpi_febuary_base_2009');
+
+
+// @Charles Ndirangu
+// CPI  cpi_group_weights_for_kenya_cpi_october_base_1997 route
+Route::get('CPI/cpi_group_weights_for_kenya_cpi_october_base_1997', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_october_base_1997')->name('get_cpi_group_weights_for_kenya_cpi_october_base_1997');
+
+
+// @Charles Ndirangu
+// Administration  administrative_unit route
+Route::get('Administration/administrative_unit', 'Endpoints\Administration@get_administrative_unit')->name('administrative_unit');
+
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_balance_of_trade route
+Route::get('Trade/trade_and_commerce_balance_of_trade', 'Endpoints\Trade@get_trade_and_commerce_balance_of_trade')->name('trade_and_commerce_balance_of_trade');
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_import_trade_africa_countries route
+Route::get('Trade/trade_and_commerce_import_trade_africa_countries', 'Endpoints\Trade@get_trade_and_commerce_import_trade_africa_countries')->name('trade_and_commerce_import_trade_africa_countries');
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_quantities_principal_domestic_exports route
+Route::get('Trade/trade_and_commerce_quantities_principal_domestic_exports', 'Endpoints\Trade@get_trade_and_commerce_quantities_principal_domestic_exports')->name('trade_and_commerce_quantities_principal_domestic_exports');
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_quantities_principal_imports route
+Route::get('Trade/trade_and_commerce_quantities_principal_imports', 'Endpoints\Trade@get_trade_and_commerce_quantities_principal_imports')->name('trade_and_commerce_quantities_principal_imports');
+
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_revenue_collection_by_amount route
+Route::get('Trade/trade_and_commerce_revenue_collection_by_amount', 'Endpoints\Trade@get_trade_and_commerce_revenue_collection_by_amount')->name('trade_and_commerce_revenue_collection_by_amount');
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_trading_centres route
+Route::get('Trade/trade_and_commerce_trading_centres', 'Endpoints\Trade@get_trade_and_commerce_trading_centres')->name('trade_and_commerce_trading_centres');
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_value_of_total_exports_all_destinations route
+Route::get('Trade/trade_and_commerce_value_of_total_exports_all_destinations', 'Endpoints\Trade@get_trade_and_commerce_value_of_total_exports_all_destinations')->name('trade_and_commerce_value_of_total_exports_all_destinations');
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_value_of_total_exports_european_union route
+Route::get('Trade/trade_and_commerce_value_of_total_exports_european_union', 'Endpoints\Trade@get_trade_and_commerce_value_of_total_exports_european_union')->name('trade_and_commerce_value_of_total_exports_european_union');
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_value_total_exports_east_africa_communities route
+Route::get('Trade/trade_and_commerce_value_total_exports_east_africa_communities', 'Endpoints\Trade@get_trade_and_commerce_value_total_exports_east_africa_communities')->name('trade_and_commerce_value_total_exports_east_africa_communities');
+
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_values_of_principal_domestic_exports route
+Route::get('Trade/trade_and_commerce_values_of_principal_domestic_exports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_domestic_exports')->name('trade_and_commerce_values_of_principal_domestic_exports');
+
+
+// @Charles Ndirangu
+// Trade  trade_and_commerce_values_of_principal_imports route
+Route::get('Trade/trade_and_commerce_values_of_principal_imports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_imports')->name('trade_and_commerce_values_of_principal_imports');
