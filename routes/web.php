@@ -103,3 +103,25 @@ Route::get('Trade/trade_and_commerce_values_of_principal_domestic_exports', 'End
 // @Charles Ndirangu
 // Trade  trade_and_commerce_values_of_principal_imports route
 Route::get('Trade/trade_and_commerce_values_of_principal_imports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_imports')->name('trade_and_commerce_values_of_principal_imports');
+
+
+
+//Building and Construction
+// @Charles Ndirangu
+// Building  building_and_construction_quarterly_civil_engineering_cost_index route
+Route::get('Building/building_and_construction_quarterly_civil_engineering_cost_index', 'Endpoints\Building@get_building_and_construction_quarterly_civil_engineering_cost_index')->name('building_and_construction_quarterly_civil_engineering_cost_index');
+
+// @Charles Ndirangu
+// Building  building_and_construction_quarterly_non_residential_build_cost route
+Route::get('Building/building_and_construction_quarterly_non_residential_build_cost', 'Endpoints\Building@get_building_and_construction_quarterly_non_residential_build_cost')->name('building_and_construction_quarterly_non_residential_build_cost');
+
+
+// @Charles Ndirangu
+// Building  building_and_construction_quarterly_overal_construction_cost route
+Route::get('Building/building_and_construction_quarterly_overal_construction_cost', 'Endpoints\Building@get_building_and_construction_quarterly_overal_construction_cost')->name('building_and_construction_quarterly_overal_construction_cost');
+
+
+
+// @Charles Ndirangu
+// Building  building_and_construction_quarterly_residential_bulding_cost route
+Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
