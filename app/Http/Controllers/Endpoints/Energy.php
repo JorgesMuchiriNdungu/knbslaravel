@@ -19,14 +19,10 @@ class Energy extends Controller
     	$data = DB::table('energy_averagemonthlypumppricesforfuelbycategory')
                     ->join('health_counties', 'energy_averagemonthlypumppricesforfuelbycategory.county_id', '=', 'health_counties.county_id')
                     ->join('health_months', 'energy_averagemonthlypumppricesforfuelbycategory.month_id', '=', 'health_months.month_id')->get();
-       
-                
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
 		
-	 
 			$series1 = array();
 			$series1['name'] = 'super petrol';
 			
@@ -43,8 +39,6 @@ class Energy extends Controller
 			$series5['name'] = 'month';
 
 		
-
-			 
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
@@ -71,17 +65,19 @@ class Energy extends Controller
 
 
 
+
+
+
+
+
+
  //get energy_average_retail_prices_of_selected_petroleum_products
-
-
 
       public function get_energy_average_retail_prices_of_selected_petroleum_products(){
     	$data = DB::table('energy_average_retail_prices_of_selected_petroleum_products')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
-		
 	 
 			$series1 = array();
 			$series1['name'] = 'petroleum product';
@@ -90,11 +86,7 @@ class Energy extends Controller
 			$series2['name'] = 'retail price ksh';
 
 			$series3 = array();
-			$series3['name'] = 'month';
-
-		
-
-			 
+			$series3['name'] = 'month'; 
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
@@ -116,6 +108,12 @@ class Energy extends Controller
 
 
 
+
+
+
+
+
+ // get_energy_electricity_demand_and_supply
 
       public function get_energy_electricity_demand_and_supply(){
     	$data = DB::table('energy_electricity_demand_and_supply')->get();
@@ -152,6 +150,12 @@ class Energy extends Controller
 
 
 
+
+
+
+
+
+//get_energy_generation_and_imports_of_electricity
 
       public function get_energy_generation_and_imports_of_electricity(){
     	$data = DB::table('energy_generation_and_imports_of_electricity')->get();
@@ -190,6 +194,14 @@ class Energy extends Controller
     }
 
 
+
+
+
+
+
+
+//get_energy_installed_and_effective_capacity_of_electricity
+
   public function get_energy_installed_and_effective_capacity_of_electricity(){
     	$data = DB::table('energy_installed_and_effective_capacity_of_electricity')->get();
 
@@ -227,12 +239,19 @@ class Energy extends Controller
     }
 
 
+
+
+
+
+
+
+//gget_energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category
+
  public function get_energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category(){
     	$data = DB::table('energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
 		
 	 
 			$series1 = array();
@@ -241,9 +260,7 @@ class Energy extends Controller
 			$series2 = array();
 			$series2['name'] = 'quantity tonnes';
 
-		
-
-			 
+	 
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
@@ -265,14 +282,19 @@ class Energy extends Controller
 
 
 
+
+
+
+
+// get_energy_petroleum_supply_and_demand
+
  public function get_energy_petroleum_supply_and_demand(){
     	$data = DB::table('energy_petroleum_supply_and_demand')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
 				 
-		
-	 
+
 			$series1 = array();
 			$series1['name'] = 'type';
 			
@@ -281,11 +303,6 @@ class Energy extends Controller
 
 			$series3 = array();
 			$series3['name'] = 'quantity tonnes';
-
-			
-
-		
-
 			 
 			foreach ($data as $row)
 			{
@@ -311,6 +328,11 @@ class Energy extends Controller
 
 
 
+
+
+
+// get_energy_value_and_quantity_of_imports_exports
+
  public function get_energy_value_and_quantity_of_imports_exports(){
     	$data = DB::table('energy_value_and_quantity_of_imports_exports')->get();
 
@@ -330,14 +352,7 @@ class Energy extends Controller
 
 			$series4 = array();
 			$series4['name'] = 'value millions';
-
-			
-
-			
-
-		
-
-			 
+ 
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
@@ -359,9 +374,5 @@ class Energy extends Controller
 					
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
-
-
-
-
 
 }
