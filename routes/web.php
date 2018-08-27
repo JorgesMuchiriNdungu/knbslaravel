@@ -28,11 +28,7 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 //Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-=======
 
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
@@ -229,7 +225,6 @@ Route::get('Manufacturing/manufacturing_quantum_indices_of_manufacturing_product
 
 
 
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('Education/education_approved_degree_diploma_programs', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -946,6 +941,18 @@ Route::get('Tourism/tourism_hotel_occupancy_by_residence', 'Endpoints\Tourism@ge
 // @Charles Ndirangu
 // Building  tourism_hotel_occupancy_by_zone route
 Route::get('Tourism/tourism_hotel_occupancy_by_zone', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_zone')->name('tourism_hotel_occupancy_by_zone');
+
+// @Charles Ndirangu
+// Building  tourism_population_proportion_that_took_trip route
+Route::get('Tourism/tourism_population_proportion_that_took_trip', 'Endpoints\Tourism@get_tourism_population_proportion_that_took_trip')->name('tourism_population_proportion_that_took_trip');
+
+// @Charles Ndirangu
+// Building  tourism_visitor_to_parks route
+Route::get('Tourism/tourism_visitor_to_parks', 'Endpoints\Tourism@get_tourism_visitor_to_parks')->name('tourism_visitor_to_parks');
+
+// @Charles Ndirangu
+// Building  tourism_visitors_to_museums route
+Route::get('Tourism/tourism_visitors_to_museums', 'Endpoints\Tourism@get_tourism_visitors_to_museums')->name('tourism_visitors_to_museums');
 
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri

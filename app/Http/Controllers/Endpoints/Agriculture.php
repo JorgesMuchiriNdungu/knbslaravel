@@ -338,7 +338,7 @@ class Agriculture extends Controller
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
-			$series1['data'][] = $row->cattle_and_calves_for_slaughter;
+			$series1['data'][] = $row->nairobi;
 			$series2['data'][] = $row->sugarcane;
 			$series3['data'][] = $row->vegetables;
 			$series4['data'][] = $row->cutflowers;	
@@ -401,6 +401,8 @@ class Agriculture extends Controller
 
     }
 
+    //@Charles Ndirangu
+    // gets tourism_population_proportion_that_took_trip
      public function get_irrigation_schemes(){
     		$data = DB::table('agriculture_irrigation_schemes')->get();
 

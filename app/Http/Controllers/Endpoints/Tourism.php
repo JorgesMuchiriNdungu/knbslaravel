@@ -431,38 +431,257 @@ class Tourism extends Controller
 	}
 
 	//@Charles Ndirangu
-    // gets tourism_population_proportion_that_took_trip
+    // gets tourism_visitor_to_parks
     public function get_tourism_population_proportion_that_took_trip(){
     	
-    	$data = DB::table('tourism_population_proportion_that_took_trip')->get();
+    	$data = DB::table('tourism_population_proportion_that_took_trip')
+    		->join('health_counties','tourism_population_proportion_that_took_trip.county_id','=','health_counties.county_id')
+    		->get();
     	
-    		$year = array();
-			$year['name'] = 'Year';
-		 		 
+    				 		 
 			$series3 = array();
-			$series3['name'] = 'Category';
+			$series3['name'] = 'County';
 
 			$series4 = array();
-			$series4['name'] = 'Number of Conferences';
+			$series4['name'] = 'Population Proportion';
 			
 			$series5 = array();
-			$series5['name'] = 'Number of Delegates';
+			$series5['name'] = 'Number of Individuals';
 
 			foreach ($data as $row)
 			{
-				$year['data'][] = $row->year;
-				$series3['data'][] = $row->category;
-				$series4['data'][] = $row->number_of_conferences;
-				$series5['data'][] = $row->number_of_delegates;
+				$series3['data'][] = $row->county_name;
+				$series4['data'][] = $row->proportion;
+				$series5['data'][] = $row->no_of_individuals;
 				
 			}
 			 
 			$result = array();
-			array_push($result,$year);
 			array_push($result,$series3);
 			array_push($result,$series4);
 			array_push($result,$series5);
 									
 			print json_encode($result, JSON_NUMERIC_CHECK);
 	}
+
+	//@Charles Ndirangu
+    // gets tourism_visitor_to_parks
+	public function get_tourism_visitor_to_parks(){
+    		$data = DB::table('tourism_visitor_to_parks')->get();
+    		 $year = array();
+			$year['name'] = 'year';	 
+					 
+			$series1 = array();
+			$series1['name'] = 'Nairobi';
+			
+			$series2 = array();
+			$series2['name'] = 'Nairobi Safari Walk';
+
+			$series3 = array();
+			$series3['name'] = 'Nairobi Mini Opharnage';
+
+			$series4 = array();
+			$series4['name'] = 'Amboseli';
+			$series5 = array();
+			$series5['name'] = 'Tsavo West';
+			$series6 = array();
+			$series6['name'] = 'Tsavo East';
+			$series7 = array();
+			$series7['name'] = 'Aberdare';
+			$series8 = array();
+			$series8['name'] = 'Lake Nakuru';
+			$series9 = array();
+			$series9['name'] = 'Maasai Mara';
+			$series10 = array();
+			$series10['name'] = 'Halllers Park';
+			$series11 = array();
+			$series11['name'] = 'Malindi Marine';
+			$series12 = array();
+			$series12['name'] = 'Lake Bogoria';
+			$series13 = array();
+			$series13['name'] = 'Meru';
+			$series14 = array();
+			$series14['name'] = 'Shimba Hills';
+			$series15 = array();
+			$series15['name'] = 'Mt Kenya';
+			$series16 = array();
+			$series16['name'] = 'Samburu';
+			$series17 = array();
+			$series17['name'] = 'Kisite Mpunguti';
+			$series18 = array();
+			$series18['name'] = 'Mombasa Marine';
+			$series19 = array();
+			$series19['name'] = 'Watamu Marine';
+			
+			$series20 = array();
+			$series20['name'] = 'Hells Gate';
+
+			$series21 = array();
+			$series21['name'] = 'Impala Sanctuary Kisumu';
+
+		    $series22 = array();
+			$series22['name'] = 'Mt Longonot';
+
+			$series23 = array();
+			$series23['name'] = 'Other';
+
+			
+			foreach ($data as $row)
+			{
+			$year['data'][] = $row->year;
+			$series1['data'][] = $row->nairobi;
+			$series2['data'][] = $row->nairobi_safari_walk;
+			$series3['data'][] = $row->nairobi_mini_orphanage;
+			$series4['data'][] = $row->amboseli;	
+			$series5['data'][] = $row->tsavo_west;
+			$series6['data'][] = $row->tsavo_east;
+			$series7['data'][] = $row->aberdare;				
+			$series8['data'][] = $row->lake_nakuru;
+			$series9['data'][] = $row->masai_mara;
+		    $series10['data'][] = $row->hallers_park;
+		    $series11['data'][] = $row->malindi_marine;
+		    $series12['data'][] = $row->lake_bogoria;
+		    $series13['data'][] = $row->meru;
+		    $series14['data'][] = $row->shimba_hills;
+		    $series15['data'][] = $row->mt_kenya;
+		    $series16['data'][] = $row->samburu;
+		    $series17['data'][] = $row->kisite_mpunguti;
+		    $series18['data'][] = $row->mombasa_marine;
+		    $series19['data'][] = $row->watamu_marine;
+		    $series20['data'][] = $row->hells_gate;
+		    $series21['data'][] = $row->impala_sanctuary_kisumu;
+		    $series22['data'][] = $row->mt_longonot;
+		    $series23['data'][] = $row->other;
+		    
+			}
+			 
+			$result = array();
+			array_push($result,$year);
+			array_push($result,$series1);
+			array_push($result,$series2);
+			array_push($result,$series3);
+			array_push($result,$series4);
+			array_push($result,$series5);
+			array_push($result,$series6);
+			array_push($result,$series7);
+			array_push($result,$series8);
+			array_push($result,$series9);
+			array_push($result,$series10);
+			array_push($result,$series11);
+		    array_push($result,$series12);
+			array_push($result,$series13);
+			array_push($result,$series14);
+		    array_push($result,$series15);
+		    array_push($result,$series16);
+		    array_push($result,$series17);
+		    array_push($result,$series18);
+		    array_push($result,$series19);
+		    array_push($result,$series20);
+		    array_push($result,$series21);
+		    array_push($result,$series22);
+		   	array_push($result,$series23);
+			print json_encode($result, JSON_NUMERIC_CHECK);
+
+    }
+
+    //@Charles Ndirangu
+    // gets tourism_visitors_to_museums
+	public function get_tourism_visitors_to_museums(){
+    		$data = DB::table('tourism_visitors_to_museums')->get();
+    		 $year = array();
+			$year['name'] = 'year';	 
+					 
+			$series1 = array();
+			$series1['name'] = 'Nairobi Snake Park';
+			
+			$series2 = array();
+			$series2['name'] = 'Fort Jesus';
+
+			$series3 = array();
+			$series3['name'] = 'Kisumu';
+
+			$series4 = array();
+			$series4['name'] = 'Kitale';
+			$series5 = array();
+			$series5['name'] = 'Gede';
+			$series6 = array();
+			$series6['name'] = 'Meru';
+			$series7 = array();
+			$series7['name'] = 'Lamu';
+			$series8 = array();
+			$series8['name'] = 'Jumba La Mtwana';
+			$series9 = array();
+			$series9['name'] = 'Kariandusi';
+			$series10 = array();
+			$series10['name'] = 'Hyrax Hill';
+			$series11 = array();
+			$series11['name'] = 'Karen Blixen';
+			$series12 = array();
+			$series12['name'] = 'Malindi';
+			$series13 = array();
+			$series13['name'] = 'Kilifi Mnarani';
+			$series14 = array();
+			$series14['name'] = 'Kabarnet';
+			$series15 = array();
+			$series15['name'] = 'Kapenguria';
+			$series16 = array();
+			$series16['name'] = 'Swahili House';
+			$series17 = array();
+			$series17['name'] = 'Narok';
+			$series18 = array();
+			$series18['name'] = 'German Post';
+			
+			$series19 = array();
+			$series19['name'] = 'Takwa Ruins';
+
+						
+			foreach ($data as $row)
+			{
+			$year['data'][] = $row->year;
+			$series1['data'][] = $row->nairobi_snake_park;
+			$series2['data'][] = $row->fort_jesus;
+			$series3['data'][] = $row->kisumu;
+			$series4['data'][] = $row->kitale;	
+			$series5['data'][] = $row->gede;
+			$series6['data'][] = $row->meru;
+			$series7['data'][] = $row->lamu;				
+			$series8['data'][] = $row->jumba_la_mtwana;
+			$series9['data'][] = $row->kariandusi;
+		    $series10['data'][] = $row->hyrax_hill;
+		    $series11['data'][] = $row->karen_blixen;
+		    $series12['data'][] = $row->malindi;
+		    $series13['data'][] = $row->kilifi_mnarani;
+		    $series14['data'][] = $row->kabarnet;
+		    $series15['data'][] = $row->kapenguria;
+		    $series16['data'][] = $row->swahili_house;
+		    $series17['data'][] = $row->narok;
+		    $series18['data'][] = $row->german_post;
+		    $series19['data'][] = $row->takwa_ruins;
+		   		    		    
+			}
+			 
+			$result = array();
+			array_push($result,$year);
+			array_push($result,$series1);
+			array_push($result,$series2);
+			array_push($result,$series3);
+			array_push($result,$series4);
+			array_push($result,$series5);
+			array_push($result,$series6);
+			array_push($result,$series7);
+			array_push($result,$series8);
+			array_push($result,$series9);
+			array_push($result,$series10);
+			array_push($result,$series11);
+		    array_push($result,$series12);
+			array_push($result,$series13);
+			array_push($result,$series14);
+		    array_push($result,$series15);
+		    array_push($result,$series16);
+		    array_push($result,$series17);
+		    array_push($result,$series18);
+		    array_push($result,$series19);
+		    print json_encode($result, JSON_NUMERIC_CHECK);
+
+    }
 }
