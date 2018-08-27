@@ -23,7 +23,7 @@ class Energy extends Controller
     	    $year = array();
 			$year['name'] = 'year';
 		
-			$series1 = array();
+	     	$series1 = array();
 			$series1['name'] = 'super petrol';
 			
 			$series2 = array();

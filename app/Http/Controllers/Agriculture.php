@@ -12,7 +12,7 @@ class Agriculture extends Controller
 
     //function to get data
 
-    public function get_sugar(){
+    public function get_agriculture_area_under_sugarcane_harvested_production_avg_yield(){
     	$data = DB::table('agriculture_area_under_sugarcane_harvested_production_avg_yield')->get();
 
     	    $year = array();

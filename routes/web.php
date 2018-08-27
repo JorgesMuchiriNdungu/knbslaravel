@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.admin');
 });
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
 //Agriclture sugar route @George Kagwe
-Route::get('Agriculture/sugar', 'Agriculture@get_sugar')->name('sugar');
+Route::get('Agriculture/agriculture_area_under_sugarcane_harvested_production_avg_yield', 'Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('sugar');
 //Agriclture categories_of_land route @George Kagwe
 Route::get('Agriculture/categories_of_land', 'Agriculture@get_categories_of_land')->name('categories');
 //Agriclture get_agriculture_chemical_med_feed_input route @George Kagwe
@@ -29,6 +29,11 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
 
+
+// Health Sectors shows all the tables and all the apis @George Kagwe
+Route::get('health/all_sectors', 
+     'Endpoints\Health_Sectors@index')->
+      name('Health_Sectors');
 
 
 
@@ -835,4 +840,3 @@ Route::get('Ict/ict_kihibs_population_who_used_internet_by_place',
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
-    

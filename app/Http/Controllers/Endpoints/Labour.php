@@ -27,9 +27,7 @@ class Labour extends Controller
 			$series2 = array();
 			$series2['name'] = 'wage earnings';
 
-		
-
-			 
+		 
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
