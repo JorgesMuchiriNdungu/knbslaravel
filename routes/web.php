@@ -29,6 +29,10 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
 
+// Health Sectors shows all the tables and all the apis @George Kagwe
+Route::get('health/all_sectors', 
+     'Endpoints\Health_Sectors@index')->
+      name('Health_Sectors');
 
 
 
@@ -764,8 +768,4 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
-<<<<<<< HEAD
-=======
->>>>>>> 5448ca06465bc1fd06366c7e1d1a37497f7fafd2
->>>>>>> 519a0ea800db114cc79aee3b85cbc5655163feb6
->>>>>>> 8067474d97077c87dfb80a8e92cec8c62a2807b2
+
