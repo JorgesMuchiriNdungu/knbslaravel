@@ -27,7 +27,7 @@ Route::get('Agriculture/get_agriculture_chemical_med_feed_input', 'Agriculture@g
 Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('get_cooperatives');
 //Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
-<<<<<<< HEAD
+
 
 
 
@@ -220,8 +220,6 @@ Route::get('Manufacturing/manufacturing_quantum_indices_of_manufacturing_product
 
 
 
-=======
-<<<<<<< HEAD
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('Education/education_approved_degree_diploma_programs', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -384,9 +382,7 @@ Route::get('Health/health_kihibs_health_insurance_cover_by_type', 'Endpoints\Hea
 //Health
 //health_kihibs_incidence_of_sickness_injury @fredrick muiruri
 Route::get('Health/health_kihibs_incidence_of_sickness_injury', 'Endpoints\Health@health_kihibs_incidence_of_sickness_injury')->name('health_kihibs_incidence_of_sickness_injury');
-=======
 
-<<<<<<< HEAD
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
@@ -669,7 +665,7 @@ Route::get('Population/population_households_type_floor_material_main_dwelling_u
 
 Route::get('Population/population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
-=======
+
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -767,5 +763,76 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
->>>>>>> 5448ca06465bc1fd06366c7e1d1a37497f7fafd2
->>>>>>> 519a0ea800db114cc79aee3b85cbc5655163feb6
+
+
+//Ict  ict_kihibs_households_owned_ict_equipment_services @david
+Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
+  'Endpoints\Ict@get_ict_kihibs_households_owned_ict_equipment_services')->
+    name('ict_kihibs_households_owned_ict_equipment_services');
+
+
+//Ict   ict_kihibs_households_without_internet_by_reason @david
+Route::get('Ict/ict_kihibs_households_without_internet_by_reason', 
+  'Endpoints\Ict@get_ict_kihibs_households_without_internet_by_reason')->
+    name('ict_kihibs_households_without_internet_by_reason');
+
+
+//Ict   ict_kihibs_households_with_internet_by_type @david
+Route::get('Ict/ict_kihibs_households_with_internet_by_type', 
+  'Endpoints\Ict@get_ict_kihibs_households_with_internet_by_type')->
+    name('ict_kihibs_households_with_internet_by_type');
+
+
+//Ict   ict_kihibs_households_with_tv @david
+Route::get('Ict/ict_kihibs_households_with_tv', 
+  'Endpoints\Ict@get_ict_kihibs_households_with_tv')->
+    name('ict_kihibs_households_with_tv');
+
+
+    //Ict  ict_kihibs_population_above18by_reasonnothaving_phone @david
+Route::get('Ict/ict_kihibs_population_above18by_reasonnothaving_phone', 
+  'Endpoints\Ict@get_ict_kihibs_population_above18by_reasonnothaving_phone')->
+    name('ict_kihibs_population_above18by_reasonnothaving_phone');
+
+
+   //Ict  ict_kihibs_population_above18subscribed_mobilemoney @david
+Route::get('Ict/ict_kihibs_population_above18subscribed_mobilemoney', 
+  'Endpoints\Ict@get_ict_kihibs_population_above18subscribed_mobilemoney')->
+    name('ict_kihibs_population_above18subscribed_mobilemoney');
+
+
+
+
+   //Ict   ict_kihibs_population_by_ictequipment_and_servicesused @david
+Route::get('Ict/ict_kihibs_population_by_ictequipment_and_servicesused', 
+  'Endpoints\Ict@get_ict_kihibs_population_by_ictequipment_and_servicesused')->
+    name('ict_kihibs_population_by_ictequipment_and_servicesusedey');
+
+
+   //Ict    ict_kihibs_population_that_didntuseinternet_by_reason @david
+Route::get('Ict/ict_kihibs_population_that_didntuseinternet_by_reason', 
+  'Endpoints\Ict@get_ict_kihibs_population_that_didntuseinternet_by_reason')->
+    name('ict_kihibs_population_that_didntuseinternet_by_reason');
+
+
+
+   //Ict     ict_kihibs_population_that_used_internet_by_purpose @david
+Route::get('Ict/ict_kihibs_population_that_used_internet_by_purpose', 
+  'Endpoints\Ict@get_ict_kihibs_population_that_used_internet_by_purpose')->
+    name('ict_kihibs_population_that_used_internet_by_purpose');
+
+
+
+     //Ict      ict_kihibs_population_who_used_internet_by_place @david
+Route::get('Ict/ict_kihibs_population_who_used_internet_by_place', 
+  'Endpoints\Ict@get_ict_kihibs_population_who_used_internet_by_place')->
+    name('ict_kihibs_population_who_used_internet_by_place');
+    
+
+
+
+     //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
+Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
+  'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
+    name(' ict_kihibs_population_withmobilephone_andaveragesims');
+    
