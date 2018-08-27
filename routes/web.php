@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.admin');
 });
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
 //Agriclture sugar route @George Kagwe
-Route::get('Agriculture/sugar', 'Agriculture@get_sugar')->name('sugar');
+Route::get('Agriculture/agriculture_area_under_sugarcane_harvested_production_avg_yield', 'Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('sugar');
 //Agriclture categories_of_land route @George Kagwe
 Route::get('Agriculture/categories_of_land', 'Agriculture@get_categories_of_land')->name('categories');
 //Agriclture get_agriculture_chemical_med_feed_input route @George Kagwe
@@ -28,6 +28,208 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 //Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+=======
+
+// Health Sectors shows all the tables and all the apis @George Kagwe
+Route::get('health/all_sectors', 
+     'Endpoints\Health_Sectors@index')->
+      name('Health_Sectors');
+
+
+
+
+// environment `environment_and_natural_resources_average_export_prices_ash` @david
+Route::get('Environment/environment_and_natural_resources_average_export_prices_ash', 
+     'Endpoints\Environment@get_environment_and_natural_resources_average_export_prices_ash')->
+      name('environment_and_natural_resources_average_export_prices_ash');
+
+
+//environment environment_and_natural_resources_development_expenditure_water @david
+Route::get('Environment/environment_and_natural_resources_development_expenditure_water', 
+	   'Endpoints\Environment@get_environment_and_natural_resources_development_expenditure_water')->
+       name('environment_and_natural_resources_development_expenditure_water');
+
+
+//environment environment_and_natural_resources_expenditure_cleaning_refuse @david
+Route::get('Environment/environment_and_natural_resources_expenditure_cleaning_refuse', 
+	'Endpoints\Environment@get_environment_and_natural_resources_expenditure_cleaning_refuse')->
+     name('environment_and_natural_resources_expenditure_cleaning_refuse');
+
+
+ //environment environment_and_natural_resources_government_forest @david
+Route::get('Environment/environment_and_natural_resources_government_forest', 
+	'Endpoints\Environment@get_environment_and_natural_resources_government_forest')->
+    name('environment_and_natural_resources_government_forest');
+
+
+ //environment  environment_and_natural_resources_num_high_risk_environ_impact @david
+Route::get('Environment/environment_and_natural_resources_num_high_risk_environ_impact', 
+	 'Endpoints\Environment@get_environment_and_natural_resources_num_high_risk_environ_impact')->
+     name('environment_and_natural_resources_num_high_risk_environ_impact');
+
+
+
+//environment  environment_and_natural_resources_population_wildlife @david
+Route::get('Environment/environment_and_natural_resources_population_wildlife', 
+	'Endpoints\Environment@get_environment_and_natural_resources_population_wildlife')->
+    name('environment_and_natural_resources_population_wildlife');
+
+
+//environment  environment_and_natural_resources_quantity_of_total_mineral @david
+Route::get('Environment/environment_and_natural_resources_quantity_of_total_mineral', 
+	'Endpoints\Environment@get_environment_and_natural_resources_quantity_of_total_mineral')->
+    name('environment_and_natural_resources_quantity_of_total_mineral');
+
+
+//environment  environment_and_natural_resources_quantity_value_fish_landed @david
+Route::get('Environment/environment_and_natural_resources_quantity_value_fish_landed', 
+     'Endpoints\Environment@get_environment_and_natural_resources_quantity_value_fish_landed')->
+    name('environment_and_natural_resources_quantity_value_fish_landed');
+
+
+//environment  environment_and_natural_resources_record_sale_goverment_products @david
+Route::get('Environment/environment_and_natural_resources_record_sale_goverment_products', 
+	'Endpoints\Environment@get_environment_and_natural_resources_record_sale_goverment_products')->
+    name('environment_and_natural_resources_record_sale_goverment_products');
+
+
+//environment  environment_and_natural_resources_trends_envi_natural_resources @david
+Route::get('Environment/environment_and_natural_resources_trends_envi_natural_resources', 
+	'Endpoints\Environment@get_environment_and_natural_resources_trends_envi_natural_resources')->
+    name('environment_and_natural_resources_trends_envi_natural_resources');
+
+
+  //environment   environment_and_natural_resources_value_of_total_mineral @david
+Route::get('Environment/environment_and_natural_resources_value_of_total_mineral', 
+	'Endpoints\Environment@get_environment_and_natural_resources_value_of_total_mineral')->
+    name('environment_and_natural_resources_value_of_total_mineral');
+
+
+//environment   environment_and_natural_resources_water_purification_points @david
+Route::get('Environment/environment_and_natural_resources_water_purification_points', 
+	'Endpoints\Environment@get_environment_and_natural_resources_water_purification_points')->
+    name( 'environment_and_natural_resources_water_purification_points');
+
+
+
+//Manufacturing  manufacturing_per_change_in_quantum_indices_of_man_production @david
+Route::get('Manufacturing/manufacturing_per_change_in_quantum_indices_of_man_production', 
+	'Endpoints\Manufacturing@get_manufacturing_per_change_in_quantum_indices_of_man_production')->
+    name('manufacturing_per_change_in_quantum_indices_of_man_production');
+
+
+//Manufacturing  manufacturing_quantum_indices_of_manufacturing_production @david
+Route::get('Manufacturing/manufacturing_quantum_indices_of_manufacturing_production', 
+	'Endpoints\Manufacturing@get_manufacturing_quantum_indices_of_manufacturing_production')->
+    name('manufacturing_quantum_indices_of_manufacturing_production');
+
+ //Energy energy_averagemonthlypumppricesforfuelbycategory @david
+    Route::get('Energy/energy_averagemonthlypumppricesforfuelbycategory', 
+	'Endpoints\Energy@get_energy_averagemonthlypumppricesforfuelbycategory')->
+    name('energy_averagemonthlypumppricesforfuelbycategory');
+
+//Energy energy_average_retail_prices_of_selected_petroleum_products @david
+  Route::get('Energy/energy_average_retail_prices_of_selected_petroleum_products', 
+	'Endpoints\Energy@get_energy_average_retail_prices_of_selected_petroleum_products')->
+    name('energy_energy_average_retail_prices_of_selected_petroleum_products');
+
+//Energy energy_electricity_demand_and_supply @david
+  Route::get('Energy/energy_electricity_demand_and_supply', 
+	'Endpoints\Energy@get_energy_electricity_demand_and_supply')->
+    name('energy_electricity_demand_and_supply');
+
+ //Energy energy_generation_and_imports_of_electricity @david
+  Route::get('Energy/energy_generation_and_imports_of_electricity', 
+	'Endpoints\Energy@get_energy_generation_and_imports_of_electricity')->
+    name('energy_generation_and_imports_of_electricity');
+
+    //Energy energy_installed_and_effective_capacity_of_electricity  @david
+  Route::get('Energy/energy_installed_and_effective_capacity_of_electricity', 
+	'Endpoints\Energy@get_energy_installed_and_effective_capacity_of_electricity')->
+    name('energy_installed_and_effective_capacity_of_electricity');
+
+
+    //Energy energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category  @david
+  Route::get('Energy/energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category', 
+	'Endpoints\Energy@get_energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category')->
+    name('energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category');
+
+
+  //Energy energy_petroleum_supply_and_demand  @david
+  Route::get('Energy/energy_petroleum_supply_and_demand', 
+	'Endpoints\Energy@get_energy_petroleum_supply_and_demand')->
+    name('energy_petroleum_supply_and_demand');
+
+
+
+ //Energy energy_value_and_quantity_of_imports_exportsand  @david
+  Route::get('Energy/energy_value_and_quantity_of_imports_exports', 
+	'Endpoints\Energy@get_energy_value_and_quantity_of_imports_exports')->
+    name('energy_value_and_quantity_of_imports_exports');
+
+
+  //Labour labour_average_wage_earnings_per_employee_private_sector  @david
+  Route::get('Labour/labour_average_wage_earnings_per_employee_private_sector', 
+	'Endpoints\Labour@get_labour_average_wage_earnings_per_employee_private_sector')->
+    name('labour_average_wage_earnings_per_employee_private_sector');
+
+
+ //Labour  labour_average_wage_earnings_per_employee_public_sector  @david
+  Route::get('Labour/labour_average_wage_earnings_per_employee_public_sector', 
+	'Endpoints\Labour@get_labour_average_wage_earnings_per_employee_public_sector')->
+    name('labour_average_wage_earnings_per_employee_public_sector');
+
+
+ //Labour  labour_employment_public_sector  @david
+  Route::get('Labour/labour_employment_public_sector', 
+	'Endpoints\Labour@get_labour_employment_public_sector')->
+    name('labour_employment_public_sector');
+
+
+ //Labour  labour_memorandum_items_in_public_sector  @david
+  Route::get('Labour/labour_memorandum_items_in_public_sector', 
+	'Endpoints\Labour@get_labour_memorandum_items_in_public_sector')->
+    name('labour_memorandum_items_in_public_sector');
+
+  //Labour  labour_sectors  @david
+  Route::get('Labour/labour_sectors', 
+	'Endpoints\Labour@get_labour_sectors')->
+    name('labour_sectors');
+
+  // labour    labour_total_recorded_employment   @david
+    Route::get('Labour/labour_total_recorded_employment', 
+	'Endpoints\Labour@get_labour_total_recorded_employment')->
+    name('labour_total_recorded_employment');
+
+ // labour    labour_wage_employment_by_industry_and_sex   @david
+    Route::get('Labour/labour_wage_employment_by_industry_and_sex', 
+	'Endpoints\Labour@get_labour_wage_employment_by_industry_and_sex')->
+    name('labour_wage_employment_by_industry_and_sex');
+
+
+ // labour    labour_wage_employment_by_industry_in_private_sector   @david
+    Route::get('Labour/labour_wage_employment_by_industry_in_private_sector', 
+	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_private_sector')->
+    name(' labour_wage_employment_by_industry_in_private_sector');
+
+
+
+ // labour   labour_wage_employment_by_industry_in_public_sector   @david
+    Route::get('Labour/labour_wage_employment_by_industry_in_public_sector', 
+	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_public_sector')->
+    name('labour_wage_employment_by_industry_in_public_sector');
+
+
+
+
+
+
+
+>>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('Education/education_approved_degree_diploma_programs', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -190,6 +392,11 @@ Route::get('Health/health_kihibs_health_insurance_cover_by_type', 'Endpoints\Hea
 //Health
 //health_kihibs_incidence_of_sickness_injury @fredrick muiruri
 Route::get('Health/health_kihibs_incidence_of_sickness_injury', 'Endpoints\Health@health_kihibs_incidence_of_sickness_injury')->name('health_kihibs_incidence_of_sickness_injury');
+<<<<<<< HEAD
+=======
+
+>>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
+>>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
@@ -397,7 +604,7 @@ Route::get('Governance/governance_public_assets_traced_recovered_and_loss_averte
 'Endpoints\Governance@get_governance_public_assets_traced_recovered_and_loss_averted')->name('governance_public_assets_traced_recovered_and_loss_averted');
 
 
-// @George 
+// @George Muchiri
 // @get_governance_registered_voters_by_county_and_by_sex
 Route::get('Governance/governance_registered_voters_by_county_and_by_sex', 
 'Endpoints\Governance@get_governance_registered_voters_by_county_and_by_sex')->name('
@@ -405,7 +612,7 @@ governance_registered_voters_by_county_and_by_sex');
 
 
 
-// @George 
+// @George Muchiri
 // @get_governance_total_prisoners_committed_for_debt_bysex
 Route::get('Governance/governance_total_prisoners_committed_for_debt_bysex', 
 'Endpoints\Governance@get_governance_total_prisoners_committed_for_debt_bysex')->name('
@@ -413,66 +620,218 @@ governance_total_prisoners_committed_for_debt_bysex');
 
 
 
-// @George 
+// @George Muchiri
 // @get_governance_women_groups_registration_contributions_uwezo_funds
 Route::get('Governance/governance_women_groups_registration_contributions_uwezo_funds', 
 'Endpoints\Governance@get_governance_women_groups_registration_contributions_uwezo_funds')->name('governance_women_groups_registration_contributions_uwezo_funds');
 
 
-// @George 
+// @George Muchiri
 // @get_governance_women_groups_registration_contributions_women_groups
 Route::get('Governance/governance_women_groups_registration_contributions_women_groups', 
 'Endpoints\Governance@get_governance_women_groups_registration_contributions_women_groups')->name('governance_women_groups_registration_contributions_women_groups');
 
-// @George 
+// @George Muchiri
 // @get_governance_women_groups_registration_cont_women_enterprise_fund
 Route::get('Governance/governance_women_groups_registration_cont_women_enterprise_fund', 
 'Endpoints\Governance@get_governance_women_groups_registration_cont_women_enterprise_fund')->name('governance_women_groups_registration_cont_women_enterprise_fund');
 
-// @George 
+// @George Muchiri
 // @get_population_by_sex_and_age_groups
 Route::get('Population/population_by_sex_and_age_groups', 
 'Endpoints\Population@get_population_by_sex_and_age_groups')->name('
 population_by_sex_and_age_groups');
 
-// @George 
+// @George Muchiri
 // @get_population_by_sex_and_school_attendance
 
 Route::get('Population/population_by_sex_and_school_attendance', 
 'Endpoints\Population@get_population_by_sex_and_school_attendance')->name('population_by_sex_and_school_attendance');
 
-// @George 
+// @George Muchiri
 // @get_population_by_type_of_disability
 
 Route::get('Population/population_by_type_of_disability', 
 'Endpoints\Population@get_population_by_type_of_disability')->name('population_by_type_of_disability');
 
 
-// @George 
+// @George Muchiri
 // @get_population_distribution_sex_number_households_area_density
 
 Route::get('Population/population_distribution_sex_number_households_area_density', 
 'Endpoints\Population@get_population_distribution_sex_number_households_area_density')->name('population_distribution_sex_number_households_area_density');
 
-// @George 
+// @George Muchiri
 // @get_population_households_by_main_source_of_water
 
 Route::get('Population/population_households_by_main_source_of_water', 
 'Endpoints\Population@get_population_households_by_main_source_of_water')->name('population_households_by_main_source_of_water');
 
-// @George 
+// @George Muchiri
 // @get_population_households_type_floor_material_main_dwelling_unit
 
 Route::get('Population/population_households_type_floor_material_main_dwelling_unit', 
 'Endpoints\Population@get_population_households_type_floor_material_main_dwelling_unit')->name('population_households_type_floor_material_main_dwelling_unit');
 
 
-// @George 
+// @George Muchiri
 // @get_population_percentage_households_ownership_household_assets
 
 Route::get('Population/population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+// @George Muchiri
+// @get_population_populationbysexhouseholdsdensityandcensusyears
+
+Route::get('Population/population_populationbysexhouseholdsdensityandcensusyears', 
+'Endpoints\Population@get_population_populationbysexhouseholdsdensityandcensusyears')->name('population_populationbysexhouseholdsdensityandcensusyears');
+
+
+// @George Muchiri
+// @get_population_populationprojectionsbyselectedagegroup
+
+Route::get('Population/population_populationprojectionsbyselectedagegroup', 
+'Endpoints\Population@get_population_populationprojectionsbyselectedagegroup')->name('population_populationprojectionsbyselectedagegroup');
+
+
+// @George Muchiri
+// @get_population_populationprojectionsbyspecialagegroups
+
+Route::get('Population/population_populationprojectionsbyspecialagegroups', 
+'Endpoints\Population@get_population_populationprojectionsbyspecialagegroups')->name('population_populationprojectionsbyspecialagegroups');
+
+
+// @George Muchiri
+// @get_finance_cdf_allocation_by_constituency
+
+Route::get('Finance/finance_cdf_allocation_by_constituency', 
+'Endpoints\Finance@get_finance_cdf_allocation_by_constituency')->name('finance_cdf_allocation_by_constituency');
+
+// @George Muchiri
+// @get_finance_classification_national_government_expenditure_function
+
+Route::get('Finance/finance_classification_national_government_expenditure_function', 
+'Endpoints\Finance@get_finance_classification_national_government_expenditure_function')->name('finance_classification_national_government_expenditure_function');
+
+// @George Muchiri
+// @get_finance_county_budget_allocation
+
+Route::get('Finance/finance_county_budget_allocation', 
+'Endpoints\Finance@get_finance_county_budget_allocation')->name('finance_county_budget_allocation');
+
+// @George Muchiri
+// @get_finance_county_expenditure
+
+Route::get('Finance/finance_county_expenditure', 
+'Endpoints\Finance@get_finance_county_expenditure')->name('finance_county_expenditure');
+
+
+// @George Muchiri
+// @get_finance_county_revenue
+
+Route::get('Finance/finance_county_revenue', 
+'Endpoints\Finance@get_finance_county_revenue')->name('finance_county_revenue');
+
+
+// @George Muchiri
+// @get_finance_economic_analysis_of_national_government_expenditure
+
+Route::get('Finance/finance_economic_analysis_of_national_government_expenditure', 
+'Endpoints\Finance@get_finance_economic_analysis_of_national_government_expenditure')->name('finance_economic_analysis_of_national_government_expenditure');
+
+
+// @George Muchiri
+// @get_finance_economic_classification_of_county_government_expenditure
+
+Route::get('Finance/finance_economic_classification_of_county_government_expenditure', 
+'Endpoints\Finance@get_finance_economic_classification_of_county_government_expenditure')->name('finance_economic_classification_of_county_government_expenditure');
+
+// @George Muchiri
+// @get_finance_economic_classification_revenue
+
+Route::get('Finance/finance_economic_classification_revenue', 
+'Endpoints\Finance@get_finance_economic_classification_revenue')->name('finance_economic_classification_revenue');
+
+// @George Muchiri
+// @get_finance_excise_revenue_commodity
+
+Route::get('Finance/finance_excise_revenue_commodity', 
+'Endpoints\Finance@get_finance_excise_revenue_commodity')->name(
+	'finance_excise_revenue_commodity');
+
+
+// @George Muchiri
+// @get_finance_expenditure_functions_county_governments
+
+Route::get('Finance/finance_expenditure_functions_county_governments', 
+'Endpoints\Finance@get_finance_expenditure_functions_county_governments')->name(
+	'finance_expenditure_functions_county_governments');
+
+// @George Muchiri
+// @get_finance_expenditure_functions_county_governments
+
+Route::get('Finance/finance_expenditure_functions_county_governments', 
+'Endpoints\Finance@get_finance_expenditure_functions_county_governments')->name(
+	'finance_expenditure_functions_county_governments');
+
+// @George Muchiri
+// @get_finance_money_banking_index
+
+Route::get('Finance/finance_money_banking_index', 
+'Endpoints\Finance@get_finance_money_banking_index')->name(
+	'finance_money_banking_index');
+
+// @George Muchiri
+// @get_finance_money_banking_institutions
+
+Route::get('Finance/finance_money_banking_institutions', 
+'Endpoints\Finance@get_finance_money_banking_institutions')->name(
+	'finance_money_banking_institutions');
+
+
+// @George Muchiri
+// @get_finance_national_government_expenditure
+
+Route::get('Finance/finance_national_government_expenditure', 
+'Endpoints\Finance@get_finance_national_government_expenditure')->name(
+	'finance_national_government_expenditure');
+
+// @George Muchiri
+// @get_finance_national_government_expenditure_purpose
+
+Route::get('Finance/finance_national_government_expenditure_purpose', 
+'Endpoints\Finance@get_finance_national_government_expenditure_purpose')->name(
+	'finance_national_government_expenditure_purpose');
+
+// @George Muchiri
+// @get_ finance_outstanding_debt_international_organization
+
+Route::get('Finance/finance_outstanding_debt_international_organization', 
+'Endpoints\Finance@get_finance_outstanding_debt_international_organization')->name(
+	'finance_outstanding_debt_international_organization');
+
+
+// @George Muchiri
+// @get_finance_outstanding_debt_lending_country
+
+Route::get('Finance/finance_outstanding_debt_lending_country', 
+'Endpoints\Finance@get_finance_outstanding_debt_lending_country')->name(
+	'finance_outstanding_debt_lending_country');
+
+// @George Muchiri
+// @get_finance_statement_of_national_government_operations
+
+Route::get('Finance/finance_statement_of_national_government_operations', 
+'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
+	'finance_statement_of_national_government_operations');
+
+
+=======
+>>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
+>>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -570,6 +929,7 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
+<<<<<<< HEAD
 
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri
@@ -659,3 +1019,81 @@ Route::get('Health/health_subcounty', 'Endpoints\Health@health_subcounty')->name
 //Health
 //health_use_of_mosquito_nets_by_children @fredrick muiruri
 Route::get('Health/health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
+=======
+<<<<<<< HEAD
+	
+=======
+
+
+//Ict  ict_kihibs_households_owned_ict_equipment_services @david
+Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
+  'Endpoints\Ict@get_ict_kihibs_households_owned_ict_equipment_services')->
+    name('ict_kihibs_households_owned_ict_equipment_services');
+
+
+//Ict   ict_kihibs_households_without_internet_by_reason @david
+Route::get('Ict/ict_kihibs_households_without_internet_by_reason', 
+  'Endpoints\Ict@get_ict_kihibs_households_without_internet_by_reason')->
+    name('ict_kihibs_households_without_internet_by_reason');
+
+
+//Ict   ict_kihibs_households_with_internet_by_type @david
+Route::get('Ict/ict_kihibs_households_with_internet_by_type', 
+  'Endpoints\Ict@get_ict_kihibs_households_with_internet_by_type')->
+    name('ict_kihibs_households_with_internet_by_type');
+
+
+//Ict   ict_kihibs_households_with_tv @david
+Route::get('Ict/ict_kihibs_households_with_tv', 
+  'Endpoints\Ict@get_ict_kihibs_households_with_tv')->
+    name('ict_kihibs_households_with_tv');
+
+
+    //Ict  ict_kihibs_population_above18by_reasonnothaving_phone @david
+Route::get('Ict/ict_kihibs_population_above18by_reasonnothaving_phone', 
+  'Endpoints\Ict@get_ict_kihibs_population_above18by_reasonnothaving_phone')->
+    name('ict_kihibs_population_above18by_reasonnothaving_phone');
+
+
+   //Ict  ict_kihibs_population_above18subscribed_mobilemoney @david
+Route::get('Ict/ict_kihibs_population_above18subscribed_mobilemoney', 
+  'Endpoints\Ict@get_ict_kihibs_population_above18subscribed_mobilemoney')->
+    name('ict_kihibs_population_above18subscribed_mobilemoney');
+
+
+
+
+   //Ict   ict_kihibs_population_by_ictequipment_and_servicesused @david
+Route::get('Ict/ict_kihibs_population_by_ictequipment_and_servicesused', 
+  'Endpoints\Ict@get_ict_kihibs_population_by_ictequipment_and_servicesused')->
+    name('ict_kihibs_population_by_ictequipment_and_servicesusedey');
+
+
+   //Ict    ict_kihibs_population_that_didntuseinternet_by_reason @david
+Route::get('Ict/ict_kihibs_population_that_didntuseinternet_by_reason', 
+  'Endpoints\Ict@get_ict_kihibs_population_that_didntuseinternet_by_reason')->
+    name('ict_kihibs_population_that_didntuseinternet_by_reason');
+
+
+
+   //Ict     ict_kihibs_population_that_used_internet_by_purpose @david
+Route::get('Ict/ict_kihibs_population_that_used_internet_by_purpose', 
+  'Endpoints\Ict@get_ict_kihibs_population_that_used_internet_by_purpose')->
+    name('ict_kihibs_population_that_used_internet_by_purpose');
+
+
+
+     //Ict      ict_kihibs_population_who_used_internet_by_place @david
+Route::get('Ict/ict_kihibs_population_who_used_internet_by_place', 
+  'Endpoints\Ict@get_ict_kihibs_population_who_used_internet_by_place')->
+    name('ict_kihibs_population_who_used_internet_by_place');
+    
+
+
+
+     //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
+Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
+  'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
+    name(' ict_kihibs_population_withmobilephone_andaveragesims');
+>>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
+>>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
