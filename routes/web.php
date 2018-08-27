@@ -17,6 +17,27 @@ Route::get('/', function () {
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
+
+Route::get('Agriculture/get_agriculture_land_potential', 'Endpoints\Agriculture@get_agriculture_land_potential')->name('Agriculture');
+
+
+
+Route::get('Agriculture/agriculture_pricetoproducersformeatmilk', 'Endpoints\Agriculture@agriculture_pricetoproducersformeatmilk')->name('Agriculture');
+
+Route::get('Agriculture/agriculture_production_area_average_yield_coffee_type_of_grower', 'Endpoints\Agriculture@agriculture_production_area_average_yield_coffee_type_of_grower')->name('Agriculture');
+
+Route::get('Agriculture/agriculture_production_of_livestock_and_dairy_products', 'Endpoints\Agriculture@agriculture_production_of_livestock_and_dairy_products')->name('Agriculture');
+
+
+Route::get('Agriculture/agriculture_production_of_livestock_and_dairy_products', 'Endpoints\Agriculture@agriculture_production_of_livestock_and_dairy_products')->name('Agriculture');
+
+
+Route::get('Agriculture/agriculture_totalsharecapital', 'Endpoints\Agriculture@agriculture_totalsharecapital')->name('Agriculture');
+
+
+
+Route::get('Agriculture/agriculture_production_area_average_yield_tea_type_grower', 'Endpoints\Agriculture@agriculture_production_area_average_yield_tea_type_grower')->name('Agriculture');
+
 //Agriclture sugar route @George Kagwe
 Route::get('Agriculture/agriculture_area_under_sugarcane_harvested_production_avg_yield', 'Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('sugar');
 //Agriclture categories_of_land route @George Kagwe
@@ -28,11 +49,7 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 //Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-=======
 
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
@@ -229,7 +246,6 @@ Route::get('Manufacturing/manufacturing_quantum_indices_of_manufacturing_product
 
 
 
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('Education/education_approved_degree_diploma_programs', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -392,11 +408,7 @@ Route::get('Health/health_kihibs_health_insurance_cover_by_type', 'Endpoints\Hea
 //Health
 //health_kihibs_incidence_of_sickness_injury @fredrick muiruri
 Route::get('Health/health_kihibs_incidence_of_sickness_injury', 'Endpoints\Health@health_kihibs_incidence_of_sickness_injury')->name('health_kihibs_incidence_of_sickness_injury');
-<<<<<<< HEAD
-=======
 
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
@@ -680,9 +692,7 @@ Route::get('Population/population_households_type_floor_material_main_dwelling_u
 Route::get('Population/population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 // @George Muchiri
 // @get_population_populationbysexhouseholdsdensityandcensusyears
 
@@ -829,9 +839,6 @@ Route::get('Finance/finance_statement_of_national_government_operations',
 	'finance_statement_of_national_government_operations');
 
 
-=======
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -929,7 +936,7 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
-<<<<<<< HEAD
+
 
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri
@@ -1019,10 +1026,7 @@ Route::get('Health/health_subcounty', 'Endpoints\Health@health_subcounty')->name
 //Health
 //health_use_of_mosquito_nets_by_children @fredrick muiruri
 Route::get('Health/health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
-=======
-<<<<<<< HEAD
-	
-=======
+
 
 
 //Ict  ict_kihibs_households_owned_ict_equipment_services @david
@@ -1095,5 +1099,4 @@ Route::get('Ict/ict_kihibs_population_who_used_internet_by_place',
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
+

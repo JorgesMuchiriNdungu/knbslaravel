@@ -6,11 +6,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
-class Agriculture extends Controller
+class George extends Controller
 {
     
 
-    //function to get data
+    
+    //function to get data for sugarharvested
 
     public function get_agriculture_area_under_sugarcane_harvested_production_avg_yield(){
     	$data = DB::table('agriculture_area_under_sugarcane_harvested_production_avg_yield')->get();
@@ -52,9 +53,9 @@ class Agriculture extends Controller
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
 
+     //function to get categories of land
     public function get_categories_of_land(){
-    	// $data = DB::table('agriculture_categories_of_agricultural_land')->get();
-
+    	
     	$data = DB::table('agriculture_categories_of_agricultural_land')
                ->join('health_counties', 'agriculture_categories_of_agricultural_land.county_id', '=', 'health_counties.county_id')
             
@@ -109,7 +110,7 @@ class Agriculture extends Controller
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
      
-     //fetches agriculture_chemical_med_feed_input
+     //function fetches agriculture_chemical_med_feed_input
     public function get_agriculture_chemical_med_feed_input(){
     		$data = DB::table('agriculture_chemical_med_feed_input')->get();
 
@@ -180,7 +181,8 @@ class Agriculture extends Controller
 			print json_encode($result, JSON_NUMERIC_CHECK);
 
     }
-
+ 
+     //function to fetch cooperatives
     public function get_cooperatives(){
     		$data = DB::table('agriculture_cooperatives')->get();
 
@@ -267,7 +269,8 @@ class Agriculture extends Controller
 
     }
 
-     public function agriculture_gross_market_production(){
+    //function to fectch gross market production
+    public function agriculture_gross_market_production(){
     		$data = DB::table('agriculture_gross_market_production')->get();
     		 $year = array();
 			$year['name'] = 'year';	 
@@ -401,7 +404,8 @@ class Agriculture extends Controller
 
     }
 
-     public function get_irrigation_schemes(){
+    //function to fetch irrigation schemes
+    public function get_irrigation_schemes(){
     		$data = DB::table('agriculture_irrigation_schemes')->get();
 
 
@@ -486,5 +490,21 @@ class Agriculture extends Controller
 			print json_encode($result, JSON_NUMERIC_CHECK);
 
     }
+
+    //function to fetch agriculture_land_potential
+    public function get_agriculture_land_potential(){
+    
+           $data =DB::table('agriculture_land_potential')
+                    ->join('health_counties.county_id', 'agriculture_categories_of_agricultural_land.county_id', '=', 'health_counties.county_id')
+                    ->join('health_subcounties','agriculture_categories_of_agricultural_land.subcounty_id','=','
+                    	health_subcounties.subcounty_id')
+                    ->get();
+
+            var_dump($data);die();
+
+    }
+  
+
+    
 
 }
