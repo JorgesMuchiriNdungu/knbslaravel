@@ -29,6 +29,7 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
 
+
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
      'Endpoints\Health_Sectors@index')->
@@ -217,7 +218,6 @@ Route::get('Manufacturing/manufacturing_quantum_indices_of_manufacturing_product
     Route::get('Labour/labour_wage_employment_by_industry_in_public_sector', 
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_public_sector')->
     name('labour_wage_employment_by_industry_in_public_sector');
-
 
 
 
@@ -769,3 +769,74 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
 
+
+//Ict  ict_kihibs_households_owned_ict_equipment_services @david
+Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
+  'Endpoints\Ict@get_ict_kihibs_households_owned_ict_equipment_services')->
+    name('ict_kihibs_households_owned_ict_equipment_services');
+
+
+//Ict   ict_kihibs_households_without_internet_by_reason @david
+Route::get('Ict/ict_kihibs_households_without_internet_by_reason', 
+  'Endpoints\Ict@get_ict_kihibs_households_without_internet_by_reason')->
+    name('ict_kihibs_households_without_internet_by_reason');
+
+
+//Ict   ict_kihibs_households_with_internet_by_type @david
+Route::get('Ict/ict_kihibs_households_with_internet_by_type', 
+  'Endpoints\Ict@get_ict_kihibs_households_with_internet_by_type')->
+    name('ict_kihibs_households_with_internet_by_type');
+
+
+//Ict   ict_kihibs_households_with_tv @david
+Route::get('Ict/ict_kihibs_households_with_tv', 
+  'Endpoints\Ict@get_ict_kihibs_households_with_tv')->
+    name('ict_kihibs_households_with_tv');
+
+
+    //Ict  ict_kihibs_population_above18by_reasonnothaving_phone @david
+Route::get('Ict/ict_kihibs_population_above18by_reasonnothaving_phone', 
+  'Endpoints\Ict@get_ict_kihibs_population_above18by_reasonnothaving_phone')->
+    name('ict_kihibs_population_above18by_reasonnothaving_phone');
+
+
+   //Ict  ict_kihibs_population_above18subscribed_mobilemoney @david
+Route::get('Ict/ict_kihibs_population_above18subscribed_mobilemoney', 
+  'Endpoints\Ict@get_ict_kihibs_population_above18subscribed_mobilemoney')->
+    name('ict_kihibs_population_above18subscribed_mobilemoney');
+
+
+
+
+   //Ict   ict_kihibs_population_by_ictequipment_and_servicesused @david
+Route::get('Ict/ict_kihibs_population_by_ictequipment_and_servicesused', 
+  'Endpoints\Ict@get_ict_kihibs_population_by_ictequipment_and_servicesused')->
+    name('ict_kihibs_population_by_ictequipment_and_servicesusedey');
+
+
+   //Ict    ict_kihibs_population_that_didntuseinternet_by_reason @david
+Route::get('Ict/ict_kihibs_population_that_didntuseinternet_by_reason', 
+  'Endpoints\Ict@get_ict_kihibs_population_that_didntuseinternet_by_reason')->
+    name('ict_kihibs_population_that_didntuseinternet_by_reason');
+
+
+
+   //Ict     ict_kihibs_population_that_used_internet_by_purpose @david
+Route::get('Ict/ict_kihibs_population_that_used_internet_by_purpose', 
+  'Endpoints\Ict@get_ict_kihibs_population_that_used_internet_by_purpose')->
+    name('ict_kihibs_population_that_used_internet_by_purpose');
+
+
+
+     //Ict      ict_kihibs_population_who_used_internet_by_place @david
+Route::get('Ict/ict_kihibs_population_who_used_internet_by_place', 
+  'Endpoints\Ict@get_ict_kihibs_population_who_used_internet_by_place')->
+    name('ict_kihibs_population_who_used_internet_by_place');
+    
+
+
+
+     //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
+Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
+  'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
+    name(' ict_kihibs_population_withmobilephone_andaveragesims');
