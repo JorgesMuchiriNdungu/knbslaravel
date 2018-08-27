@@ -321,12 +321,18 @@ class ComposerStaticInit7095d18fc50ec9df83b04970a544ff12
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+<<<<<<< HEAD
         'App\\Http\\Controllers\\Agriculture' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Agriculture.php',
+=======
+        'App\\Http\\Controllers\\Agriculture' => __DIR__ . '/../..' . '/app/Http/Controllers/Agriculture.php',
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\BuildingConstruction' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/BuildingConstruction.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+<<<<<<< HEAD
         'App\\Http\\Controllers\\Dashboard\\Dashboard' => __DIR__ . '/../..' . '/app/Http/Controllers/Dashboard/Dashboard.php',
         'App\\Http\\Controllers\\Endpoints\\Administration' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Administration.php',
         'App\\Http\\Controllers\\Endpoints\\Building' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Building.php',
@@ -342,6 +348,11 @@ class ComposerStaticInit7095d18fc50ec9df83b04970a544ff12
         'App\\Http\\Controllers\\Endpoints\\Labour' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Labour.php',
         'App\\Http\\Controllers\\Endpoints\\Manufacturing' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Manufacturing.php',
         'App\\Http\\Controllers\\Endpoints\\Population' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Population.php',
+=======
+        'App\\Http\\Controllers\\Endpoints\\Administration' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Administration.php',
+        'App\\Http\\Controllers\\Endpoints\\CPI' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/CPI.php',
+        'App\\Http\\Controllers\\Endpoints\\Environment' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Environment.php',
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
         'App\\Http\\Controllers\\Endpoints\\Trade' => __DIR__ . '/../..' . '/app/Http/Controllers/Endpoints/Trade.php',
         'App\\Http\\Controllers\\Forms\\Agriculture' => __DIR__ . '/../..' . '/app/Http/Controllers/Forms/Agriculture.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',

@@ -8,12 +8,18 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+<<<<<<< HEAD
     'App\\Http\\Controllers\\Agriculture' => $baseDir . '/app/Http/Controllers/Endpoints/Agriculture.php',
+=======
+    'App\\Http\\Controllers\\Agriculture' => $baseDir . '/app/Http/Controllers/Agriculture.php',
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+    'App\\Http\\Controllers\\BuildingConstruction' => $baseDir . '/app/Http/Controllers/Endpoints/BuildingConstruction.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+<<<<<<< HEAD
     'App\\Http\\Controllers\\Dashboard\\Dashboard' => $baseDir . '/app/Http/Controllers/Dashboard/Dashboard.php',
     'App\\Http\\Controllers\\Endpoints\\Administration' => $baseDir . '/app/Http/Controllers/Endpoints/Administration.php',
     'App\\Http\\Controllers\\Endpoints\\Building' => $baseDir . '/app/Http/Controllers/Endpoints/Building.php',
@@ -29,6 +35,11 @@ return array(
     'App\\Http\\Controllers\\Endpoints\\Labour' => $baseDir . '/app/Http/Controllers/Endpoints/Labour.php',
     'App\\Http\\Controllers\\Endpoints\\Manufacturing' => $baseDir . '/app/Http/Controllers/Endpoints/Manufacturing.php',
     'App\\Http\\Controllers\\Endpoints\\Population' => $baseDir . '/app/Http/Controllers/Endpoints/Population.php',
+=======
+    'App\\Http\\Controllers\\Endpoints\\Administration' => $baseDir . '/app/Http/Controllers/Endpoints/Administration.php',
+    'App\\Http\\Controllers\\Endpoints\\CPI' => $baseDir . '/app/Http/Controllers/Endpoints/CPI.php',
+    'App\\Http\\Controllers\\Endpoints\\Environment' => $baseDir . '/app/Http/Controllers/Endpoints/Environment.php',
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
     'App\\Http\\Controllers\\Endpoints\\Trade' => $baseDir . '/app/Http/Controllers/Endpoints/Trade.php',
     'App\\Http\\Controllers\\Forms\\Agriculture' => $baseDir . '/app/Http/Controllers/Forms/Agriculture.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
