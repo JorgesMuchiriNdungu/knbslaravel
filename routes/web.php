@@ -125,3 +125,30 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
+
+
+//Tourism
+// @Charles Ndirangu
+// Building  tourism_arrivals route
+Route::get('Tourism/tourism_arrivals', 'Endpoints\Tourism@get_tourism_arrivals')->name('tourism_arrivals');
+
+// @Charles Ndirangu
+// Building  tourism_conferences route
+Route::get('Tourism/tourism_conferences', 'Endpoints\Tourism@get_tourism_conferences')->name('tourism_conferences');
+
+// @Charles Ndirangu
+// Building  tourism_departures route
+Route::get('Tourism/tourism_departures', 'Endpoints\Tourism@get_tourism_departures')->name('tourism_departures');
+
+
+// @Charles Ndirangu
+// Building  tourism_earnings route
+Route::get('Tourism/tourism_earnings', 'Endpoints\Tourism@get_tourism_earnings')->name('tourism_earnings');
+
+// @Charles Ndirangu
+// Building  tourism_hotel_occupancy_by_residence route
+Route::get('Tourism/tourism_hotel_occupancy_by_residence', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_residence')->name('tourism_hotel_occupancy_by_residence');
+
+// @Charles Ndirangu
+// Building  tourism_hotel_occupancy_by_zone route
+Route::get('Tourism/tourism_hotel_occupancy_by_zone', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_zone')->name('tourism_hotel_occupancy_by_zone');
