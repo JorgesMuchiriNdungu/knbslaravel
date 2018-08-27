@@ -50,6 +50,10 @@ class Manufacturing extends Controller
 
 
 
+
+
+
+
     // get manufacturing_quantum_indices_of_manufacturing_production
 
       public function get_manufacturing_quantum_indices_of_manufacturing_production(){

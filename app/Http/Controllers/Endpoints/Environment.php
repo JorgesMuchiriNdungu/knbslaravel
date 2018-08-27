@@ -11,11 +11,7 @@ class Environment extends Controller
     
 
 
-
-
-
     //function to get data average_export_prices_ash
-
 
 
       public function get_environment_and_natural_resources_average_export_prices_ash(){
@@ -24,17 +20,13 @@ class Environment extends Controller
     	    $year = array();
 			$year['name'] = 'year';
 				 
-		
-	 
+	
 			$series1 = array();
 			$series1['name'] = 'soda ash';
 			
 			$series2 = array();
 			$series2['name'] = 'fluorspar';
 
-		
-
-			 
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
@@ -54,12 +46,14 @@ class Environment extends Controller
 
 
 
+
+
+
+
 // get environment_and_natural_resources_development_expenditure_water
 
 
-
-
-      public function get_environment_and_natural_resources_development_expenditure_water(){
+    public function get_environment_and_natural_resources_development_expenditure_water(){
     	$data = DB::table('environment_and_natural_resources_development_expenditure_water')->get();
 
     	    $year = array();
@@ -117,6 +111,10 @@ class Environment extends Controller
 }
 
 
+
+
+
+
 // get environment_and_natural_resources_expenditure_cleaning_refuse
 
 
@@ -125,14 +123,10 @@ class Environment extends Controller
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
-		
 	 
 			$series1 = array();
 			$series1['name'] = 'refuse removal';
-			
 		
-
 			 
 			foreach ($data as $row)
 			{
@@ -151,17 +145,14 @@ class Environment extends Controller
 }
 
 
+
+
 // get environment_and_natural_resources_government_forest
-
-
-
 public function get_environment_and_natural_resources_government_forest(){
     	$data = DB::table('environment_and_natural_resources_government_forest')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
-		
 	 
 			$series1 = array();
 			$series1['name'] = 'previous plantation area';
@@ -196,6 +187,8 @@ public function get_environment_and_natural_resources_government_forest(){
 
 
 
+
+
 //  get environment_and_natural_resources_num_high_risk_environ_impact
 
  public function get_environment_and_natural_resources_num_high_risk_environ_impact(){
@@ -203,9 +196,7 @@ public function get_environment_and_natural_resources_government_forest(){
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
 		
-	 
 			$series1 = array();
 			$series1['name'] = 'transport and communication';
 			
@@ -259,6 +250,9 @@ public function get_environment_and_natural_resources_government_forest(){
     
 
 }
+
+
+
 
 
 
@@ -390,9 +384,9 @@ public function get_environment_and_natural_resources_government_forest(){
 
 
 
+
+
 // get environment_and_natural_resources_quantity_of_total_mineral
-
-
 
 public function get_environment_and_natural_resources_quantity_of_total_mineral(){
     	$data = DB::table('environment_and_natural_resources_quantity_of_total_mineral')->get();
@@ -400,8 +394,6 @@ public function get_environment_and_natural_resources_quantity_of_total_mineral(
     	    $year = array();
 			$year['name'] = 'year';
 				 
-		
-	 
 			$series1 = array();
 			$series1['name'] = 'category';
 			
@@ -435,9 +427,11 @@ public function get_environment_and_natural_resources_quantity_of_total_mineral(
 
 
 
+
+
+
+
 // get  environment_and_natural_resources_quantity_value_fish_landed
-
-
 
 public function get_environment_and_natural_resources_quantity_value_fish_landed(){
     	$data = DB::table('environment_and_natural_resources_quantity_value_fish_landed')->get();
@@ -479,17 +473,15 @@ public function get_environment_and_natural_resources_quantity_value_fish_landed
 }
 
 
+
+
+
 // get  environment_and_natural_resources_record_sale_goverment_products
-
-
-
 public function get_environment_and_natural_resources_record_sale_goverment_products(){
     	$data = DB::table('environment_and_natural_resources_record_sale_goverment_products')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
-		
 	 
 			$series1 = array();
 			$series1['name'] = 'soft wood';
@@ -524,6 +516,11 @@ public function get_environment_and_natural_resources_record_sale_goverment_prod
 
 
 
+
+
+
+
+
 //  get environment_and_natural_resources_trends_envi_natural_resources
 
  public function get_environment_and_natural_resources_trends_envi_natural_resources(){
@@ -532,8 +529,6 @@ public function get_environment_and_natural_resources_record_sale_goverment_prod
     	    $year = array();
 			$year['name'] = 'year';
 				 
-		
-	 
 			$series1 = array();
 			$series1['name'] = 'forestry and logging';
 			
@@ -551,10 +546,7 @@ public function get_environment_and_natural_resources_record_sale_goverment_prod
 
 			$series6 = array();
 			$series6['name'] = 'resource as percent of GDP';
-
-			
-
-			 
+ 
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
@@ -586,18 +578,15 @@ public function get_environment_and_natural_resources_record_sale_goverment_prod
 
 
 
+
+
 // get  environment_and_natural_resources_value_of_total_mineral
-
-
-
 public function get_environment_and_natural_resources_value_of_total_mineral(){
     	$data = DB::table('environment_and_natural_resources_value_of_total_mineral')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
-		
-	 
+			
 			$series1 = array();
 			$series1['name'] = 'category';
 			
@@ -630,16 +619,17 @@ public function get_environment_and_natural_resources_value_of_total_mineral(){
 }
 
 
+
+
+
+
 // get environment_and_natural_resources_water_purification_points
-
-
 
 public function get_environment_and_natural_resources_water_purification_points(){
     	$data = DB::table('environment_and_natural_resources_water_purification_points')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
 		
 	 
 			$series1 = array();

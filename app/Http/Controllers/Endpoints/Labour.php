@@ -15,15 +15,11 @@ class Labour extends Controller
 
     //function to get labour_average_wage_earnings_per_employee_private_sector
 
-
-
       public function get_labour_average_wage_earnings_per_employee_private_sector(){
     	$data = DB::table('labour_average_wage_earnings_per_employee_private_sector')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
-		
 	 
 			$series1 = array();
 			$series1['name'] = 'private sector';
@@ -53,13 +49,18 @@ class Labour extends Controller
 
 
 
+
+
+
+
+
+//et_labour_average_wage_earnings_per_employee_public_sector
  
 public function get_labour_average_wage_earnings_per_employee_public_sector(){
     	$data = DB::table('labour_average_wage_earnings_per_employee_public_sector')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
 		
 	 
 			$series1 = array();
@@ -67,8 +68,6 @@ public function get_labour_average_wage_earnings_per_employee_public_sector(){
 			
 			$series2 = array();
 			$series2['name'] = 'wage earnings';
-
-		
 
 			 
 			foreach ($data as $row)
@@ -88,6 +87,14 @@ public function get_labour_average_wage_earnings_per_employee_public_sector(){
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
 
+
+
+
+
+
+
+
+ // get_labour_employment_public_sector
 
 public function get_labour_employment_public_sector(){
     	$data = DB::table('labour_employment_public_sector')->get();
@@ -109,12 +116,6 @@ public function get_labour_employment_public_sector(){
 			$series2['name'] = 'Wage Employment';
 			$series3 = array();
 			$series3['name'] = 'County Name';
-
-			
-
-		
-
-		
 
 			 
 			foreach ($data as $row)
@@ -139,18 +140,20 @@ public function get_labour_employment_public_sector(){
 
 
 
+
+
+
+
+
+
 //get  labour_memorandum_items_in_public_sector
-
-
 
       public function get_labour_memorandum_items_in_public_sector(){
     	$data = DB::table('labour_memorandum_items_in_public_sector')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
-				 
 		
-	 
 			$series1 = array();
 			$series1['name'] = 'memorandum item';
 			
@@ -158,8 +161,6 @@ public function get_labour_employment_public_sector(){
 			$series2['name'] = 'wage earnings';
 
 		
-
-			 
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
@@ -180,23 +181,20 @@ public function get_labour_employment_public_sector(){
 
 
 
+
+
+
+
+
+
 //get labour_sectors
-
-
 
       public function get_labour_sectors(){
     	$data = DB::table('labour_sectors')->get();
 
     	    $sector = array();
 			$sector['name'] = 'sector name';
-				 
-		
-	 
-			
-
-		
-
-			 
+				
 			foreach ($data as $row)
 			{
 			$sector['data'][] = $row->sector_name;
@@ -237,9 +235,7 @@ public function get_labour_employment_public_sector(){
 			$series2 = array();
 			$series2['name'] = 'total employment';
 
-		
-
-			 
+	
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
@@ -258,6 +254,9 @@ public function get_labour_employment_public_sector(){
 			
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
+
+
+
 
 
 
@@ -309,6 +308,9 @@ public function get_labour_employment_public_sector(){
 
 
 
+
+
+
 //get labour_wage_employment_by_industry_in_private_sector
 
       public function get_labour_wage_employment_by_industry_in_private_sector(){
@@ -349,9 +351,12 @@ public function get_labour_employment_public_sector(){
     }
 
 
+
+
+
+
+
     // get labour_wage_employment_by_industry_in_public_sector
-
-
 
       public function get_labour_wage_employment_by_industry_in_public_sector(){
 
