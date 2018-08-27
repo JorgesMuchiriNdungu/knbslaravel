@@ -17,6 +17,27 @@ Route::get('/', function () {
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
+
+Route::get('Agriculture/get_agriculture_land_potential', 'Endpoints\Agriculture@get_agriculture_land_potential')->name('Agriculture');
+
+
+
+Route::get('Agriculture/agriculture_pricetoproducersformeatmilk', 'Endpoints\Agriculture@agriculture_pricetoproducersformeatmilk')->name('Agriculture');
+
+Route::get('Agriculture/agriculture_production_area_average_yield_coffee_type_of_grower', 'Endpoints\Agriculture@agriculture_production_area_average_yield_coffee_type_of_grower')->name('Agriculture');
+
+Route::get('Agriculture/agriculture_production_of_livestock_and_dairy_products', 'Endpoints\Agriculture@agriculture_production_of_livestock_and_dairy_products')->name('Agriculture');
+
+
+Route::get('Agriculture/agriculture_production_of_livestock_and_dairy_products', 'Endpoints\Agriculture@agriculture_production_of_livestock_and_dairy_products')->name('Agriculture');
+
+
+Route::get('Agriculture/agriculture_totalsharecapital', 'Endpoints\Agriculture@agriculture_totalsharecapital')->name('Agriculture');
+
+
+
+Route::get('Agriculture/agriculture_production_area_average_yield_tea_type_grower', 'Endpoints\Agriculture@agriculture_production_area_average_yield_tea_type_grower')->name('Agriculture');
+
 //Agriclture sugar route @George Kagwe
 Route::get('Agriculture/agriculture_area_under_sugarcane_harvested_production_avg_yield', 'Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('sugar');
 //Agriclture categories_of_land route @George Kagwe
@@ -387,6 +408,10 @@ Route::get('Health/health_kihibs_health_insurance_cover_by_type', 'Endpoints\Hea
 //Health
 //health_kihibs_incidence_of_sickness_injury @fredrick muiruri
 Route::get('Health/health_kihibs_incidence_of_sickness_injury', 'Endpoints\Health@health_kihibs_incidence_of_sickness_injury')->name('health_kihibs_incidence_of_sickness_injury');
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
@@ -915,6 +940,8 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
 
+<<<<<<< HEAD
+=======
 
 //Tourism
 // @Charles Ndirangu
@@ -941,6 +968,7 @@ Route::get('Tourism/tourism_hotel_occupancy_by_residence', 'Endpoints\Tourism@ge
 // @Charles Ndirangu
 // Building  tourism_hotel_occupancy_by_zone route
 Route::get('Tourism/tourism_hotel_occupancy_by_zone', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_zone')->name('tourism_hotel_occupancy_by_zone');
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
 
 // @Charles Ndirangu
 // Building  tourism_population_proportion_that_took_trip route
@@ -1115,3 +1143,7 @@ Route::get('Ict/ict_kihibs_population_who_used_internet_by_place',
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
