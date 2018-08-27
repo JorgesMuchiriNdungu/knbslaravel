@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.admin');
 });
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
 //Agriclture sugar route @George Kagwe
-Route::get('Agriculture/sugar', 'Agriculture@get_sugar')->name('sugar');
+Route::get('Agriculture/agriculture_area_under_sugarcane_harvested_production_avg_yield', 'Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('sugar');
 //Agriclture categories_of_land route @George Kagwe
 Route::get('Agriculture/categories_of_land', 'Agriculture@get_categories_of_land')->name('categories');
 //Agriclture get_agriculture_chemical_med_feed_input route @George Kagwe
@@ -27,7 +27,7 @@ Route::get('Agriculture/get_agriculture_chemical_med_feed_input', 'Agriculture@g
 Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('get_cooperatives');
 //Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
-<<<<<<< HEAD
+
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('Education/education_approved_degree_diploma_programs', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -190,9 +190,7 @@ Route::get('Health/health_kihibs_health_insurance_cover_by_type', 'Endpoints\Hea
 //Health
 //health_kihibs_incidence_of_sickness_injury @fredrick muiruri
 Route::get('Health/health_kihibs_incidence_of_sickness_injury', 'Endpoints\Health@health_kihibs_incidence_of_sickness_injury')->name('health_kihibs_incidence_of_sickness_injury');
-=======
 
-<<<<<<< HEAD
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
@@ -475,7 +473,7 @@ Route::get('Population/population_households_type_floor_material_main_dwelling_u
 
 Route::get('Population/population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
-=======
+
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -573,4 +571,3 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
->>>>>>> 5448ca06465bc1fd06366c7e1d1a37497f7fafd2
