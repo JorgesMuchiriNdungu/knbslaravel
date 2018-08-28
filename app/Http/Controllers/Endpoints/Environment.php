@@ -5,13 +5,13 @@ namespace App\Http\Controllers\Endpoints;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
+
 
 class Environment extends Controller
 {
     
 
-<<<<<<< HEAD
+
 
  public function get_environment_and_natural_resources_average_export_prices_ash(){
     
@@ -24,9 +24,9 @@ class Environment extends Controller
 			 
 			$series1 = array();
 			$series1['name'] = 'Soda Ash ';
-=======
-    //function to get data average_export_prices_ash
 
+    //function to get data average_export_prices_ash
+}
 
       public function get_environment_and_natural_resources_average_export_prices_ash(){
     	$data = DB::table('environment_and_natural_resources_average_export_prices_ash')->get();
@@ -37,27 +37,17 @@ class Environment extends Controller
 	
 			$series1 = array();
 			$series1['name'] = 'soda ash';
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
+
 			
 			$series2 = array();
 			$series2['name'] = 'fluorspar';
 
-<<<<<<< HEAD
-		
-
-			 
-=======
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
 			foreach ($data as $row)
 			{
 			$year['data'][] = $row->year;
 			$series1['data'][] = $row->soda_ash;
 			$series2['data'][] = $row->fluorspar;
-<<<<<<< HEAD
-						
-=======
-								
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
+
 			}
 			 
 			$result = array();
@@ -67,13 +57,10 @@ class Environment extends Controller
 			
 					
 			print json_encode($result, JSON_NUMERIC_CHECK);
-<<<<<<< HEAD
-
 
     }
 
 
-=======
     }
 
 
@@ -140,7 +127,6 @@ class Environment extends Controller
 			print json_encode($result, JSON_NUMERIC_CHECK);
     
 
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
 }
 
 
