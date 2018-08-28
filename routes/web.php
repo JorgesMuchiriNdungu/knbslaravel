@@ -122,7 +122,7 @@ Route::get('environment/all_environment_and_natural_resources_population_wildlif
 
 
 //environment  environment_and_natural_resources_quantity_of_total_mineral @david
-Route::get('Environment/environment_and_natural_resources_quantity_of_total_mineral', 
+Route::get('environment/all_environment_and_natural_resources_quantity_of_total_mineral', 
 	'Endpoints\Environment@get_environment_and_natural_resources_quantity_of_total_mineral')->
     name('environment_and_natural_resources_quantity_of_total_mineral');
 
@@ -134,25 +134,25 @@ Route::get('environment/all_environment_and_natural_resources_quantity_value_fis
 
 
 //environment  environment_and_natural_resources_record_sale_goverment_products @david
-Route::get('Environment/environment_and_natural_resources_record_sale_goverment_products', 
+Route::get('environment/all_environment_and_natural_resources_record_sale_goverment_products', 
 	'Endpoints\Environment@get_environment_and_natural_resources_record_sale_goverment_products')->
     name('environment_and_natural_resources_record_sale_goverment_products');
 
 
 //environment  environment_and_natural_resources_trends_envi_natural_resources @david
-Route::get('Environment/environment_and_natural_resources_trends_envi_natural_resources', 
+Route::get('environment/all_environment_and_natural_resources_trends_envi_natural_resources', 
 	'Endpoints\Environment@get_environment_and_natural_resources_trends_envi_natural_resources')->
     name('environment_and_natural_resources_trends_envi_natural_resources');
 
 
   //environment   environment_and_natural_resources_value_of_total_mineral @david
-Route::get('Environment/environment_and_natural_resources_value_of_total_mineral', 
+Route::get('environment/all_environment_and_natural_resources_value_of_total_mineral', 
 	'Endpoints\Environment@get_environment_and_natural_resources_value_of_total_mineral')->
     name('environment_and_natural_resources_value_of_total_mineral');
 
 
 //environment   environment_and_natural_resources_water_purification_points @david
-Route::get('Environment/environment_and_natural_resources_water_purification_points', 
+Route::get('environment/all_environment_and_natural_resources_water_purification_points', 
 	'Endpoints\Environment@get_environment_and_natural_resources_water_purification_points')->
     name( 'environment_and_natural_resources_water_purification_points');
 
