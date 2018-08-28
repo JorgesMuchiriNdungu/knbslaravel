@@ -29,8 +29,7 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
 
-<<<<<<< HEAD
-=======
+
 
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
@@ -390,17 +389,15 @@ Route::get('Health/health_kihibs_health_insurance_cover_by_type', 'Endpoints\Hea
 //health_kihibs_incidence_of_sickness_injury @fredrick muiruri
 Route::get('Health/health_kihibs_incidence_of_sickness_injury', 'Endpoints\Health@health_kihibs_incidence_of_sickness_injury')->name('health_kihibs_incidence_of_sickness_injury');
 
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
+// @George Muchiri
+// governance_cases_forwarded_and_action_taken route
+
+Route::get('governance/all_governance_cases_forwarded_and_action_taken', 'Endpoints\Governance@get_governance_cases_forwarded_and_action_taken')->name('governance_cases_forwarded_and_action_taken');
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
 
-Route::get('Governance/governance_cases_forwarded_and_action_taken', 'Endpoints\Governance@get_governance_cases_forwarded_and_action_taken')->name('governance_cases_forwarded_and_action_taken');
-
-// @George Muchiri
-// governance_cases_forwarded_and_action_taken route
-
-Route::get('Governance/governance_cases_handled_by_ethics_commision', 'Endpoints\Governance@get_governance_cases_handled_by_ethics_commision')->name('governance_cases_handled_by_ethics_commision');
+Route::get('governance/all_governance_cases_handled_by_ethics_commision', 'Endpoints\Governance@get_governance_cases_handled_by_ethics_commision')->name('governance_cases_handled_by_ethics_commision');
 
 
 // @George Muchiri
@@ -674,7 +671,7 @@ Route::get('Population/population_households_type_floor_material_main_dwelling_u
 Route::get('Population/population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
 
-<<<<<<< HEAD
+
 // @George Muchiri
 // @get_population_populationbysexhouseholdsdensityandcensusyears
 
@@ -821,8 +818,6 @@ Route::get('Finance/finance_statement_of_national_government_operations',
 	'finance_statement_of_national_government_operations');
 
 
-=======
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -920,9 +915,6 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
-<<<<<<< HEAD
-	
-=======
 
 
 //Ict  ict_kihibs_households_owned_ict_equipment_services @david
@@ -989,10 +981,72 @@ Route::get('Ict/ict_kihibs_population_who_used_internet_by_place',
     name('ict_kihibs_population_who_used_internet_by_place');
     
 
-
-
      //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
+
+// @George Muchiri
+// housing_conditions_kihibs_hholds_by_habitable_rooms
+
+Route::get('Housing/housing_conditions_kihibs_hholds_by_habitable_rooms', 'Endpoints\Housing@get_housing_conditions_kihibs_hholds_by_habitable_rooms')->name('housing_conditions_kihibs_hholds_by_habitable_rooms');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_hholds_by_housing_tenure
+
+Route::get('Housing/housing_conditions_kihibs_hholds_by_housing_tenure', 'Endpoints\Housing@get_housing_conditions_kihibs_hholds_by_housing_tenure')->name('housing_conditions_kihibs_hholds_by_housing_tenure');
+
+// @George Muchiri
+// housing_conditions_kihibs_hholds_by_type_of_housing_unit
+
+Route::get('Housing/housing_conditions_kihibs_hholds_by_type_of_housing_unit', 'Endpoints\Housing@get_housing_conditions_kihibs_hholds_by_type_of_housing_unit')->name('housing_conditions_kihibs_hholds_by_type_of_housing_unit');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_hholds_in_rented_dwellings
+
+Route::get('Housing/housing_conditions_kihibs_hholds_in_rented_dwellings', 'Endpoints\Housing@get_housing_conditions_kihibs_hholds_in_rented_dwellings')->name('housing_conditions_kihibs_hholds_in_rented_dwellings');
+
+// @George Muchiri
+// housing_conditions_kihibs_main_floor_material
+
+Route::get('Housing/housing_conditions_kihibs_main_floor_material', 'Endpoints\Housing@get_housing_conditions_kihibs_main_floor_material')->name('housing_conditions_kihibs_main_floor_material');
+
+// @George Muchiri
+// housing_conditions_kihibs_main_roofing_material
+
+Route::get('Housing/housing_conditions_kihibs_main_roofing_material', 'Endpoints\Housing@get_housing_conditions_kihibs_main_roofing_material')->name('housing_conditions_kihibs_main_roofing_material');
+
+// @George Muchiri
+// housing_conditions_kihibs_main_source_of_cooking_fuel
+
+Route::get('Housing/housing_conditions_kihibs_main_source_of_cooking_fuel', 'Endpoints\Housing@get_housing_conditions_kihibs_main_source_of_cooking_fuel')->name('housing_conditions_kihibs_main_source_of_cooking_fuel');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_main_source_of_drinking_water
+
+Route::get('Housing/housing_conditions_kihibs_main_source_of_drinking_water', 'Endpoints\Housing@get_housing_conditions_kihibs_main_source_of_drinking_water')->name(
+	'housing_conditions_kihibs_main_source_of_drinking_water');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_main_source_of_lighting_fuel
+
+Route::get('Housing/housing_conditions_kihibs_main_source_of_lighting_fuel', 'Endpoints\Housing@get_housing_conditions_kihibs_main_source_of_lighting_fuel')->name(
+	'housing_conditions_kihibs_main_source_of_lighting_fuel');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_main_toilet_facility
+Route::get('Housing/housing_conditions_kihibs_main_toilet_facility', 
+	'Endpoints\Housing@get_housing_conditions_kihibs_main_toilet_facility')->name(
+	'housing_conditions_kihibs_main_toilet_facility');
+
+// @George Muchiri
+// housing_conditions_kihibs_main_wall_material
+Route::get('Housing/housing_conditions_kihibs_main_wall_material', 
+	'Endpoints\Housing@get_housing_conditions_kihibs_main_wall_material')->name(
+	'housing_conditions_kihibs_main_wall_material');
+
