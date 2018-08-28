@@ -44,7 +44,9 @@ class Education extends Controller
      //function to get data from education_csa_adulteducationcentresbysubcounty
 
     public function education_csa_adulteducationcentresbysubcounty(){
-    	$data = DB::table('education_csa_adulteducationcentresbysubcounty')->join('health_counties', 'education_csa_adulteducationcentresbysubcounty.county_id', '=', 'health_counties.county_id')->join('health_subcounty', 'education_csa_adulteducationcentresbysubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
+    	$data = DB::table('education_csa_adulteducationcentresbysubcounty')
+    	            ->join('health_counties', 'education_csa_adulteducationcentresbysubcounty.county_id', '=', 'health_counties.county_id')
+    	            ->join('health_subcounty', 'education_csa_adulteducationcentresbysubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
 
 
 
@@ -80,7 +82,9 @@ class Education extends Controller
      //function to get data from education_csa_adulteducationenrolmentbysexandsubcounty
 
     public function education_csa_adulteducationenrolmentbysexandsubcounty(){
-    	$data = DB::table('education_csa_adulteducationenrolmentbysexandsubcounty')->join('health_counties', 'education_csa_adulteducationenrolmentbysexandsubcounty.county_id', '=', 'health_counties.county_id')->join('health_subcounty', 'education_csa_adulteducationenrolmentbysexandsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
+    	$data = DB::table('education_csa_adulteducationenrolmentbysexandsubcounty')
+    	            ->join('health_counties', 'education_csa_adulteducationenrolmentbysexandsubcounty.county_id', '=', 'health_counties.county_id')
+    	            ->join('health_subcounty', 'education_csa_adulteducationenrolmentbysexandsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
 
 
     	    $year = array();
@@ -121,7 +125,9 @@ class Education extends Controller
      //function to get data from education_csa_adulteducationproficiencytestresults
 
     public function education_csa_adulteducationproficiencytestresults(){
-    $data = DB::table('education_csa_adulteducationproficiencytestresults')->join('health_counties', 'education_csa_adulteducationproficiencytestresults.county_id', '=', 'health_counties.county_id')->join('health_subcounty', 'education_csa_adulteducationproficiencytestresults.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
+    $data = DB::table('education_csa_adulteducationproficiencytestresults')
+               ->join('health_counties', 'education_csa_adulteducationproficiencytestresults.county_id', '=', 'health_counties.county_id')
+               ->join('health_subcounty', 'education_csa_adulteducationproficiencytestresults.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
 
 
     	    $year = array();
@@ -166,7 +172,9 @@ class Education extends Controller
      //function to get data from education_csa_ecdecentresbycategoryandsubcounty
 
     public function education_csa_ecdecentresbycategoryandsubcounty(){
-    	 $data = DB::table('education_csa_ecdecentresbycategoryandsubcounty')->join('health_counties', 'education_csa_ecdecentresbycategoryandsubcounty.county_id', '=', 'health_counties.county_id')->join('health_subcounty', 'education_csa_ecdecentresbycategoryandsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
+    	 $data = DB::table('education_csa_ecdecentresbycategoryandsubcounty')
+    	            ->join('health_counties', 'education_csa_ecdecentresbycategoryandsubcounty.county_id', '=', 'health_counties.county_id')
+    	            ->join('health_subcounty', 'education_csa_ecdecentresbycategoryandsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
 
 
 
@@ -207,7 +215,8 @@ class Education extends Controller
  //function to get data from education_csa_primaryenrolmentandaccessindicators
 
     public function education_csa_primaryenrolmentandaccessindicators(){
-    	$data = DB::table('education_csa_primaryenrolmentandaccessindicators')->join('health_counties', 'education_csa_primaryenrolmentandaccessindicators.county_id', '=', 'education_csa_primaryenrolmentandaccessindicators.county_id')->get();
+    	$data = DB::table('education_csa_primaryenrolmentandaccessindicators')
+    	          ->join('health_counties', 'education_csa_primaryenrolmentandaccessindicators.county_id', '=', 'education_csa_primaryenrolmentandaccessindicators.county_id')->get();
 
 
     	    $year = array();
@@ -252,7 +261,9 @@ class Education extends Controller
  //function to get data from education_csa_primaryschoolenrollmentbyclasssexandsubcounty
 
     public function education_csa_primaryschoolenrollmentbyclasssexandsubcounty(){
-    	 $data = DB::table('education_csa_primaryschoolenrollmentbyclasssexandsubcounty')->join('health_counties', 'education_csa_primaryschoolenrollmentbyclasssexandsubcounty.county_id', '=', 'health_counties.county_id')->join('health_subcounty', 'education_csa_primaryschoolenrollmentbyclasssexandsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
+    	 $data = DB::table('education_csa_primaryschoolenrollmentbyclasssexandsubcounty')
+    	           ->join('health_counties', 'education_csa_primaryschoolenrollmentbyclasssexandsubcounty.county_id', '=', 'health_counties.county_id')
+    	             ->join('health_subcounty', 'education_csa_primaryschoolenrollmentbyclasssexandsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
@@ -327,7 +338,9 @@ class Education extends Controller
 //function to get data from education_csa_primaryschoolsbycategoryandsubcounty
 
     public function education_csa_primaryschoolsbycategoryandsubcounty(){
-    	 $data = DB::table('education_csa_primaryschoolsbycategoryandsubcounty')->join('health_counties', 'education_csa_primaryschoolsbycategoryandsubcounty.county_id', '=', 'health_counties.county_id')->join('health_subcounty', 'education_csa_primaryschoolsbycategoryandsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
+    	 $data = DB::table('education_csa_primaryschoolsbycategoryandsubcounty')
+    	            ->join('health_counties', 'education_csa_primaryschoolsbycategoryandsubcounty.county_id', '=', 'health_counties.county_id')
+    	            ->join('health_subcounty', 'education_csa_primaryschoolsbycategoryandsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
@@ -368,7 +381,8 @@ class Education extends Controller
 //function to get data from education_csa_secondaryenrolmentandaccessindicators
 
     public function education_csa_secondaryenrolmentandaccessindicators(){
-    	 $data = DB::table('education_csa_secondaryenrolmentandaccessindicators')->join('health_counties', 'education_csa_secondaryenrolmentandaccessindicators.county_id', '=', 'education_csa_secondaryenrolmentandaccessindicators.county_id')->get();
+    	 $data = DB::table('education_csa_secondaryenrolmentandaccessindicators')
+    	            ->join('health_counties', 'education_csa_secondaryenrolmentandaccessindicators.county_id', '=', 'education_csa_secondaryenrolmentandaccessindicators.county_id')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
@@ -413,7 +427,9 @@ class Education extends Controller
 //function to get data from education_csa_secondaryschoolenrollmentbyclasssexsubcounty
 
     public function education_csa_secondaryschoolenrollmentbyclasssexsubcounty(){
-   	 $data = DB::table('education_csa_secondaryschoolenrollmentbyclasssexsubcounty')->join('health_counties', 'education_csa_secondaryschoolenrollmentbyclasssexsubcounty.county_id', '=', 'health_counties.county_id')->join('health_subcounty', 'education_csa_secondaryschoolenrollmentbyclasssexsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
+   	 $data = DB::table('education_csa_secondaryschoolenrollmentbyclasssexsubcounty')
+   	            ->join('health_counties', 'education_csa_secondaryschoolenrollmentbyclasssexsubcounty.county_id', '=', 'health_counties.county_id')
+   	            ->join('health_subcounty', 'education_csa_secondaryschoolenrollmentbyclasssexsubcounty.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
@@ -468,7 +484,10 @@ class Education extends Controller
 //function to get data from education_csa_studentenrolmentinyouthpolytechnics
 
     public function education_csa_studentenrolmentinyouthpolytechnics(){
-   	 $data = DB::table('education_csa_studentenrolmentinyouthpolytechnics')->join('health_counties', 'education_csa_studentenrolmentinyouthpolytechnics.county_id', '=', 'health_counties.county_id')->join('health_subcounty', 'education_csa_studentenrolmentinyouthpolytechnics.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
+   	 $data = DB::table('education_csa_studentenrolmentinyouthpolytechnics')
+   	           ->join('health_counties', 'education_csa_studentenrolmentinyouthpolytechnics.county_id', '=', 'health_counties.county_id')
+
+   	           ->join('health_subcounty', 'education_csa_studentenrolmentinyouthpolytechnics.sub_county_id', '=', 'health_subcounty.subcounty_id')->get();
 
     	    $year = array();
 			$year['name'] = 'year';
@@ -518,7 +537,8 @@ class Education extends Controller
 //function to get data from education_csa_teachertrainingcolleges
 
     public function education_csa_teachertrainingcolleges(){
-   	 $data = DB::table('education_csa_teachertrainingcolleges')->join('health_counties', 'education_csa_teachertrainingcolleges.county_id', '=', 'education_csa_teachertrainingcolleges.county_id')->get();
+   	 $data = DB::table('education_csa_teachertrainingcolleges')
+   	           ->join('health_counties', 'education_csa_teachertrainingcolleges.county_id', '=', 'education_csa_teachertrainingcolleges.county_id')->get();
 
 
     	    $year = array();
@@ -608,7 +628,8 @@ class Education extends Controller
 //function to get data from education_distribution_abovefifteen_ability_readwrite
 
     public function education_distribution_abovefifteen_ability_readwrite(){
-    $data = DB::table('education_distribution_abovefifteen_ability_readwrite')->join('health_counties', 'education_distribution_abovefifteen_ability_readwrite.county_id', '=', 'education_distribution_abovefifteen_ability_readwrite.county_id')->get(); 	
+    $data = DB::table('education_distribution_abovefifteen_ability_readwrite')
+              ->join('health_counties', 'education_distribution_abovefifteen_ability_readwrite.county_id', '=', 'education_distribution_abovefifteen_ability_readwrite.county_id')->get(); 	
    
 
 			$county = array();
@@ -654,7 +675,8 @@ class Education extends Controller
 //function to get data from education_distribution_abovethreeyears_highestlevel_reached
 
     public function education_distribution_abovethreeyears_highestlevel_reached(){
-    $data = DB::table('education_distribution_abovethreeyears_highestlevel_reached')->join('health_counties', 'education_distribution_abovethreeyears_highestlevel_reached.county_id', '=', 'education_distribution_abovethreeyears_highestlevel_reached.county_id')->get(); 	
+    $data = DB::table('education_distribution_abovethreeyears_highestlevel_reached')
+              ->join('health_counties', 'education_distribution_abovethreeyears_highestlevel_reached.county_id', '=', 'education_distribution_abovethreeyears_highestlevel_reached.county_id')->get(); 	
    
 
 			$county = array();
@@ -726,7 +748,8 @@ class Education extends Controller
 //function to get data from education_distribution_abovethreeyears_training
 
     public function education_distribution_abovethreeyears_training(){
-    $data = DB::table('education_distribution_abovethreeyears_training')->join('health_counties', 'education_distribution_abovethreeyears_training.county_id', '=', 'education_distribution_abovethreeyears_training.county_id')->get(); 	
+    $data = DB::table('education_distribution_abovethreeyears_training')
+              ->join('health_counties', 'education_distribution_abovethreeyears_training.county_id', '=', 'education_distribution_abovethreeyears_training.county_id')->get(); 	
    
 
 			$county = array();
@@ -768,7 +791,8 @@ class Education extends Controller
 //function to get data from education_distribution_highest_education_qualification
 
     public function education_distribution_highest_education_qualification(){
-    $data = DB::table('education_distribution_highest_education_qualification')->join('health_counties', 'education_distribution_highest_education_qualification.county_id', '=', 'education_distribution_highest_education_qualification.county_id')->get(); 	
+    $data = DB::table('education_distribution_highest_education_qualification')
+              ->join('health_counties', 'education_distribution_highest_education_qualification.county_id', '=', 'education_distribution_highest_education_qualification.county_id')->get(); 	
    
 
 			$county = array();
@@ -854,7 +878,8 @@ class Education extends Controller
 //function to get data from education_distribution_sixthirteen_by_schooltype
 
     public function education_distribution_sixthirteen_by_schooltype(){
-    $data = DB::table('education_distribution_sixthirteen_by_schooltype')->join('health_counties', 'education_distribution_sixthirteen_by_schooltype.county_id', '=', 'education_distribution_sixthirteen_by_schooltype.county_id')->get(); 	
+    $data = DB::table('education_distribution_sixthirteen_by_schooltype')
+              ->join('health_counties', 'education_distribution_sixthirteen_by_schooltype.county_id', '=', 'education_distribution_sixthirteen_by_schooltype.county_id')->get(); 	
    
 
 			$county = array();
@@ -896,7 +921,8 @@ class Education extends Controller
 //function to get data from education_distribution_three_twentyfour_schoolattendance
 
     public function education_distribution_three_twentyfour_schoolattendance(){
-    $data = DB::table('education_distribution_three_twentyfour_schoolattendance')->join('health_counties', 'education_distribution_three_twentyfour_schoolattendance.county_id', '=', 'education_distribution_three_twentyfour_schoolattendance.county_id')->get(); 	
+    $data = DB::table('education_distribution_three_twentyfour_schoolattendance')
+              ->join('health_counties', 'education_distribution_three_twentyfour_schoolattendance.county_id', '=', 'education_distribution_three_twentyfour_schoolattendance.county_id')->get(); 	
    
 
 			$county = array();
@@ -938,7 +964,8 @@ class Education extends Controller
 //function to get data from education_edstat_ecde_enrollment_and_enrollment_rates_by_county
 
     public function education_edstat_ecde_enrollment_and_enrollment_rates_by_county(){
-    $data = DB::table('education_edstat_ecde_enrollment_and_enrollment_rates_by_county')->join('health_counties', 'education_edstat_ecde_enrollment_and_enrollment_rates_by_county.county_id', '=', 'education_edstat_ecde_enrollment_and_enrollment_rates_by_county.county_id')->get(); 	
+    $data = DB::table('education_edstat_ecde_enrollment_and_enrollment_rates_by_county')
+              ->join('health_counties', 'education_edstat_ecde_enrollment_and_enrollment_rates_by_county.county_id', '=', 'education_edstat_ecde_enrollment_and_enrollment_rates_by_county.county_id')->get(); 	
    
 
     	    $year = array();
@@ -1085,7 +1112,8 @@ class Education extends Controller
 //function to get data from education_edstat_primary_enrollment_enrollment_rates_county
 
     public function education_edstat_primary_enrollment_enrollment_rates_county(){
-    $data = DB::table('education_edstat_primary_enrollment_enrollment_rates_county')->join('health_counties', 'education_edstat_primary_enrollment_enrollment_rates_county.county_id', '=', 'education_edstat_primary_enrollment_enrollment_rates_county.county_id')->get(); 	
+    $data = DB::table('education_edstat_primary_enrollment_enrollment_rates_county')
+              ->join('health_counties', 'education_edstat_primary_enrollment_enrollment_rates_county.county_id', '=', 'education_edstat_primary_enrollment_enrollment_rates_county.county_id')->get(); 	
    
 
     	    $year = array();
@@ -1132,7 +1160,8 @@ class Education extends Controller
 //function to get data from education_edstat_secondary_enrollment_enrollment_rates_county
 
     public function education_edstat_secondary_enrollment_enrollment_rates_county(){
-    $data = DB::table('education_edstat_secondary_enrollment_enrollment_rates_county')->join('health_counties', 'education_edstat_secondary_enrollment_enrollment_rates_county.county_id', '=', 'education_edstat_secondary_enrollment_enrollment_rates_county.county_id')->get(); 	
+    $data = DB::table('education_edstat_secondary_enrollment_enrollment_rates_county')
+              ->join('health_counties', 'education_edstat_secondary_enrollment_enrollment_rates_county.county_id', '=', 'education_edstat_secondary_enrollment_enrollment_rates_county.county_id')->get(); 	
    
 
     	    $year = array();
@@ -1179,7 +1208,8 @@ class Education extends Controller
 //function to get data from education_gross_attendance_ratio_by_level
 
     public function education_gross_attendance_ratio_by_level(){
-    $data = DB::table('education_gross_attendance_ratio_by_level')->join('health_counties', 'education_gross_attendance_ratio_by_level.county_id', '=', 'education_gross_attendance_ratio_by_level.county_id')->get(); 	
+    $data = DB::table('education_gross_attendance_ratio_by_level')
+              ->join('health_counties', 'education_gross_attendance_ratio_by_level.county_id', '=', 'education_gross_attendance_ratio_by_level.county_id')->get(); 	
    
 
 			$county = array();
@@ -1221,7 +1251,8 @@ class Education extends Controller
 //function to get data from education_net_attendance_ratio_by_level
 
     public function education_net_attendance_ratio_by_level(){
-    $data = DB::table('education_net_attendance_ratio_by_level')->join('health_counties', 'education_net_attendance_ratio_by_level.county_id', '=', 'education_net_attendance_ratio_by_level.county_id')->get(); 	
+    $data = DB::table('education_net_attendance_ratio_by_level')
+              ->join('health_counties', 'education_net_attendance_ratio_by_level.county_id', '=', 'education_net_attendance_ratio_by_level.county_id')->get(); 	
    
 
 			$county = array();
@@ -1296,7 +1327,8 @@ class Education extends Controller
     //function to get data from education_population_distribution_above_three_school_attendance
 
     public function education_population_distribution_above_three_school_attendance(){
-    $data = DB::table('education_population_distribution_above_three_school_attendance')->join('health_counties', 'education_population_distribution_above_three_school_attendance.county_id', '=', 'education_population_distribution_above_three_school_attendance.county_id')->get(); 	
+    $data = DB::table('education_population_distribution_above_three_school_attendance')
+              ->join('health_counties', 'education_population_distribution_above_three_school_attendance.county_id', '=', 'education_population_distribution_above_three_school_attendance.county_id')->get(); 	
    
 
 			$county = array();

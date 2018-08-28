@@ -230,7 +230,7 @@ class Population extends Controller
     } 
 
      
-// @George Muchiri 
+     // @George Muchiri 
      // get population_households_by_main_source_of_water
 
     public function get_population_households_by_main_source_of_water(){

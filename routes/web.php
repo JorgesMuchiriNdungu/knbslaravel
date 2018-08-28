@@ -17,30 +17,85 @@ Route::get('/', function () {
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
-//Agriclture sugar route @George Kagwe
-Route::get('Agriculture/agriculture_area_under_sugarcane_harvested_production_avg_yield', 'Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('sugar');
-//Agriclture categories_of_land route @George Kagwe
-Route::get('Agriculture/categories_of_land', 'Agriculture@get_categories_of_land')->name('categories');
-//Agriclture get_agriculture_chemical_med_feed_input route @George Kagwe
-Route::get('Agriculture/get_agriculture_chemical_med_feed_input', 'Agriculture@get_agriculture_chemical_med_feed_input')->name('chemical_input');
-//Agriclture get_cooperatives route @George Kagwe
-Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('get_cooperatives');
-//Agriclture agriculture_gross_market_production route @George Kagwe
-Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
+<<<<<<< HEAD
+=======
+//@George Kagwe
+//route to fetch get_agriculture_area_under_sugarcane_harvested_production_avg_yield
+Route::get('agriculture/all_sugarcane_harvested', 'Endpoints\Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('Agriculture');
+
+//route to fetch get_categories_of_land
+Route::get('agriculture/all_categories_of_land', 'Endpoints\Agriculture@get_categories_of_land')->name('Agriculture');
+
+
+
+// route to fetch get_agriculture_chemical_med_feed_input
+Route::get('agriculture/all_chemical_feeds', 'Endpoints\Agriculture@get_agriculture_chemical_med_feed_input')->name('Agriculture');
+
+//route to fetch get_cooperatives
+Route::get('agriculture/all_cooperatives', 'Endpoints\Agriculture@get_cooperatives')->name('Agriculture');
+
+
+//route to fetch agriculture_gross_market_production
+Route::get('agriculture/all_market_production', 'Endpoints\Agriculture@agriculture_gross_market_production')->name('Agriculture');
+
+
+//route to fetch get_irrigation_schemes
+
+Route::get('agriculture/all_irrigation_schemes', 'Endpoints\Agriculture@get_irrigation_schemes')->name('Agriculture');
+
+// route to fetch get_agriculture_land_potential
+Route::get('agriculture/all_land_potential', 'Endpoints\Agriculture@get_agriculture_land_potential')->name('Agriculture');
+
+//route to fetch agriculture_pricetoproducersformeatmilk
+
+Route::get('agriculture/all_price_meat_milk', 'Endpoints\Agriculture@agriculture_pricetoproducersformeatmilk')->name('Agriculture');
+
+//route to fetch agriculture_production_area_average_yield_coffee_type_of_grower
+
+Route::get('agriculture/all_coffee_production', 'Endpoints\Agriculture@agriculture_production_area_average_yield_coffee_type_of_grower')->name('Agriculture');
+
+
+//route to fetch agriculture_production_area_average_yield_tea_type_grower
+
+Route::get('agriculture/all_tea_production', 'Endpoints\Agriculture@agriculture_production_area_average_yield_tea_type_grower')->name('Agriculture');
+
+
+//route to fetch agriculture_production_of_livestock_and_dairy_products
+
+Route::get('Agriculture/agriculture_production_of_livestock_and_dairy_products', 'Endpoints\Agriculture@agriculture_production_of_livestock_and_dairy_products')->name('Agriculture');
+
+
+//route to fetch agriculture_production_of_livestock_and_dairy_products
+
+Route::get('agriculture/all_share_capital', 'Endpoints\Agriculture@agriculture_totalsharecapital')->name('Agriculture');
+
+//route to fetch agriculture_valueofagriculturalinput
+
+Route::get('agriculture/all_agricultural_input', 'Endpoints\Agriculture@agriculture_valueofagriculturalinput')->name('Agriculture');
+
+
+
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> b5e17f27bac0c047e1dda6d0ff7ebf0c65b7128e
+
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
      'Endpoints\Health_Sectors@index')->
       name('Health_Sectors');
 
 // environment `environment_and_natural_resources_average_export_prices_ash` @david
-Route::get('Environment/environment_and_natural_resources_average_export_prices_ash', 
+Route::get('environment/all_environment_and_natural_resources_average_export_prices_ash', 
      'Endpoints\Environment@get_environment_and_natural_resources_average_export_prices_ash')->
       name('environment_and_natural_resources_average_export_prices_ash');
 
 
 //environment environment_and_natural_resources_development_expenditure_water @david
-Route::get('Environment/environment_and_natural_resources_development_expenditure_water', 
+Route::get('environment/all_environment_and_natural_resources_development_expenditure_water', 
 	   'Endpoints\Environment@get_environment_and_natural_resources_development_expenditure_water')->
        name('environment_and_natural_resources_development_expenditure_water');
 
@@ -52,7 +107,7 @@ Route::get('Environment/environment_and_natural_resources_expenditure_cleaning_r
 
 
  //environment environment_and_natural_resources_government_forest @david
-Route::get('Environment/environment_and_natural_resources_government_forest', 
+Route::get('environment/all_environment_and_natural_resources_government_forest', 
 	'Endpoints\Environment@get_environment_and_natural_resources_government_forest')->
     name('environment_and_natural_resources_government_forest');
 
@@ -64,43 +119,43 @@ Route::get('Environment/environment_and_natural_resources_num_high_risk_environ_
 
 
 //environment  environment_and_natural_resources_population_wildlife @david
-Route::get('Environment/environment_and_natural_resources_population_wildlife', 
+Route::get('environment/all_environment_and_natural_resources_population_wildlife', 
 	'Endpoints\Environment@get_environment_and_natural_resources_population_wildlife')->
     name('environment_and_natural_resources_population_wildlife');
 
 
 //environment  environment_and_natural_resources_quantity_of_total_mineral @david
-Route::get('Environment/environment_and_natural_resources_quantity_of_total_mineral', 
+Route::get('environment/all_environment_and_natural_resources_quantity_of_total_mineral', 
 	'Endpoints\Environment@get_environment_and_natural_resources_quantity_of_total_mineral')->
     name('environment_and_natural_resources_quantity_of_total_mineral');
 
 
 //environment  environment_and_natural_resources_quantity_value_fish_landed @david
-Route::get('Environment/environment_and_natural_resources_quantity_value_fish_landed', 
+Route::get('environment/all_environment_and_natural_resources_quantity_value_fish_landed', 
      'Endpoints\Environment@get_environment_and_natural_resources_quantity_value_fish_landed')->
     name('environment_and_natural_resources_quantity_value_fish_landed');
 
 
 //environment  environment_and_natural_resources_record_sale_goverment_products @david
-Route::get('Environment/environment_and_natural_resources_record_sale_goverment_products', 
+Route::get('environment/all_environment_and_natural_resources_record_sale_goverment_products', 
 	'Endpoints\Environment@get_environment_and_natural_resources_record_sale_goverment_products')->
     name('environment_and_natural_resources_record_sale_goverment_products');
 
 
 //environment  environment_and_natural_resources_trends_envi_natural_resources @david
-Route::get('Environment/environment_and_natural_resources_trends_envi_natural_resources', 
+Route::get('environment/all_environment_and_natural_resources_trends_envi_natural_resources', 
 	'Endpoints\Environment@get_environment_and_natural_resources_trends_envi_natural_resources')->
     name('environment_and_natural_resources_trends_envi_natural_resources');
 
 
   //environment   environment_and_natural_resources_value_of_total_mineral @david
-Route::get('Environment/environment_and_natural_resources_value_of_total_mineral', 
+Route::get('environment/all_environment_and_natural_resources_value_of_total_mineral', 
 	'Endpoints\Environment@get_environment_and_natural_resources_value_of_total_mineral')->
     name('environment_and_natural_resources_value_of_total_mineral');
 
 
 //environment   environment_and_natural_resources_water_purification_points @david
-Route::get('Environment/environment_and_natural_resources_water_purification_points', 
+Route::get('environment/all_environment_and_natural_resources_water_purification_points', 
 	'Endpoints\Environment@get_environment_and_natural_resources_water_purification_points')->
     name( 'environment_and_natural_resources_water_purification_points');
 
@@ -118,46 +173,46 @@ Route::get('manufacturing/all_quantum_indices_of_manufacturing_production',
     name('manufacturing_quantum_indices_of_manufacturing_production');
 
  //Energy energy_averagemonthlypumppricesforfuelbycategory @david
-    Route::get('Energy/energy_averagemonthlypumppricesforfuelbycategory', 
+    Route::get('energy/all_pump_prices_fuel', 
 	'Endpoints\Energy@get_energy_averagemonthlypumppricesforfuelbycategory')->
     name('energy_averagemonthlypumppricesforfuelbycategory');
 
 //Energy energy_average_retail_prices_of_selected_petroleum_products @david
-  Route::get('Energy/energy_average_retail_prices_of_selected_petroleum_products', 
+  Route::get('energy/all_average_retail_prices_of_selected_petroleum_products', 
 	'Endpoints\Energy@get_energy_average_retail_prices_of_selected_petroleum_products')->
     name('energy_energy_average_retail_prices_of_selected_petroleum_products');
 
 //Energy energy_electricity_demand_and_supply @david
-  Route::get('Energy/energy_electricity_demand_and_supply', 
+  Route::get('energy/all_electricity_demand_and_supply', 
 	'Endpoints\Energy@get_energy_electricity_demand_and_supply')->
     name('energy_electricity_demand_and_supply');
 
  //Energy energy_generation_and_imports_of_electricity @david
-  Route::get('Energy/energy_generation_and_imports_of_electricity', 
+  Route::get('Energy/all_generation_and_imports_of_electricity', 
 	'Endpoints\Energy@get_energy_generation_and_imports_of_electricity')->
     name('energy_generation_and_imports_of_electricity');
 
     //Energy energy_installed_and_effective_capacity_of_electricity  @david
-  Route::get('Energy/energy_installed_and_effective_capacity_of_electricity', 
+  Route::get('energy/all_installed_and_effective_capacity_of_electricity', 
 	'Endpoints\Energy@get_energy_installed_and_effective_capacity_of_electricity')->
     name('energy_installed_and_effective_capacity_of_electricity');
 
 
     //Energy energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category  @david
-  Route::get('Energy/energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category', 
+  Route::get('energy/all_net_domestic_sale_of_petroleum_fuels_by_consumer_category', 
 	'Endpoints\Energy@get_energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category')->
     name('energy_net_domestic_sale_of_petroleum_fuels_by_consumer_category');
 
 
   //Energy energy_petroleum_supply_and_demand  @david
-  Route::get('Energy/energy_petroleum_supply_and_demand', 
+  Route::get('energy/all_petroleum_supply_and_demand', 
 	'Endpoints\Energy@get_energy_petroleum_supply_and_demand')->
     name('energy_petroleum_supply_and_demand');
 
 
 
  //Energy energy_value_and_quantity_of_imports_exportsand  @david
-  Route::get('Energy/energy_value_and_quantity_of_imports_exports', 
+  Route::get('energy/all_value_and_quantity_of_imports_exports', 
 	'Endpoints\Energy@get_energy_value_and_quantity_of_imports_exports')->
     name('energy_value_and_quantity_of_imports_exports');
 
@@ -213,45 +268,54 @@ Route::get('manufacturing/all_quantum_indices_of_manufacturing_production',
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_public_sector')->
     name('labour_wage_employment_by_industry_in_public_sector');
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
-Route::get('Education/education_approved_degree_diploma_programs', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
+Route::get('education/all_diploma_degree', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
 //Education
 //education_csa_adulteducationcentresbysubcounty @fredrick muiruri
-Route::get('Education/education_csa_adulteducationcentresbysubcounty', 'Endpoints\Education@education_csa_adulteducationcentresbysubcounty')->name('education_csa_adulteducationcentresbysubcounty');
+Route::get('education/all_adult_edu_centres_subcounty', 'Endpoints\Education@education_csa_adulteducationcentresbysubcounty')->name('education_csa_adulteducationcentresbysubcounty');
 //Education
 //education_csa_adulteducationenrolmentbysexandsubcounty @fredrick muiruri
-Route::get('Education/education_csa_adulteducationenrolmentbysexandsubcounty', 'Endpoints\Education@education_csa_adulteducationenrolmentbysexandsubcounty')->name('education_csa_adulteducationenrolmentbysexandsubcounty');
+Route::get('education/all_adult_education_enrollment', 'Endpoints\Education@education_csa_adulteducationenrolmentbysexandsubcounty')->name('education_csa_adulteducationenrolmentbysexandsubcounty');
 //Education
 //education_csa_adulteducationproficiencytestresults @fredrick muiruri
-Route::get('Education/education_csa_adulteducationproficiencytestresults', 'Endpoints\Education@education_csa_adulteducationproficiencytestresults')->name('education_csa_adulteducationproficiencytestresults');
+Route::get('education/all_adult_education_proficiency', 'Endpoints\Education@education_csa_adulteducationproficiencytestresults')->name('education_csa_adulteducationproficiencytestresults');
 //Education
 //education_csa_ecdecentresbycategoryandsubcounty @fredrick muiruri
-Route::get('Education/education_csa_ecdecentresbycategoryandsubcounty', 'Endpoints\Education@education_csa_ecdecentresbycategoryandsubcounty')->name('education_csa_ecdecentresbycategoryandsubcounty');
+Route::get('education/all_ecde_centres_category_subcounty', 'Endpoints\Education@education_csa_ecdecentresbycategoryandsubcounty')->name('education_csa_ecdecentresbycategoryandsubcounty');
 //Education
 //education_csa_primaryenrolmentandaccessindicators @fredrick muiruri
 Route::get('Education/education_csa_primaryenrolmentandaccessindicators', 'Endpoints\Education@education_csa_primaryenrolmentandaccessindicators')->name('education_csa_primaryenrolmentandaccessindicators');
 //Education
 //education_csa_primaryschoolenrollmentbyclasssexandsubcounty @fredrick muiruri
-Route::get('Education/education_csa_primaryschoolenrollmentbyclasssexandsubcounty', 'Endpoints\Education@education_csa_primaryschoolenrollmentbyclasssexandsubcounty')->name('education_csa_primaryschoolenrollmentbyclasssexandsubcounty');
+Route::get('education/all_primary_enrollment_sex_county', 'Endpoints\Education@education_csa_primaryschoolenrollmentbyclasssexandsubcounty')->name('education_csa_primaryschoolenrollmentbyclasssexandsubcounty');
 //Education
 //education_csa_primaryschoolsbycategoryandsubcounty @fredrick muiruri
-Route::get('Education/education_csa_primaryschoolsbycategoryandsubcounty', 'Endpoints\Education@education_csa_primaryschoolsbycategoryandsubcounty')->name('education_csa_primaryschoolsbycategoryandsubcounty');
+Route::get('education/all_primary_category_subcounty', 'Endpoints\Education@education_csa_primaryschoolsbycategoryandsubcounty')->name('education_csa_primaryschoolsbycategoryandsubcounty');
 //Education
 //education_csa_secondaryenrolmentandaccessindicators @fredrick muiruri
 Route::get('Education/education_csa_secondaryenrolmentandaccessindicators', 'Endpoints\Education@education_csa_secondaryenrolmentandaccessindicators')->name('education_csa_secondaryenrolmentandaccessindicators');
 //Education
 //education_csa_secondaryschoolenrollmentbyclasssexsubcounty @fredrick muiruri
-Route::get('Education/education_csa_secondaryschoolenrollmentbyclasssexsubcounty', 'Endpoints\Education@education_csa_secondaryschoolenrollmentbyclasssexsubcounty')->name('education_csa_secondaryschoolenrollmentbyclasssexsubcounty');
+Route::get('education/all_education_csa_secondaryschoolenrollmentbyclasssexsubcounty', 'Endpoints\Education@education_csa_secondaryschoolenrollmentbyclasssexsubcounty')->name('education_csa_secondaryschoolenrollmentbyclasssexsubcounty');
 //Education
 //education_csa_studentenrolmentinyouthpolytechnics @fredrick muiruri
-Route::get('Education/education_csa_studentenrolmentinyouthpolytechnics', 'Endpoints\Education@education_csa_studentenrolmentinyouthpolytechnics')->name('education_csa_studentenrolmentinyouthpolytechnics');
+Route::get('education/all_student_enrollment_polytechnics', 'Endpoints\Education@education_csa_studentenrolmentinyouthpolytechnics')->name('education_csa_studentenrolmentinyouthpolytechnics');
 //Education
 //education_csa_teachertrainingcolleges @fredrick muiruri
-Route::get('Education/education_csa_teachertrainingcolleges', 'Endpoints\Education@education_csa_teachertrainingcolleges')->name('education_csa_teachertrainingcolleges');
+Route::get('education/all_teachertrainingcolleges', 'Endpoints\Education@education_csa_teachertrainingcolleges')->name('education_csa_teachertrainingcolleges');
 //Education
 //education_csa_youthpolytechnicsbycategoryandsubcounty @fredrick muiruri
-Route::get('Education/education_csa_youthpolytechnicsbycategoryandsubcounty', 'Endpoints\Education@education_csa_youthpolytechnicsbycategoryandsubcounty')->name('education_csa_youthpolytechnicsbycategoryandsubcounty');
+Route::get('education/all_polytechnic_category_subcounty', 'Endpoints\Education@education_csa_youthpolytechnicsbycategoryandsubcounty')->name('education_csa_youthpolytechnicsbycategoryandsubcounty');
 //Education
 //education_distribution_abovefifteen_ability_readwrite @fredrick muiruri
 Route::get('Education/education_distribution_abovefifteen_ability_readwrite', 'Endpoints\Education@education_distribution_abovefifteen_ability_readwrite')->name('education_distribution_abovefifteen_ability_readwrite');
@@ -272,22 +336,22 @@ Route::get('Education/education_distribution_sixthirteen_by_schooltype', 'Endpoi
 Route::get('Education/education_distribution_three_twentyfour_schoolattendance', 'Endpoints\Education@education_distribution_three_twentyfour_schoolattendance')->name('education_distribution_three_twentyfour_schoolattendance');
 //Education
 //education_edstat_ecde_enrollment_and_enrollment_rates_by_county @fredrick muiruri
-Route::get('Education/education_edstat_ecde_enrollment_and_enrollment_rates_by_county', 'Endpoints\Education@education_edstat_ecde_enrollment_and_enrollment_rates_by_county')->name('education_edstat_ecde_enrollment_and_enrollment_rates_by_county');
+Route::get('education/all_education_edstat_ecde_enrollment_and_enrollment_rates_by_county', 'Endpoints\Education@education_edstat_ecde_enrollment_and_enrollment_rates_by_county')->name('education_edstat_ecde_enrollment_and_enrollment_rates_by_county');
 //Education
 //education_edstat_kcpe_examination_candidature @fredrick muiruri
-Route::get('Education/education_edstat_kcpe_examination_candidature', 'Endpoints\Education@education_edstat_kcpe_examination_candidature')->name('education_edstat_kcpe_examination_candidature');
+Route::get('education/all_edstat_kcpe_examination_candidature', 'Endpoints\Education@education_edstat_kcpe_examination_candidature')->name('education_edstat_kcpe_examination_candidature');
 //Education
 //education_edstat_kcpe_examination_results_by_subject @fredrick muiruri
-Route::get('Education/education_edstat_kcpe_examination_results_by_subject', 'Endpoints\Education@education_edstat_kcpe_examination_results_by_subject')->name('education_edstat_kcpe_examination_results_by_subject');
+Route::get('education/all_edstat_kcpe_examination_results_by_subject', 'Endpoints\Education@education_edstat_kcpe_examination_results_by_subject')->name('education_edstat_kcpe_examination_results_by_subject');
 //Education
 //education_edstat_kcse_examination_results @fredrick muiruri
-Route::get('Education/education_edstat_kcse_examination_results', 'Endpoints\Education@education_edstat_kcse_examination_results')->name('education_edstat_kcse_examination_results');
+Route::get('education/all_edstat_kcse_examination_results', 'Endpoints\Education@education_edstat_kcse_examination_results')->name('education_edstat_kcse_examination_results');
 //Education
 //education_edstat_primary_enrollment_enrollment_rates_county @fredrick muiruri
-Route::get('Education/education_edstat_primary_enrollment_enrollment_rates_county', 'Endpoints\Education@education_edstat_primary_enrollment_enrollment_rates_county')->name('education_edstat_primary_enrollment_enrollment_rates_county');
+Route::get('education/all_education_edstat_primary_enrollment_enrollment_rates_county', 'Endpoints\Education@education_edstat_primary_enrollment_enrollment_rates_county')->name('education_edstat_primary_enrollment_enrollment_rates_county');
 //Education
 //education_edstat_secondary_enrollment_enrollment_rates_county @fredrick muiruri
-Route::get('Education/education_edstat_secondary_enrollment_enrollment_rates_county', 'Endpoints\Education@education_edstat_secondary_enrollment_enrollment_rates_county')->name('education_edstat_secondary_enrollment_enrollment_rates_county');
+Route::get('education/all_education_edstat_secondary_enrollment_enrollment_rates_county', 'Endpoints\Education@education_edstat_secondary_enrollment_enrollment_rates_county')->name('education_edstat_secondary_enrollment_enrollment_rates_county');
 //Education
 //education_gross_attendance_ratio_by_level @fredrick muiruri
 Route::get('Education/education_gross_attendance_ratio_by_level', 'Endpoints\Education@education_gross_attendance_ratio_by_level')->name('education_gross_attendance_ratio_by_level');
@@ -296,31 +360,31 @@ Route::get('Education/education_gross_attendance_ratio_by_level', 'Endpoints\Edu
 Route::get('Education/education_net_attendance_ratio_by_level', 'Endpoints\Education@education_net_attendance_ratio_by_level')->name('education_net_attendance_ratio_by_level');
 //Education
 //education_number_of_candidates_by_sex_in_kcse @fredrick muiruri
-Route::get('Education/education_number_of_candidates_by_sex_in_kcse', 'Endpoints\Education@education_number_of_candidates_by_sex_in_kcse')->name('education_number_of_candidates_by_sex_in_kcse');
+Route::get('education/all_education_number_of_candidates_by_sex_in_kcse', 'Endpoints\Education@education_number_of_candidates_by_sex_in_kcse')->name('education_number_of_candidates_by_sex_in_kcse');
 //Education
 //education_population_distribution_above_three_school_attendance @fredrick muiruri
 Route::get('Education/education_population_distribution_above_three_school_attendance', 'Endpoints\Education@education_population_distribution_above_three_school_attendance')->name('education_population_distribution_above_three_school_attendance');
 //Education
 //education_primary_school_enrolments_by_sex @fredrick muiruri
-Route::get('Education/education_primary_school_enrolments_by_sex', 'Endpoints\Education@education_primary_school_enrolments_by_sex')->name('education_primary_school_enrolments_by_sex');
+Route::get('education/all_education_primary_school_enrolments_by_sex', 'Endpoints\Education@education_primary_school_enrolments_by_sex')->name('education_primary_school_enrolments_by_sex');
 //Education
 //education_public_primaryteachers_trainingcollege_enrolment @fredrick muiruri
-Route::get('Education/education_public_primaryteachers_trainingcollege_enrolment', 'Endpoints\Education@education_public_primaryteachers_trainingcollege_enrolment')->name('education_public_primaryteachers_trainingcollege_enrolment');
+Route::get('education/all_education_public_primaryteachers_trainingcollege_enrolment', 'Endpoints\Education@education_public_primaryteachers_trainingcollege_enrolment')->name('education_public_primaryteachers_trainingcollege_enrolment');
 //Education
 //education_public_primary_school_teachers_by_sex @fredrick muiruri
-Route::get('Education/education_public_primary_school_teachers_by_sex', 'Endpoints\Education@education_public_primary_school_teachers_by_sex')->name('education_public_primary_school_teachers_by_sex');
+Route::get('education/all_education_public_primary_school_teachers_by_sex', 'Endpoints\Education@education_public_primary_school_teachers_by_sex')->name('education_public_primary_school_teachers_by_sex');
 //Education
 //education_public_secondary_school_teachers_by_sex @fredrick muiruri
-Route::get('Education/education_public_secondary_school_teachers_by_sex', 'Endpoints\Education@education_public_secondary_school_teachers_by_sex')->name('education_public_secondary_school_teachers_by_sex');
+Route::get('education/all_education_public_secondary_school_teachers_by_sex', 'Endpoints\Education@education_public_secondary_school_teachers_by_sex')->name('education_public_secondary_school_teachers_by_sex');
 //Education
 //education_secondary_school_enrolment_by_sex @fredrick muiruri
-Route::get('Education/education_secondary_school_enrolment_by_sex', 'Endpoints\Education@education_secondary_school_enrolment_by_sex')->name('education_secondary_school_enrolment_by_sex');
+Route::get('education/all_secondary_enrollment_sex_county', 'Endpoints\Education@education_secondary_school_enrolment_by_sex')->name('education_secondary_school_enrolment_by_sex');
 //Education
 //education_studentenrollmentbysextechnicalinstitutions @fredrick muiruri
-Route::get('Education/education_studentenrollmentbysextechnicalinstitutions', 'Endpoints\Education@education_studentenrollmentbysextechnicalinstitutions')->name('education_studentenrollmentbysextechnicalinstitutions');
+Route::get('education/all_student_enrollment_sex', 'Endpoints\Education@education_studentenrollmentbysextechnicalinstitutions')->name('education_studentenrollmentbysextechnicalinstitutions');
 //Education
 //education_studentenrollmentpublicuniversities @fredrick muiruri
-Route::get('Education/education_studentenrollmentpublicuniversities', 'Endpoints\Education@education_studentenrollmentpublicuniversities')->name('education_studentenrollmentpublicuniversities');
+Route::get('education/all_student_enrollment_public_universities', 'Endpoints\Education@education_studentenrollmentpublicuniversities')->name('education_studentenrollmentpublicuniversities');
 //Health
 //health_counties @fredrick muiruri
 Route::get('Health/health_counties', 'Endpoints\Health@health_counties')->name('health_counties');
@@ -379,12 +443,12 @@ Route::get('Health/health_kihibs_incidence_of_sickness_injury', 'Endpoints\Healt
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
 
-Route::get('Governance/governance_cases_forwarded_and_action_taken', 'Endpoints\Governance@get_governance_cases_forwarded_and_action_taken')->name('governance_cases_forwarded_and_action_taken');
+Route::get('governance/all_governance_cases_forwarded_and_action_taken', 'Endpoints\Governance@get_governance_cases_forwarded_and_action_taken')->name('governance_cases_forwarded_and_action_taken');
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
 
-Route::get('Governance/governance_cases_handled_by_ethics_commision', 'Endpoints\Governance@get_governance_cases_handled_by_ethics_commision')->name('governance_cases_handled_by_ethics_commision');
+Route::get('governance/all_governance_cases_handled_by_ethics_commision', 'Endpoints\Governance@get_governance_cases_handled_by_ethics_commision')->name('governance_cases_handled_by_ethics_commision');
 
 
 // @George Muchiri
@@ -658,6 +722,10 @@ Route::get('Population/population_households_type_floor_material_main_dwelling_u
 Route::get('Population/population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 // @George Muchiri
 // @get_population_populationbysexhouseholdsdensityandcensusyears
 
@@ -803,27 +871,31 @@ Route::get('Finance/finance_statement_of_national_government_operations',
 'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
 	'finance_statement_of_national_government_operations');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
-Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
+Route::get('cpi/all_annual_avg_retail_prices_of_certain_consumer_goods_in', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
 
 // @Charles Ndirangu
 // CPI  cpi_consumer_price_index route
-Route::get('CPI/cpi_consumer_price_index', 'Endpoints\CPI@get_cpi_consumer_price_index')->name('cpi_consumer_price_index');
+Route::get('cpi/all_consumer_price_index', 'Endpoints\CPI@get_cpi_consumer_price_index')->name('cpi_consumer_price_index');
 
 // @Charles Ndirangu
 // CPI  cpi_elementary_aggregates_weights_in_the_cpi_baskets route
-Route::get('CPI/cpi_elementary_aggregates_weights_in_the_cpi_baskets', 'Endpoints\CPI@get_cpi_elementary_aggregates_weights_in_the_cpi_baskets')->name('cpi_elementary_aggregates_weights_in_the_cpi_baskets');
+Route::get('cpi/all_elementary_aggregates_weights_in_the_cpi_baskets', 'Endpoints\CPI@get_cpi_elementary_aggregates_weights_in_the_cpi_baskets')->name('cpi_elementary_aggregates_weights_in_the_cpi_baskets');
 
 
 // @Charles Ndirangu
 // CPI  cpi_group_weights_for_kenya_cpi_febuary_base_2009 route
-Route::get('CPI/cpi_group_weights_for_kenya_cpi_febuary_base_2009', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_febuary_base_2009')->name('cpi_group_weights_for_kenya_cpi_febuary_base_2009');
+Route::get('cpi/all_group_weights_for_kenya_cpi_febuary_base_2009', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_febuary_base_2009')->name('cpi_group_weights_for_kenya_cpi_febuary_base_2009');
 
 
 // @Charles Ndirangu
 // CPI  cpi_group_weights_for_kenya_cpi_october_base_1997 route
-Route::get('CPI/cpi_group_weights_for_kenya_cpi_october_base_1997', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_october_base_1997')->name('get_cpi_group_weights_for_kenya_cpi_october_base_1997');
+Route::get('cpi/all_group_weights_for_kenya_cpi_october_base_1997', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_october_base_1997')->name('get_cpi_group_weights_for_kenya_cpi_october_base_1997');
 
 // @Charles Ndirangu
 // Administration  administrative_unit route
@@ -878,20 +950,65 @@ Route::get('Trade/trade_and_commerce_values_of_principal_imports', 'Endpoints\Tr
 //Building and Construction
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_civil_engineering_cost_index route
-Route::get('Building/building_and_construction_quarterly_civil_engineering_cost_index', 'Endpoints\Building@get_building_and_construction_quarterly_civil_engineering_cost_index')->name('building_and_construction_quarterly_civil_engineering_cost_index');
+Route::get('building/all_quarterly_civil_engineering_cost_index', 'Endpoints\Building@get_building_and_construction_quarterly_civil_engineering_cost_index')->name('building_and_construction_quarterly_civil_engineering_cost_index');
 
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_non_residential_build_cost route
-Route::get('Building/building_and_construction_quarterly_non_residential_build_cost', 'Endpoints\Building@get_building_and_construction_quarterly_non_residential_build_cost')->name('building_and_construction_quarterly_non_residential_build_cost');
+Route::get('building/all__quarterly_non_residential_build_cost', 'Endpoints\Building@get_building_and_construction_quarterly_non_residential_build_cost')->name('building_and_construction_quarterly_non_residential_build_cost');
 
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_overal_construction_cost route
-Route::get('Building/building_and_construction_quarterly_overal_construction_cost', 'Endpoints\Building@get_building_and_construction_quarterly_overal_construction_cost')->name('building_and_construction_quarterly_overal_construction_cost');
+Route::get('building/all_quarterly_overal_construction_cost', 'Endpoints\Building@get_building_and_construction_quarterly_overal_construction_cost')->name('building_and_construction_quarterly_overal_construction_cost');
 
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_residential_bulding_cost route
-Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
+Route::get('building/all_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
+<<<<<<< HEAD
+=======
+
+
+
+//Tourism
+// @Charles Ndirangu
+// Building  tourism_arrivals route
+Route::get('Tourism/tourism_arrivals', 'Endpoints\Tourism@get_tourism_arrivals')->name('tourism_arrivals');
+
+// @Charles Ndirangu
+// Building  tourism_conferences route
+Route::get('Tourism/tourism_conferences', 'Endpoints\Tourism@get_tourism_conferences')->name('tourism_conferences');
+
+// @Charles Ndirangu
+// Building  tourism_departures route
+Route::get('Tourism/tourism_departures', 'Endpoints\Tourism@get_tourism_departures')->name('tourism_departures');
+
+
+// @Charles Ndirangu
+// Building  tourism_earnings route
+Route::get('Tourism/tourism_earnings', 'Endpoints\Tourism@get_tourism_earnings')->name('tourism_earnings');
+
+// @Charles Ndirangu
+// Building  tourism_hotel_occupancy_by_residence route
+Route::get('Tourism/tourism_hotel_occupancy_by_residence', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_residence')->name('tourism_hotel_occupancy_by_residence');
+
+// @Charles Ndirangu
+// Building  tourism_hotel_occupancy_by_zone route
+Route::get('Tourism/tourism_hotel_occupancy_by_zone', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_zone')->name('tourism_hotel_occupancy_by_zone');
+
+
+// @Charles Ndirangu
+// Building  tourism_population_proportion_that_took_trip route
+Route::get('Tourism/tourism_population_proportion_that_took_trip', 'Endpoints\Tourism@get_tourism_population_proportion_that_took_trip')->name('tourism_population_proportion_that_took_trip');
+
+// @Charles Ndirangu
+// Building  tourism_visitor_to_parks route
+Route::get('Tourism/tourism_visitor_to_parks', 'Endpoints\Tourism@get_tourism_visitor_to_parks')->name('tourism_visitor_to_parks');
+
+// @Charles Ndirangu
+// Building  tourism_visitors_to_museums route
+Route::get('Tourism/tourism_visitors_to_museums', 'Endpoints\Tourism@get_tourism_visitors_to_museums')->name('tourism_visitors_to_museums');
+
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri
 Route::get('Health/health_kihibs_received_free_medical_services', 'Endpoints\Health@health_kihibs_received_free_medical_services')->name('health_kihibs_received_free_medical_services');
@@ -980,6 +1097,11 @@ Route::get('Health/health_subcounty', 'Endpoints\Health@health_subcounty')->name
 //Health
 //health_use_of_mosquito_nets_by_children @fredrick muiruri
 Route::get('Health/health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 
 //Ict  ict_kihibs_households_owned_ict_equipment_services @david
 Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
@@ -1031,10 +1153,15 @@ Route::get('Ict/ict_kihibs_population_who_used_internet_by_place',
   'Endpoints\Ict@get_ict_kihibs_population_who_used_internet_by_place')->
     name('ict_kihibs_population_who_used_internet_by_place');
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
      //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
+<<<<<<< HEAD
 
 //Nutrition
 //health_nutritional_status_of_children @fredrick muiruri
@@ -1067,3 +1194,73 @@ Route::get('Housing/housing_conditions_kihibs_owner_occupier_dwellings', 'Endpoi
 //Housing
 //housing_conditions_kihibs_methods_used_to_make_water_safer @fredrick muiruri
 Route::get('Housing/housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
+=======
+<<<<<<< HEAD
+
+// @George Muchiri
+// housing_conditions_kihibs_hholds_by_habitable_rooms
+
+Route::get('Housing/housing_conditions_kihibs_hholds_by_habitable_rooms', 'Endpoints\Housing@get_housing_conditions_kihibs_hholds_by_habitable_rooms')->name('housing_conditions_kihibs_hholds_by_habitable_rooms');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_hholds_by_housing_tenure
+
+Route::get('Housing/housing_conditions_kihibs_hholds_by_housing_tenure', 'Endpoints\Housing@get_housing_conditions_kihibs_hholds_by_housing_tenure')->name('housing_conditions_kihibs_hholds_by_housing_tenure');
+
+// @George Muchiri
+// housing_conditions_kihibs_hholds_by_type_of_housing_unit
+
+Route::get('Housing/housing_conditions_kihibs_hholds_by_type_of_housing_unit', 'Endpoints\Housing@get_housing_conditions_kihibs_hholds_by_type_of_housing_unit')->name('housing_conditions_kihibs_hholds_by_type_of_housing_unit');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_hholds_in_rented_dwellings
+
+Route::get('Housing/housing_conditions_kihibs_hholds_in_rented_dwellings', 'Endpoints\Housing@get_housing_conditions_kihibs_hholds_in_rented_dwellings')->name('housing_conditions_kihibs_hholds_in_rented_dwellings');
+
+// @George Muchiri
+// housing_conditions_kihibs_main_floor_material
+
+Route::get('Housing/housing_conditions_kihibs_main_floor_material', 'Endpoints\Housing@get_housing_conditions_kihibs_main_floor_material')->name('housing_conditions_kihibs_main_floor_material');
+
+// @George Muchiri
+// housing_conditions_kihibs_main_roofing_material
+
+Route::get('Housing/housing_conditions_kihibs_main_roofing_material', 'Endpoints\Housing@get_housing_conditions_kihibs_main_roofing_material')->name('housing_conditions_kihibs_main_roofing_material');
+
+// @George Muchiri
+// housing_conditions_kihibs_main_source_of_cooking_fuel
+
+Route::get('Housing/housing_conditions_kihibs_main_source_of_cooking_fuel', 'Endpoints\Housing@get_housing_conditions_kihibs_main_source_of_cooking_fuel')->name('housing_conditions_kihibs_main_source_of_cooking_fuel');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_main_source_of_drinking_water
+
+Route::get('Housing/housing_conditions_kihibs_main_source_of_drinking_water', 'Endpoints\Housing@get_housing_conditions_kihibs_main_source_of_drinking_water')->name(
+	'housing_conditions_kihibs_main_source_of_drinking_water');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_main_source_of_lighting_fuel
+
+Route::get('Housing/housing_conditions_kihibs_main_source_of_lighting_fuel', 'Endpoints\Housing@get_housing_conditions_kihibs_main_source_of_lighting_fuel')->name(
+	'housing_conditions_kihibs_main_source_of_lighting_fuel');
+
+
+// @George Muchiri
+// housing_conditions_kihibs_main_toilet_facility
+Route::get('Housing/housing_conditions_kihibs_main_toilet_facility', 
+	'Endpoints\Housing@get_housing_conditions_kihibs_main_toilet_facility')->name(
+	'housing_conditions_kihibs_main_toilet_facility');
+
+// @George Muchiri
+// housing_conditions_kihibs_main_wall_material
+Route::get('Housing/housing_conditions_kihibs_main_wall_material', 
+	'Endpoints\Housing@get_housing_conditions_kihibs_main_wall_material')->name(
+	'housing_conditions_kihibs_main_wall_material');
+
+=======
+>>>>>>> b5e17f27bac0c047e1dda6d0ff7ebf0c65b7128e
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
