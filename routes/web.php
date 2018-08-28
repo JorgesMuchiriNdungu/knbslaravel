@@ -840,3 +840,48 @@ Route::get('Ict/ict_kihibs_population_who_used_internet_by_place',
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
+
+
+
+     //Poverty    poverty_consumption_expenditure_and_quintile_distribution @david
+Route::get('Poverty/poverty_consumption_expenditure_and_quintile_distribution', 
+  'Endpoints\poverty@get_poverty_consumption_expenditure_and_quintile_distribution')->
+    name('poverty_consumption_expenditure_and_quintile_distribution');
+
+       //Poverty    poverty_distribution_of_households_by_pointofpurchasedfooditems @david
+Route::get('Poverty/poverty_distribution_of_households_by_pointofpurchasedfooditems', 
+  'Endpoints\poverty@get_poverty_distribution_of_households_by_pointofpurchasedfooditems')->
+    name('poverty_distribution_of_households_by_pointofpurchasedfooditems');
+
+       //Poverty   poverty_distribution_of_household_food_consumption @david
+Route::get('Poverty/poverty_distribution_of_household_food_consumption', 
+  'Endpoints\poverty@get_poverty_distribution_of_household_food_consumption')->
+    name('poverty_distribution_of_household_food_consumption');
+
+
+   //Poverty   poverty_food_and_non_food_expenditure_per_adult_equivalent @david
+Route::get('Poverty/poverty_food_and_non_food_expenditure_per_adult_equivalent', 
+  'Endpoints\poverty@get_poverty_food_and_non_food_expenditure_per_adult_equivalent')->
+    name('poverty_food_and_non_food_expenditure_per_adult_equivalent');
+
+
+     //Poverty   poverty_food_estimates_by_residence_and_county @david
+Route::get('Poverty/poverty_food_estimates_by_residence_and_county', 
+  'Endpoints\poverty@get_poverty_food_estimates_by_residence_and_county')->
+    name('poverty_food_estimates_by_residence_and_county');
+
+
+        //Poverty   poverty_hardcore_estimates_by_residence_and_county @david
+Route::get('Poverty/poverty_hardcore_estimates_by_residence_and_county', 
+  'Endpoints\poverty@get_poverty_hardcore_estimates_by_residence_and_county')->
+    name('poverty_hardcore_estimates_by_residence_and_county');
+
+
+
+        //Poverty    poverty_overall_estimates_by_residence_and_county @david
+Route::get('Poverty/poverty_overall_estimates_by_residence_and_county', 
+  'Endpoints\poverty@get_poverty_overall_estimates_by_residence_and_county')->
+    name('poverty_overall_estimates_by_residence_and_county');
+
+
+
