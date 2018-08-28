@@ -334,6 +334,131 @@ Route::get('Population/population_populationprojectionsbyspecialagegroups',
 'Endpoints\Population@get_population_populationprojectionsbyspecialagegroups')->name('population_populationprojectionsbyspecialagegroups');
 
 
+// @George Muchiri
+// @get_finance_cdf_allocation_by_constituency
+
+Route::get('Finance/finance_cdf_allocation_by_constituency', 
+'Endpoints\Finance@get_finance_cdf_allocation_by_constituency')->name('finance_cdf_allocation_by_constituency');
+
+// @George Muchiri
+// @get_finance_classification_national_government_expenditure_function
+
+Route::get('Finance/finance_classification_national_government_expenditure_function', 
+'Endpoints\Finance@get_finance_classification_national_government_expenditure_function')->name('finance_classification_national_government_expenditure_function');
+
+// @George Muchiri
+// @get_finance_county_budget_allocation
+
+Route::get('Finance/finance_county_budget_allocation', 
+'Endpoints\Finance@get_finance_county_budget_allocation')->name('finance_county_budget_allocation');
+
+// @George Muchiri
+// @get_finance_county_expenditure
+
+Route::get('Finance/finance_county_expenditure', 
+'Endpoints\Finance@get_finance_county_expenditure')->name('finance_county_expenditure');
+
+
+// @George Muchiri
+// @get_finance_county_revenue
+
+Route::get('Finance/finance_county_revenue', 
+'Endpoints\Finance@get_finance_county_revenue')->name('finance_county_revenue');
+
+
+// @George Muchiri
+// @get_finance_economic_analysis_of_national_government_expenditure
+
+Route::get('Finance/finance_economic_analysis_of_national_government_expenditure', 
+'Endpoints\Finance@get_finance_economic_analysis_of_national_government_expenditure')->name('finance_economic_analysis_of_national_government_expenditure');
+
+
+// @George Muchiri
+// @get_finance_economic_classification_of_county_government_expenditure
+
+Route::get('Finance/finance_economic_classification_of_county_government_expenditure', 
+'Endpoints\Finance@get_finance_economic_classification_of_county_government_expenditure')->name('finance_economic_classification_of_county_government_expenditure');
+
+// @George Muchiri
+// @get_finance_economic_classification_revenue
+
+Route::get('Finance/finance_economic_classification_revenue', 
+'Endpoints\Finance@get_finance_economic_classification_revenue')->name('finance_economic_classification_revenue');
+
+// @George Muchiri
+// @get_finance_excise_revenue_commodity
+
+Route::get('Finance/finance_excise_revenue_commodity', 
+'Endpoints\Finance@get_finance_excise_revenue_commodity')->name(
+	'finance_excise_revenue_commodity');
+
+
+// @George Muchiri
+// @get_finance_expenditure_functions_county_governments
+
+Route::get('Finance/finance_expenditure_functions_county_governments', 
+'Endpoints\Finance@get_finance_expenditure_functions_county_governments')->name(
+	'finance_expenditure_functions_county_governments');
+
+// @George Muchiri
+// @get_finance_expenditure_functions_county_governments
+
+Route::get('Finance/finance_expenditure_functions_county_governments', 
+'Endpoints\Finance@get_finance_expenditure_functions_county_governments')->name(
+	'finance_expenditure_functions_county_governments');
+
+// @George Muchiri
+// @get_finance_money_banking_index
+
+Route::get('Finance/finance_money_banking_index', 
+'Endpoints\Finance@get_finance_money_banking_index')->name(
+	'finance_money_banking_index');
+
+// @George Muchiri
+// @get_finance_money_banking_institutions
+
+Route::get('Finance/finance_money_banking_institutions', 
+'Endpoints\Finance@get_finance_money_banking_institutions')->name(
+	'finance_money_banking_institutions');
+
+
+// @George Muchiri
+// @get_finance_national_government_expenditure
+
+Route::get('Finance/finance_national_government_expenditure', 
+'Endpoints\Finance@get_finance_national_government_expenditure')->name(
+	'finance_national_government_expenditure');
+
+// @George Muchiri
+// @get_finance_national_government_expenditure_purpose
+
+Route::get('Finance/finance_national_government_expenditure_purpose', 
+'Endpoints\Finance@get_finance_national_government_expenditure_purpose')->name(
+	'finance_national_government_expenditure_purpose');
+
+// @George Muchiri
+// @get_ finance_outstanding_debt_international_organization
+
+Route::get('Finance/finance_outstanding_debt_international_organization', 
+'Endpoints\Finance@get_finance_outstanding_debt_international_organization')->name(
+	'finance_outstanding_debt_international_organization');
+
+
+// @George Muchiri
+// @get_finance_outstanding_debt_lending_country
+
+Route::get('Finance/finance_outstanding_debt_lending_country', 
+'Endpoints\Finance@get_finance_outstanding_debt_lending_country')->name(
+	'finance_outstanding_debt_lending_country');
+
+// @George Muchiri
+// @get_finance_statement_of_national_government_operations
+
+Route::get('Finance/finance_statement_of_national_government_operations', 
+'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
+	'finance_statement_of_national_government_operations');
+
+
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
