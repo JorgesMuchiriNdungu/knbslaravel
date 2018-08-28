@@ -18,36 +18,61 @@ Route::get('/', function () {
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
 
-Route::get('Agriculture/get_agriculture_land_potential', 'Endpoints\Agriculture@get_agriculture_land_potential')->name('Agriculture');
+//@George Kagwe
+//route to fetch get_agriculture_area_under_sugarcane_harvested_production_avg_yield
+Route::get('agriculture/all_sugarcane_harvested', 'Endpoints\Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('Agriculture');
+
+//route to fetch get_categories_of_land
+Route::get('agriculture/all_categories_of_land', 'Endpoints\Agriculture@get_categories_of_land')->name('Agriculture');
 
 
 
-Route::get('Agriculture/agriculture_pricetoproducersformeatmilk', 'Endpoints\Agriculture@agriculture_pricetoproducersformeatmilk')->name('Agriculture');
+// route to fetch get_agriculture_chemical_med_feed_input
+Route::get('agriculture/all_chemical_feeds', 'Endpoints\Agriculture@get_agriculture_chemical_med_feed_input')->name('Agriculture');
 
-Route::get('Agriculture/agriculture_production_area_average_yield_coffee_type_of_grower', 'Endpoints\Agriculture@agriculture_production_area_average_yield_coffee_type_of_grower')->name('Agriculture');
+//route to fetch get_cooperatives
+Route::get('agriculture/all_cooperatives', 'Endpoints\Agriculture@get_cooperatives')->name('Agriculture');
+
+
+//route to fetch agriculture_gross_market_production
+Route::get('agriculture/all_market_production', 'Endpoints\Agriculture@agriculture_gross_market_production')->name('Agriculture');
+
+
+//route to fetch get_irrigation_schemes
+
+Route::get('agriculture/all_irrigation_schemes', 'Endpoints\Agriculture@get_irrigation_schemes')->name('Agriculture');
+
+// route to fetch get_agriculture_land_potential
+Route::get('agriculture/all_land_potential', 'Endpoints\Agriculture@get_agriculture_land_potential')->name('Agriculture');
+
+//route to fetch agriculture_pricetoproducersformeatmilk
+
+Route::get('agriculture/all_price_meat_milk', 'Endpoints\Agriculture@agriculture_pricetoproducersformeatmilk')->name('Agriculture');
+
+//route to fetch agriculture_production_area_average_yield_coffee_type_of_grower
+
+Route::get('agriculture/all_coffee_production', 'Endpoints\Agriculture@agriculture_production_area_average_yield_coffee_type_of_grower')->name('Agriculture');
+
+
+//route to fetch agriculture_production_area_average_yield_tea_type_grower
+
+Route::get('agriculture/all_tea_production', 'Endpoints\Agriculture@agriculture_production_area_average_yield_tea_type_grower')->name('Agriculture');
+
+
+//route to fetch agriculture_production_of_livestock_and_dairy_products
 
 Route::get('Agriculture/agriculture_production_of_livestock_and_dairy_products', 'Endpoints\Agriculture@agriculture_production_of_livestock_and_dairy_products')->name('Agriculture');
 
 
-Route::get('Agriculture/agriculture_production_of_livestock_and_dairy_products', 'Endpoints\Agriculture@agriculture_production_of_livestock_and_dairy_products')->name('Agriculture');
+//route to fetch agriculture_production_of_livestock_and_dairy_products
+
+Route::get('agriculture/all_share_capital', 'Endpoints\Agriculture@agriculture_totalsharecapital')->name('Agriculture');
+
+//route to fetch agriculture_valueofagriculturalinput
+
+Route::get('agriculture/all_agricultural_input', 'Endpoints\Agriculture@agriculture_valueofagriculturalinput')->name('Agriculture');
 
 
-Route::get('Agriculture/agriculture_totalsharecapital', 'Endpoints\Agriculture@agriculture_totalsharecapital')->name('Agriculture');
-
-
-
-Route::get('Agriculture/agriculture_production_area_average_yield_tea_type_grower', 'Endpoints\Agriculture@agriculture_production_area_average_yield_tea_type_grower')->name('Agriculture');
-
-//Agriclture sugar route @George Kagwe
-Route::get('Agriculture/agriculture_area_under_sugarcane_harvested_production_avg_yield', 'Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('sugar');
-//Agriclture categories_of_land route @George Kagwe
-Route::get('Agriculture/categories_of_land', 'Agriculture@get_categories_of_land')->name('categories');
-//Agriclture get_agriculture_chemical_med_feed_input route @George Kagwe
-Route::get('Agriculture/get_agriculture_chemical_med_feed_input', 'Agriculture@get_agriculture_chemical_med_feed_input')->name('chemical_input');
-//Agriclture get_cooperatives route @George Kagwe
-Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('get_cooperatives');
-//Agriclture agriculture_gross_market_production route @George Kagwe
-Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
 
 
@@ -248,19 +273,19 @@ Route::get('Manufacturing/manufacturing_quantum_indices_of_manufacturing_product
 
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
-Route::get('Education/education_approved_degree_diploma_programs', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
+Route::get('education/all_diploma_degree', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
 //Education
 //education_csa_adulteducationcentresbysubcounty @fredrick muiruri
-Route::get('Education/education_csa_adulteducationcentresbysubcounty', 'Endpoints\Education@education_csa_adulteducationcentresbysubcounty')->name('education_csa_adulteducationcentresbysubcounty');
+Route::get('education/all_adult_edu_centres_subcounty', 'Endpoints\Education@education_csa_adulteducationcentresbysubcounty')->name('education_csa_adulteducationcentresbysubcounty');
 //Education
 //education_csa_adulteducationenrolmentbysexandsubcounty @fredrick muiruri
-Route::get('Education/education_csa_adulteducationenrolmentbysexandsubcounty', 'Endpoints\Education@education_csa_adulteducationenrolmentbysexandsubcounty')->name('education_csa_adulteducationenrolmentbysexandsubcounty');
+Route::get('education/all_adult_education_enrollment', 'Endpoints\Education@education_csa_adulteducationenrolmentbysexandsubcounty')->name('education_csa_adulteducationenrolmentbysexandsubcounty');
 //Education
 //education_csa_adulteducationproficiencytestresults @fredrick muiruri
-Route::get('Education/education_csa_adulteducationproficiencytestresults', 'Endpoints\Education@education_csa_adulteducationproficiencytestresults')->name('education_csa_adulteducationproficiencytestresults');
+Route::get('education/all_adult_education_proficiency', 'Endpoints\Education@education_csa_adulteducationproficiencytestresults')->name('education_csa_adulteducationproficiencytestresults');
 //Education
 //education_csa_ecdecentresbycategoryandsubcounty @fredrick muiruri
-Route::get('Education/education_csa_ecdecentresbycategoryandsubcounty', 'Endpoints\Education@education_csa_ecdecentresbycategoryandsubcounty')->name('education_csa_ecdecentresbycategoryandsubcounty');
+Route::get('education/all_ecde_centres_category_subcounty', 'Endpoints\Education@education_csa_ecdecentresbycategoryandsubcounty')->name('education_csa_ecdecentresbycategoryandsubcounty');
 //Education
 //education_csa_primaryenrolmentandaccessindicators @fredrick muiruri
 Route::get('Education/education_csa_primaryenrolmentandaccessindicators', 'Endpoints\Education@education_csa_primaryenrolmentandaccessindicators')->name('education_csa_primaryenrolmentandaccessindicators');
@@ -840,25 +865,25 @@ Route::get('Finance/finance_statement_of_national_government_operations',
 
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
-Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
+Route::get('cpi/all_annual_avg_retail_prices_of_certain_consumer_goods_in', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
 
 // @Charles Ndirangu
 // CPI  cpi_consumer_price_index route
-Route::get('CPI/cpi_consumer_price_index', 'Endpoints\CPI@get_cpi_consumer_price_index')->name('cpi_consumer_price_index');
+Route::get('cpi/all_consumer_price_index', 'Endpoints\CPI@get_cpi_consumer_price_index')->name('cpi_consumer_price_index');
 
 // @Charles Ndirangu
 // CPI  cpi_elementary_aggregates_weights_in_the_cpi_baskets route
-Route::get('CPI/cpi_elementary_aggregates_weights_in_the_cpi_baskets', 'Endpoints\CPI@get_cpi_elementary_aggregates_weights_in_the_cpi_baskets')->name('cpi_elementary_aggregates_weights_in_the_cpi_baskets');
+Route::get('cpi/all_elementary_aggregates_weights_in_the_cpi_baskets', 'Endpoints\CPI@get_cpi_elementary_aggregates_weights_in_the_cpi_baskets')->name('cpi_elementary_aggregates_weights_in_the_cpi_baskets');
 
 
 // @Charles Ndirangu
 // CPI  cpi_group_weights_for_kenya_cpi_febuary_base_2009 route
-Route::get('CPI/cpi_group_weights_for_kenya_cpi_febuary_base_2009', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_febuary_base_2009')->name('cpi_group_weights_for_kenya_cpi_febuary_base_2009');
+Route::get('cpi/all_group_weights_for_kenya_cpi_febuary_base_2009', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_febuary_base_2009')->name('cpi_group_weights_for_kenya_cpi_febuary_base_2009');
 
 
 // @Charles Ndirangu
 // CPI  cpi_group_weights_for_kenya_cpi_october_base_1997 route
-Route::get('CPI/cpi_group_weights_for_kenya_cpi_october_base_1997', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_october_base_1997')->name('get_cpi_group_weights_for_kenya_cpi_october_base_1997');
+Route::get('cpi/all_group_weights_for_kenya_cpi_october_base_1997', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_october_base_1997')->name('get_cpi_group_weights_for_kenya_cpi_october_base_1997');
 
 
 // @Charles Ndirangu
@@ -918,22 +943,22 @@ Route::get('Trade/trade_and_commerce_values_of_principal_imports', 'Endpoints\Tr
 //Building and Construction
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_civil_engineering_cost_index route
-Route::get('Building/building_and_construction_quarterly_civil_engineering_cost_index', 'Endpoints\Building@get_building_and_construction_quarterly_civil_engineering_cost_index')->name('building_and_construction_quarterly_civil_engineering_cost_index');
+Route::get('building/all_quarterly_civil_engineering_cost_index', 'Endpoints\Building@get_building_and_construction_quarterly_civil_engineering_cost_index')->name('building_and_construction_quarterly_civil_engineering_cost_index');
 
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_non_residential_build_cost route
-Route::get('Building/building_and_construction_quarterly_non_residential_build_cost', 'Endpoints\Building@get_building_and_construction_quarterly_non_residential_build_cost')->name('building_and_construction_quarterly_non_residential_build_cost');
+Route::get('building/all__quarterly_non_residential_build_cost', 'Endpoints\Building@get_building_and_construction_quarterly_non_residential_build_cost')->name('building_and_construction_quarterly_non_residential_build_cost');
 
 
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_overal_construction_cost route
-Route::get('Building/building_and_construction_quarterly_overal_construction_cost', 'Endpoints\Building@get_building_and_construction_quarterly_overal_construction_cost')->name('building_and_construction_quarterly_overal_construction_cost');
+Route::get('building/all_quarterly_overal_construction_cost', 'Endpoints\Building@get_building_and_construction_quarterly_overal_construction_cost')->name('building_and_construction_quarterly_overal_construction_cost');
 
 
 
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_residential_bulding_cost route
-Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
+Route::get('building/all_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
 
 
