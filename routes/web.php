@@ -741,7 +741,7 @@ Route::get('Population/population_populationprojectionsbyspecialagegroups',
 // @George Muchiri
 // @get_finance_cdf_allocation_by_constituency
 
-Route::get('Finance/finance_cdf_allocation_by_constituency', 
+Route::get('finance/all_finance_cdf_allocation_by_constituency', 
 'Endpoints\Finance@get_finance_cdf_allocation_by_constituency')->name('finance_cdf_allocation_by_constituency');
 
 // @George Muchiri
@@ -753,20 +753,20 @@ Route::get('Finance/finance_classification_national_government_expenditure_funct
 // @George Muchiri
 // @get_finance_county_budget_allocation
 
-Route::get('Finance/finance_county_budget_allocation', 
+Route::get('finance/all_finance_county_budget_allocation', 
 'Endpoints\Finance@get_finance_county_budget_allocation')->name('finance_county_budget_allocation');
 
 // @George Muchiri
 // @get_finance_county_expenditure
 
-Route::get('Finance/finance_county_expenditure', 
+Route::get('finance/all_finance_county_expenditure', 
 'Endpoints\Finance@get_finance_county_expenditure')->name('finance_county_expenditure');
 
 
 // @George Muchiri
 // @get_finance_county_revenue
 
-Route::get('Finance/finance_county_revenue', 
+Route::get('finance/all_finance_county_revenue', 
 'Endpoints\Finance@get_finance_county_revenue')->name('finance_county_revenue');
 
 
@@ -786,13 +786,13 @@ Route::get('Finance/finance_economic_classification_of_county_government_expendi
 // @George Muchiri
 // @get_finance_economic_classification_revenue
 
-Route::get('Finance/finance_economic_classification_revenue', 
+Route::get('finance/all_economic_revenue', 
 'Endpoints\Finance@get_finance_economic_classification_revenue')->name('finance_economic_classification_revenue');
 
 // @George Muchiri
 // @get_finance_excise_revenue_commodity
 
-Route::get('Finance/finance_excise_revenue_commodity', 
+Route::get('finance/all_excise_revenue', 
 'Endpoints\Finance@get_finance_excise_revenue_commodity')->name(
 	'finance_excise_revenue_commodity');
 
@@ -829,21 +829,21 @@ Route::get('Finance/finance_money_banking_institutions',
 // @George Muchiri
 // @get_finance_national_government_expenditure
 
-Route::get('Finance/finance_national_government_expenditure', 
+Route::get('finance/all_national_expenditure', 
 'Endpoints\Finance@get_finance_national_government_expenditure')->name(
 	'finance_national_government_expenditure');
 
 // @George Muchiri
 // @get_finance_national_government_expenditure_purpose
 
-Route::get('Finance/finance_national_government_expenditure_purpose', 
+Route::get('finance/all_finance_national_government_expenditure_purpose', 
 'Endpoints\Finance@get_finance_national_government_expenditure_purpose')->name(
 	'finance_national_government_expenditure_purpose');
 
 // @George Muchiri
 // @get_ finance_outstanding_debt_international_organization
 
-Route::get('Finance/finance_outstanding_debt_international_organization', 
+Route::get('finance/all_finance_outstanding_debt_international_organization', 
 'Endpoints\Finance@get_finance_outstanding_debt_international_organization')->name(
 	'finance_outstanding_debt_international_organization');
 
@@ -851,14 +851,14 @@ Route::get('Finance/finance_outstanding_debt_international_organization',
 // @George Muchiri
 // @get_finance_outstanding_debt_lending_country
 
-Route::get('Finance/finance_outstanding_debt_lending_country', 
+Route::get('finance/all_finance_outstanding_debt_lending_country', 
 'Endpoints\Finance@get_finance_outstanding_debt_lending_country')->name(
 	'finance_outstanding_debt_lending_country');
 
 // @George Muchiri
 // @get_finance_statement_of_national_government_operations
 
-Route::get('Finance/finance_statement_of_national_government_operations', 
+Route::get('finance/all_finance_statement_of_national_government_operations', 
 'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
 	'finance_statement_of_national_government_operations');
 
@@ -966,41 +966,41 @@ Route::get('building/all_quarterly_residential_bulding_cost', 'Endpoints\Buildin
 //Tourism
 // @Charles Ndirangu
 // Building  tourism_arrivals route
-Route::get('Tourism/tourism_arrivals', 'Endpoints\Tourism@get_tourism_arrivals')->name('tourism_arrivals');
+Route::get('tourism/tourism_arrivals', 'Endpoints\Tourism@get_tourism_arrivals')->name('tourism_arrivals');
 
 // @Charles Ndirangu
 // Building  tourism_conferences route
-Route::get('Tourism/tourism_conferences', 'Endpoints\Tourism@get_tourism_conferences')->name('tourism_conferences');
+Route::get('tourism/all_tourism_conferences', 'Endpoints\Tourism@get_tourism_conferences')->name('tourism_conferences');
 
 // @Charles Ndirangu
 // Building  tourism_departures route
-Route::get('Tourism/tourism_departures', 'Endpoints\Tourism@get_tourism_departures')->name('tourism_departures');
+Route::get('tourism/all_tourism_departures', 'Endpoints\Tourism@get_tourism_departures')->name('tourism_departures');
 
 
 // @Charles Ndirangu
 // Building  tourism_earnings route
-Route::get('Tourism/tourism_earnings', 'Endpoints\Tourism@get_tourism_earnings')->name('tourism_earnings');
+Route::get('tourism/all_tourism_earnings', 'Endpoints\Tourism@get_tourism_earnings')->name('tourism_earnings');
 
 // @Charles Ndirangu
 // Building  tourism_hotel_occupancy_by_residence route
-Route::get('Tourism/tourism_hotel_occupancy_by_residence', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_residence')->name('tourism_hotel_occupancy_by_residence');
+Route::get('tourism/all_tourism_hotel_occupancy_by_residence', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_residence')->name('tourism_hotel_occupancy_by_residence');
 
 // @Charles Ndirangu
 // Building  tourism_hotel_occupancy_by_zone route
-Route::get('Tourism/tourism_hotel_occupancy_by_zone', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_zone')->name('tourism_hotel_occupancy_by_zone');
+Route::get('tourism/all_tourism_hotel_occupancy_by_zone', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_zone')->name('tourism_hotel_occupancy_by_zone');
 
 
 // @Charles Ndirangu
 // Building  tourism_population_proportion_that_took_trip route
-Route::get('Tourism/tourism_population_proportion_that_took_trip', 'Endpoints\Tourism@get_tourism_population_proportion_that_took_trip')->name('tourism_population_proportion_that_took_trip');
+Route::get('tourism/all_tourism_population_proportion_that_took_trip', 'Endpoints\Tourism@get_tourism_population_proportion_that_took_trip')->name('tourism_population_proportion_that_took_trip');
 
 // @Charles Ndirangu
 // Building  tourism_visitor_to_parks route
-Route::get('Tourism/tourism_visitor_to_parks', 'Endpoints\Tourism@get_tourism_visitor_to_parks')->name('tourism_visitor_to_parks');
+Route::get('tourism/all_tourism_visitor_to_parks', 'Endpoints\Tourism@get_tourism_visitor_to_parks')->name('tourism_visitor_to_parks');
 
 // @Charles Ndirangu
 // Building  tourism_visitors_to_museums route
-Route::get('Tourism/tourism_visitors_to_museums', 'Endpoints\Tourism@get_tourism_visitors_to_museums')->name('tourism_visitors_to_museums');
+Route::get('tourism/all_tourism_visitors_to_museums', 'Endpoints\Tourism@get_tourism_visitors_to_museums')->name('tourism_visitors_to_museums');
 
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri
