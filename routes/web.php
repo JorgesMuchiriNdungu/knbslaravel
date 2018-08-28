@@ -28,19 +28,10 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 //Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-=======
-
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
      'Endpoints\Health_Sectors@index')->
       name('Health_Sectors');
-
-
-
 
 // environment `environment_and_natural_resources_average_export_prices_ash` @david
 Route::get('Environment/environment_and_natural_resources_average_export_prices_ash', 
@@ -70,7 +61,6 @@ Route::get('Environment/environment_and_natural_resources_government_forest',
 Route::get('Environment/environment_and_natural_resources_num_high_risk_environ_impact', 
 	 'Endpoints\Environment@get_environment_and_natural_resources_num_high_risk_environ_impact')->
      name('environment_and_natural_resources_num_high_risk_environ_impact');
-
 
 
 //environment  environment_and_natural_resources_population_wildlife @david
@@ -117,13 +107,13 @@ Route::get('Environment/environment_and_natural_resources_water_purification_poi
 
 
 //Manufacturing  manufacturing_per_change_in_quantum_indices_of_man_production @david
-Route::get('Manufacturing/manufacturing_per_change_in_quantum_indices_of_man_production', 
+Route::get('manufacturing/all_per_change_in_quantum_indices_of_man_production', 
 	'Endpoints\Manufacturing@get_manufacturing_per_change_in_quantum_indices_of_man_production')->
     name('manufacturing_per_change_in_quantum_indices_of_man_production');
 
 
 //Manufacturing  manufacturing_quantum_indices_of_manufacturing_production @david
-Route::get('Manufacturing/manufacturing_quantum_indices_of_manufacturing_production', 
+Route::get('manufacturing/all_quantum_indices_of_manufacturing_production', 
 	'Endpoints\Manufacturing@get_manufacturing_quantum_indices_of_manufacturing_production')->
     name('manufacturing_quantum_indices_of_manufacturing_production');
 
@@ -223,13 +213,6 @@ Route::get('Manufacturing/manufacturing_quantum_indices_of_manufacturing_product
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_public_sector')->
     name('labour_wage_employment_by_industry_in_public_sector');
 
-
-
-
-
-
-
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('Education/education_approved_degree_diploma_programs', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -392,11 +375,6 @@ Route::get('Health/health_kihibs_health_insurance_cover_by_type', 'Endpoints\Hea
 //Health
 //health_kihibs_incidence_of_sickness_injury @fredrick muiruri
 Route::get('Health/health_kihibs_incidence_of_sickness_injury', 'Endpoints\Health@health_kihibs_incidence_of_sickness_injury')->name('health_kihibs_incidence_of_sickness_injury');
-<<<<<<< HEAD
-=======
-
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
@@ -680,9 +658,6 @@ Route::get('Population/population_households_type_floor_material_main_dwelling_u
 Route::get('Population/population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 // @George Muchiri
 // @get_population_populationbysexhouseholdsdensityandcensusyears
 
@@ -828,10 +803,6 @@ Route::get('Finance/finance_statement_of_national_government_operations',
 'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
 	'finance_statement_of_national_government_operations');
 
-
-=======
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -853,7 +824,6 @@ Route::get('CPI/cpi_group_weights_for_kenya_cpi_febuary_base_2009', 'Endpoints\C
 // @Charles Ndirangu
 // CPI  cpi_group_weights_for_kenya_cpi_october_base_1997 route
 Route::get('CPI/cpi_group_weights_for_kenya_cpi_october_base_1997', 'Endpoints\CPI@get_cpi_group_weights_for_kenya_cpi_october_base_1997')->name('get_cpi_group_weights_for_kenya_cpi_october_base_1997');
-
 
 // @Charles Ndirangu
 // Administration  administrative_unit route
@@ -897,17 +867,13 @@ Route::get('Trade/trade_and_commerce_value_of_total_exports_european_union', 'En
 // Trade  trade_and_commerce_value_total_exports_east_africa_communities route
 Route::get('Trade/trade_and_commerce_value_total_exports_east_africa_communities', 'Endpoints\Trade@get_trade_and_commerce_value_total_exports_east_africa_communities')->name('trade_and_commerce_value_total_exports_east_africa_communities');
 
-
 // @Charles Ndirangu
 // Trade  trade_and_commerce_values_of_principal_domestic_exports route
 Route::get('Trade/trade_and_commerce_values_of_principal_domestic_exports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_domestic_exports')->name('trade_and_commerce_values_of_principal_domestic_exports');
 
-
 // @Charles Ndirangu
 // Trade  trade_and_commerce_values_of_principal_imports route
 Route::get('Trade/trade_and_commerce_values_of_principal_imports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_imports')->name('trade_and_commerce_values_of_principal_imports');
-
-
 
 //Building and Construction
 // @Charles Ndirangu
@@ -918,18 +884,13 @@ Route::get('Building/building_and_construction_quarterly_civil_engineering_cost_
 // Building  building_and_construction_quarterly_non_residential_build_cost route
 Route::get('Building/building_and_construction_quarterly_non_residential_build_cost', 'Endpoints\Building@get_building_and_construction_quarterly_non_residential_build_cost')->name('building_and_construction_quarterly_non_residential_build_cost');
 
-
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_overal_construction_cost route
 Route::get('Building/building_and_construction_quarterly_overal_construction_cost', 'Endpoints\Building@get_building_and_construction_quarterly_overal_construction_cost')->name('building_and_construction_quarterly_overal_construction_cost');
 
-
-
 // @Charles Ndirangu
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
-
-<<<<<<< HEAD
 
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri
@@ -1019,81 +980,90 @@ Route::get('Health/health_subcounty', 'Endpoints\Health@health_subcounty')->name
 //Health
 //health_use_of_mosquito_nets_by_children @fredrick muiruri
 Route::get('Health/health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
-=======
-<<<<<<< HEAD
-	
-=======
-
 
 //Ict  ict_kihibs_households_owned_ict_equipment_services @david
 Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
   'Endpoints\Ict@get_ict_kihibs_households_owned_ict_equipment_services')->
     name('ict_kihibs_households_owned_ict_equipment_services');
 
-
 //Ict   ict_kihibs_households_without_internet_by_reason @david
 Route::get('Ict/ict_kihibs_households_without_internet_by_reason', 
   'Endpoints\Ict@get_ict_kihibs_households_without_internet_by_reason')->
     name('ict_kihibs_households_without_internet_by_reason');
-
 
 //Ict   ict_kihibs_households_with_internet_by_type @david
 Route::get('Ict/ict_kihibs_households_with_internet_by_type', 
   'Endpoints\Ict@get_ict_kihibs_households_with_internet_by_type')->
     name('ict_kihibs_households_with_internet_by_type');
 
-
 //Ict   ict_kihibs_households_with_tv @david
 Route::get('Ict/ict_kihibs_households_with_tv', 
   'Endpoints\Ict@get_ict_kihibs_households_with_tv')->
     name('ict_kihibs_households_with_tv');
-
 
     //Ict  ict_kihibs_population_above18by_reasonnothaving_phone @david
 Route::get('Ict/ict_kihibs_population_above18by_reasonnothaving_phone', 
   'Endpoints\Ict@get_ict_kihibs_population_above18by_reasonnothaving_phone')->
     name('ict_kihibs_population_above18by_reasonnothaving_phone');
 
-
    //Ict  ict_kihibs_population_above18subscribed_mobilemoney @david
 Route::get('Ict/ict_kihibs_population_above18subscribed_mobilemoney', 
   'Endpoints\Ict@get_ict_kihibs_population_above18subscribed_mobilemoney')->
     name('ict_kihibs_population_above18subscribed_mobilemoney');
-
-
-
 
    //Ict   ict_kihibs_population_by_ictequipment_and_servicesused @david
 Route::get('Ict/ict_kihibs_population_by_ictequipment_and_servicesused', 
   'Endpoints\Ict@get_ict_kihibs_population_by_ictequipment_and_servicesused')->
     name('ict_kihibs_population_by_ictequipment_and_servicesusedey');
 
-
    //Ict    ict_kihibs_population_that_didntuseinternet_by_reason @david
 Route::get('Ict/ict_kihibs_population_that_didntuseinternet_by_reason', 
   'Endpoints\Ict@get_ict_kihibs_population_that_didntuseinternet_by_reason')->
     name('ict_kihibs_population_that_didntuseinternet_by_reason');
-
-
 
    //Ict     ict_kihibs_population_that_used_internet_by_purpose @david
 Route::get('Ict/ict_kihibs_population_that_used_internet_by_purpose', 
   'Endpoints\Ict@get_ict_kihibs_population_that_used_internet_by_purpose')->
     name('ict_kihibs_population_that_used_internet_by_purpose');
 
-
-
      //Ict      ict_kihibs_population_who_used_internet_by_place @david
 Route::get('Ict/ict_kihibs_population_who_used_internet_by_place', 
   'Endpoints\Ict@get_ict_kihibs_population_who_used_internet_by_place')->
     name('ict_kihibs_population_who_used_internet_by_place');
     
-
-
-
      //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
->>>>>>> f039e6cdda2236e2d3f204479ba30da9c8fcf9dd
->>>>>>> c3ef70d6fbc50a0a20de8ea84aa0f0b0ea33e7da
+
+//Nutrition
+//health_nutritional_status_of_children @fredrick muiruri
+Route::get('Nutrition/health_nutritional_status_of_children', 'Endpoints\Nutrition@health_nutritional_status_of_children')->name('health_nutritional_status_of_children');
+//Nutrition
+//health_nutritional_status_of_women @fredrick muiruri
+Route::get('Nutrition/health_nutritional_status_of_women', 'Endpoints\Nutrition@health_nutritional_status_of_women')->name('health_nutritional_status_of_women');
+//Housing
+//housing_conditions_kihibs_waste_disposal_method @fredrick muiruri
+Route::get('Housing/housing_conditions_kihibs_waste_disposal_method', 'Endpoints\Housing@housing_conditions_kihibs_waste_disposal_method')->name('housing_conditions_kihibs_waste_disposal_method');
+//Housing
+//housing_conditions_kihibs_volume_of_water_used @fredrick muiruri
+Route::get('Housing/housing_conditions_kihibs_volume_of_water_used', 'Endpoints\Housing@housing_conditions_kihibs_volume_of_water_used')->name('housing_conditions_kihibs_volume_of_water_used');
+//Housing
+//housing_conditions_kihibs_time_taken_to_fetch_drinking_water @fredrick muiruri
+Route::get('Housing/housing_conditions_kihibs_time_taken_to_fetch_drinking_water', 'Endpoints\Housing@housing_conditions_kihibs_time_taken_to_fetch_drinking_water')->name('housing_conditions_kihibs_time_taken_to_fetch_drinking_water');
+//Housing
+//housing_conditions_kihibs_sharing_of_toilet_facility @fredrick muiruri
+Route::get('Housing/housing_conditions_kihibs_sharing_of_toilet_facility', 'Endpoints\Housing@housing_conditions_kihibs_sharing_of_toilet_facility')->name('housing_conditions_kihibs_sharing_of_toilet_facility');
+//Housing
+//housing_conditions_kihibs_primary_type_of_cooking_appliance @fredrick muiruri
+Route::get('Housing/housing_conditions_kihibs_primary_type_of_cooking_appliance', 'Endpoints\Housing@housing_conditions_kihibs_primary_type_of_cooking_appliance')->name('housing_conditions_kihibs_primary_type_of_cooking_appliance');
+//Housing
+//housing_conditions_kihibs_place_for_washing_hands_near_toilet @fredrick muiruri
+Route::get('Housing/housing_conditions_kihibs_place_for_washing_hands_near_toilet', 'Endpoints\Housing@housing_conditions_kihibs_place_for_washing_hands_near_toilet')->name('housing_conditions_kihibs_place_for_washing_hands_near_toilet');
+
+//Housing
+//housing_conditions_kihibs_owner_occupier_dwellings @fredrick muiruri
+Route::get('Housing/housing_conditions_kihibs_owner_occupier_dwellings', 'Endpoints\Housing@housing_conditions_kihibs_owner_occupier_dwellings')->name('housing_conditions_kihibs_owner_occupier_dwellings');
+//Housing
+//housing_conditions_kihibs_methods_used_to_make_water_safer @fredrick muiruri
+Route::get('Housing/housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');

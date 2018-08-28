@@ -244,7 +244,7 @@ class Education extends Controller
 			array_push($result,$series2);
 			array_push($result,$series3);
 			array_push($result,$series4);
-			array_push($result,$series4);
+			array_push($result,$series5);
 					
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
