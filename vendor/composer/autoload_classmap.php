@@ -8,11 +8,50 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+<<<<<<< HEAD
+    'App\\Http\\Controllers\\Agriculture' => $baseDir . '/app/Http/Controllers/Endpoints/Agriculture.php',
+=======
+<<<<<<< HEAD
+    'App\\Http\\Controllers\\Agriculture' => $baseDir . '/app/Http/Controllers/Endpoints/Agriculture.php',
+=======
+    'App\\Http\\Controllers\\Agriculture' => $baseDir . '/app/Http/Controllers/Agriculture.php',
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
+>>>>>>> 83a53d0de7f7a961a45cd84138c7caf929bb7ca3
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 83a53d0de7f7a961a45cd84138c7caf929bb7ca3
+    'App\\Http\\Controllers\\Dashboard\\Dashboard' => $baseDir . '/app/Http/Controllers/Dashboard/Dashboard.php',
+    'App\\Http\\Controllers\\Endpoints\\Administration' => $baseDir . '/app/Http/Controllers/Endpoints/Administration.php',
+    'App\\Http\\Controllers\\Endpoints\\Building' => $baseDir . '/app/Http/Controllers/Endpoints/Building.php',
+    'App\\Http\\Controllers\\Endpoints\\CPI' => $baseDir . '/app/Http/Controllers/Endpoints/CPI.php',
+    'App\\Http\\Controllers\\Endpoints\\Education' => $baseDir . '/app/Http/Controllers/Endpoints/Education.php',
+    'App\\Http\\Controllers\\Endpoints\\Energy' => $baseDir . '/app/Http/Controllers/Endpoints/Energy.php',
+    'App\\Http\\Controllers\\Endpoints\\Environment' => $baseDir . '/app/Http/Controllers/Endpoints/Environment.php',
+    'App\\Http\\Controllers\\Endpoints\\Finance' => $baseDir . '/app/Http/Controllers/Endpoints/Finance.php',
+    'App\\Http\\Controllers\\Endpoints\\Governance' => $baseDir . '/app/Http/Controllers/Endpoints/Governance.php',
+    'App\\Http\\Controllers\\Endpoints\\Health' => $baseDir . '/app/Http/Controllers/Endpoints/Health.php',
+    'App\\Http\\Controllers\\Endpoints\\Health_Sectors' => $baseDir . '/app/Http/Controllers/Endpoints/Health_Sectors.php',
+    'App\\Http\\Controllers\\Endpoints\\Ict' => $baseDir . '/app/Http/Controllers/Endpoints/Ict.php',
+    'App\\Http\\Controllers\\Endpoints\\Labour' => $baseDir . '/app/Http/Controllers/Endpoints/Labour.php',
+    'App\\Http\\Controllers\\Endpoints\\Manufacturing' => $baseDir . '/app/Http/Controllers/Endpoints/Manufacturing.php',
+    'App\\Http\\Controllers\\Endpoints\\Population' => $baseDir . '/app/Http/Controllers/Endpoints/Population.php',
+<<<<<<< HEAD
+    'App\\Http\\Controllers\\Endpoints\\Tourism' => $baseDir . '/app/Http/Controllers/Endpoints/Tourism.php',
+=======
+=======
+    'App\\Http\\Controllers\\Endpoints\\Administration' => $baseDir . '/app/Http/Controllers/Endpoints/Administration.php',
+    'App\\Http\\Controllers\\Endpoints\\CPI' => $baseDir . '/app/Http/Controllers/Endpoints/CPI.php',
+    'App\\Http\\Controllers\\Endpoints\\Environment' => $baseDir . '/app/Http/Controllers/Endpoints/Environment.php',
+>>>>>>> 9b80dace76df520df2a13652ff0fe8cbce2d9c3a
+>>>>>>> 83a53d0de7f7a961a45cd84138c7caf929bb7ca3
+    'App\\Http\\Controllers\\Endpoints\\Trade' => $baseDir . '/app/Http/Controllers/Endpoints/Trade.php',
+    'App\\Http\\Controllers\\Forms\\Agriculture' => $baseDir . '/app/Http/Controllers/Forms/Agriculture.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
