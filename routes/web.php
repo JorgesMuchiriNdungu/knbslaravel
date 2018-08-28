@@ -29,7 +29,7 @@ Route::get('Agriculture/cooperatives', 'Agriculture@get_cooperatives')->name('ge
 //Agriclture agriculture_gross_market_production route @George Kagwe
 Route::get('Agriculture/gross_production', 'Agriculture@agriculture_gross_market_production')->name('gross_production');
 
-<<<<<<< HEAD
+
 
 // @George Muchiri
 // governance_cases_forwarded_and_action_taken route
@@ -237,7 +237,7 @@ Route::get('Governance/governance_public_assets_traced_recovered_and_loss_averte
 'Endpoints\Governance@get_governance_public_assets_traced_recovered_and_loss_averted')->name('governance_public_assets_traced_recovered_and_loss_averted');
 
 
-// @George 
+// @George Muchiri
 // @get_governance_registered_voters_by_county_and_by_sex
 Route::get('Governance/governance_registered_voters_by_county_and_by_sex', 
 'Endpoints\Governance@get_governance_registered_voters_by_county_and_by_sex')->name('
@@ -245,7 +245,7 @@ governance_registered_voters_by_county_and_by_sex');
 
 
 
-// @George 
+// @George Muchiri
 // @get_governance_total_prisoners_committed_for_debt_bysex
 Route::get('Governance/governance_total_prisoners_committed_for_debt_bysex', 
 'Endpoints\Governance@get_governance_total_prisoners_committed_for_debt_bysex')->name('
@@ -253,66 +253,87 @@ governance_total_prisoners_committed_for_debt_bysex');
 
 
 
-// @George 
+// @George Muchiri
 // @get_governance_women_groups_registration_contributions_uwezo_funds
 Route::get('Governance/governance_women_groups_registration_contributions_uwezo_funds', 
 'Endpoints\Governance@get_governance_women_groups_registration_contributions_uwezo_funds')->name('governance_women_groups_registration_contributions_uwezo_funds');
 
 
-// @George 
+// @George Muchiri
 // @get_governance_women_groups_registration_contributions_women_groups
 Route::get('Governance/governance_women_groups_registration_contributions_women_groups', 
 'Endpoints\Governance@get_governance_women_groups_registration_contributions_women_groups')->name('governance_women_groups_registration_contributions_women_groups');
 
-// @George 
+// @George Muchiri
 // @get_governance_women_groups_registration_cont_women_enterprise_fund
 Route::get('Governance/governance_women_groups_registration_cont_women_enterprise_fund', 
 'Endpoints\Governance@get_governance_women_groups_registration_cont_women_enterprise_fund')->name('governance_women_groups_registration_cont_women_enterprise_fund');
 
-// @George 
+// @George Muchiri
 // @get_population_by_sex_and_age_groups
 Route::get('Population/population_by_sex_and_age_groups', 
 'Endpoints\Population@get_population_by_sex_and_age_groups')->name('
 population_by_sex_and_age_groups');
 
-// @George 
+// @George Muchiri
 // @get_population_by_sex_and_school_attendance
 
 Route::get('Population/population_by_sex_and_school_attendance', 
 'Endpoints\Population@get_population_by_sex_and_school_attendance')->name('population_by_sex_and_school_attendance');
 
-// @George 
+// @George Muchiri
 // @get_population_by_type_of_disability
 
 Route::get('Population/population_by_type_of_disability', 
 'Endpoints\Population@get_population_by_type_of_disability')->name('population_by_type_of_disability');
 
 
-// @George 
+// @George Muchiri
 // @get_population_distribution_sex_number_households_area_density
 
 Route::get('Population/population_distribution_sex_number_households_area_density', 
 'Endpoints\Population@get_population_distribution_sex_number_households_area_density')->name('population_distribution_sex_number_households_area_density');
 
-// @George 
+// @George Muchiri
 // @get_population_households_by_main_source_of_water
 
 Route::get('Population/population_households_by_main_source_of_water', 
 'Endpoints\Population@get_population_households_by_main_source_of_water')->name('population_households_by_main_source_of_water');
 
-// @George 
+// @George Muchiri
 // @get_population_households_type_floor_material_main_dwelling_unit
 
 Route::get('Population/population_households_type_floor_material_main_dwelling_unit', 
 'Endpoints\Population@get_population_households_type_floor_material_main_dwelling_unit')->name('population_households_type_floor_material_main_dwelling_unit');
 
 
-// @George 
+// @George Muchiri
 // @get_population_percentage_households_ownership_household_assets
 
 Route::get('Population/population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
-=======
+
+// @George Muchiri
+// @get_population_populationbysexhouseholdsdensityandcensusyears
+
+Route::get('Population/population_populationbysexhouseholdsdensityandcensusyears', 
+'Endpoints\Population@get_population_populationbysexhouseholdsdensityandcensusyears')->name('population_populationbysexhouseholdsdensityandcensusyears');
+
+
+// @George Muchiri
+// @get_population_populationprojectionsbyselectedagegroup
+
+Route::get('Population/population_populationprojectionsbyselectedagegroup', 
+'Endpoints\Population@get_population_populationprojectionsbyselectedagegroup')->name('population_populationprojectionsbyselectedagegroup');
+
+
+// @George Muchiri
+// @get_population_populationprojectionsbyspecialagegroups
+
+Route::get('Population/population_populationprojectionsbyspecialagegroups', 
+'Endpoints\Population@get_population_populationprojectionsbyspecialagegroups')->name('population_populationprojectionsbyspecialagegroups');
+
+
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('CPI/cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -410,3 +431,4 @@ Route::get('Building/building_and_construction_quarterly_overal_construction_cos
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('Building/building_and_construction_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
+	
