@@ -17,11 +17,6 @@ Route::get('/', function () {
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 //@George Kagwe
 //route to fetch get_agriculture_area_under_sugarcane_harvested_production_avg_yield
 Route::get('agriculture/all_sugarcane_harvested', 'Endpoints\Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('Agriculture');
@@ -76,15 +71,6 @@ Route::get('agriculture/all_share_capital', 'Endpoints\Agriculture@agriculture_t
 
 Route::get('agriculture/all_agricultural_input', 'Endpoints\Agriculture@agriculture_valueofagriculturalinput')->name('Agriculture');
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
      'Endpoints\Health_Sectors@index')->
@@ -270,13 +256,6 @@ Route::get('manufacturing/all_quantum_indices_of_manufacturing_production',
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_public_sector')->
     name('labour_wage_employment_by_industry_in_public_sector');
 
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('education/all_diploma_degree', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -903,10 +882,6 @@ Route::get('finance/all_finance_statement_of_national_government_operations',
 'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
 	'finance_statement_of_national_government_operations');
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('cpi/all_annual_avg_retail_prices_of_certain_consumer_goods_in', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -996,12 +971,6 @@ Route::get('building/all_quarterly_overal_construction_cost', 'Endpoints\Buildin
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('building/all_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 //Tourism
 // @Charles Ndirangu
 // Building  tourism_arrivals route
@@ -1044,97 +1013,93 @@ Route::get('tourism/all_tourism_visitors_to_museums', 'Endpoints\Tourism@get_tou
 
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri
-Route::get('Health/health_kihibs_received_free_medical_services', 'Endpoints\Health@health_kihibs_received_free_medical_services')->name('health_kihibs_received_free_medical_services');
+Route::get('health/all_health_kihibs_received_free_medical_services', 'Endpoints\Health@health_kihibs_received_free_medical_services')->name('health_kihibs_received_free_medical_services');
 
 //Health
 //health_kihibs_reported_being_sick_injured_by_cause @fredrick muiruri
-Route::get('Health/health_kihibs_reported_being_sick_injured_by_cause', 'Endpoints\Health@health_kihibs_reported_being_sick_injured_by_cause')->name('health_kihibs_reported_being_sick_injured_by_cause');
+Route::get('health/all_health_kihibs_reported_being_sick_injured_by_cause', 'Endpoints\Health@health_kihibs_reported_being_sick_injured_by_cause')->name('health_kihibs_reported_being_sick_injured_by_cause');
 //Health
 //health_kihibs_reported_being_sick_injured_by_type_of_sickness @fredrick muiruri
-Route::get('Health/health_kihibs_reported_being_sick_injured_by_type_of_sickness', 'Endpoints\Health@health_kihibs_reported_being_sick_injured_by_type_of_sickness')->name('health_kihibs_reported_being_sick_injured_by_type_of_sickness');
+Route::get('health/all_health_kihibs_reported_being_sick_injured_by_type_of_sickness', 'Endpoints\Health@health_kihibs_reported_being_sick_injured_by_type_of_sickness')->name('health_kihibs_reported_being_sick_injured_by_type_of_sickness');
 //Health
 //health_kihibs_reported_sickness_by_age_group @fredrick muiruri
-Route::get('Health/health_kihibs_reported_sickness_by_age_group', 'Endpoints\Health@health_kihibs_reported_sickness_by_age_group')->name('health_kihibs_reported_sickness_by_age_group');
+Route::get('health/all_health_kihibs_reported_sickness_by_age_group', 'Endpoints\Health@health_kihibs_reported_sickness_by_age_group')->name('health_kihibs_reported_sickness_by_age_group');
 //Health
 //health_kihibs_reported_sickness_by_health_provider @fredrick muiruri
-Route::get('Health/health_kihibs_reported_sickness_by_health_provider', 'Endpoints\Health@health_kihibs_reported_sickness_by_health_provider')->name('health_kihibs_reported_sickness_by_health_provider');
+Route::get('health/all_health_kihibs_reported_sickness_by_health_provider', 'Endpoints\Health@health_kihibs_reported_sickness_by_health_provider')->name('health_kihibs_reported_sickness_by_health_provider');
 //Health
 //health_kihibs_reported_sickness_by_no_of_days_missed @fredrick muiruri
-Route::get('Health/health_kihibs_reported_sickness_by_no_of_days_missed', 'Endpoints\Health@health_kihibs_reported_sickness_by_no_of_days_missed')->name('health_kihibs_reported_sickness_by_no_of_days_missed');
+Route::get('health/all_health_kihibs_reported_sickness_by_no_of_days_missed', 'Endpoints\Health@health_kihibs_reported_sickness_by_no_of_days_missed')->name('health_kihibs_reported_sickness_by_no_of_days_missed');
 //Health
 //health_kihibs_type_of_fluid_of_food_given_during_diarrhoea @fredrick muiruri
-Route::get('Health/health_kihibs_type_of_fluid_of_food_given_during_diarrhoea', 'Endpoints\Health@health_kihibs_type_of_fluid_of_food_given_during_diarrhoea')->name('health_kihibs_type_of_fluid_of_food_given_during_diarrhoea');
+Route::get('health/all_health_kihibs_type_of_fluid_of_food_given_during_diarrhoea', 'Endpoints\Health@health_kihibs_type_of_fluid_of_food_given_during_diarrhoea')->name('health_kihibs_type_of_fluid_of_food_given_during_diarrhoea');
 //Health
 //health_kihibs_type_of_health_care_sought @fredrick muiruri
-Route::get('Health/health_kihibs_type_of_health_care_sought', 'Endpoints\Health@health_kihibs_type_of_health_care_sought')->name('health_kihibs_type_of_health_care_sought');
+Route::get('health/all_health_kihibs_type_of_health_care_sought', 'Endpoints\Health@health_kihibs_type_of_health_care_sought')->name('health_kihibs_type_of_health_care_sought');
 //Health
 //health_kihibs_who_diagnosed_illness_injury @fredrick muiruri
-Route::get('Health/health_kihibs_who_diagnosed_illness_injury', 'Endpoints\Health@health_kihibs_who_diagnosed_illness_injury')->name('health_kihibs_who_diagnosed_illness_injury');
+Route::get('health/all_health_kihibs_who_diagnosed_illness_injury', 'Endpoints\Health@health_kihibs_who_diagnosed_illness_injury')->name('health_kihibs_who_diagnosed_illness_injury');
 //Health
 //health_kihibs_who_diagnosed_illness_injury @fredrick muiruri
-Route::get('Health/health_kihibs_who_diagnosed_illness_injury', 'Endpoints\Health@health_kihibs_who_diagnosed_illness_injury')->name('health_kihibs_who_diagnosed_illness_injury');
+Route::get('health/all_health_kihibs_who_diagnosed_illness_injury', 'Endpoints\Health@health_kihibs_who_diagnosed_illness_injury')->name('health_kihibs_who_diagnosed_illness_injury');
 //Health
 //health_maternal_care @fredrick muiruri
-Route::get('Health/health_maternal_care', 'Endpoints\Health@health_maternal_care')->name('health_maternal_care');
+Route::get('health/all_health_maternal_care', 'Endpoints\Health@health_maternal_care')->name('health_maternal_care');
 //Health
 //health_months @fredrick muiruri
-Route::get('Health/health_months', 'Endpoints\Health@health_months')->name('health_months');
+Route::get('health/all_health_months', 'Endpoints\Health@health_months')->name('health_months');
 //Health
 //health_nhif_members @fredrick muiruri
-Route::get('Health/health_nhif_members', 'Endpoints\Health@health_nhif_members')->name('health_nhif_members');
+Route::get('health/all_health_nhif_members', 'Endpoints\Health@health_nhif_members')->name('health_nhif_members');
 //Health
 //health_nhif_resources @fredrick muiruri
-Route::get('Health/health_nhif_resources', 'Endpoints\Health@health_nhif_resources')->name('health_nhif_resources');
+Route::get('health/all_health_nhif_resources', 'Endpoints\Health@health_nhif_resources')->name('health_nhif_resources');
 //Health
 //health_nutritional_status_of_children @fredrick muiruri
-Route::get('Health/health_nutritional_status_of_children', 'Endpoints\Health@health_nutritional_status_of_children')->name('health_nutritional_status_of_children');
+Route::get('health/all_health_nutritional_status_of_children', 'Endpoints\Health@health_nutritional_status_of_children')->name('health_nutritional_status_of_children');
 //Health
 //health_nutritional_status_of_women @fredrick muiruri
-Route::get('Health/health_nutritional_status_of_women', 'Endpoints\Health@health_nutritional_status_of_women')->name('health_nutritional_status_of_women');
+Route::get('health/all_health_nutritional_status_of_women', 'Endpoints\Health@health_nutritional_status_of_women')->name('health_nutritional_status_of_women');
 //Health
 //health_percentage_adults_who_are_current_users @fredrick muiruri
-Route::get('Health/health_percentage_adults_who_are_current_users', 'Endpoints\Health@health_percentage_adults_who_are_current_users')->name('health_percentage_adults_who_are_current_users');
+Route::get('health/all_health_percentage_adults_who_are_current_users', 'Endpoints\Health@health_percentage_adults_who_are_current_users')->name('health_percentage_adults_who_are_current_users');
 //Health
 //health_percentage_incidence_of_diseases_in_kenya @fredrick muiruri
-Route::get('Health/health_percentage_incidence_of_diseases_in_kenya', 'Endpoints\Health@health_percentage_incidence_of_diseases_in_kenya')->name('health_percentage_incidence_of_diseases_in_kenya');
+Route::get('health/all_health_percentage_incidence_of_diseases_in_kenya', 'Endpoints\Health@health_percentage_incidence_of_diseases_in_kenya')->name('health_percentage_incidence_of_diseases_in_kenya');
 //Health
 //health_percentage_who_drink_alcohol_by_age @fredrick muiruri
-Route::get('Health/health_percentage_who_drink_alcohol_by_age', 'Endpoints\Health@health_percentage_who_drink_alcohol_by_age')->name('health_percentage_who_drink_alcohol_by_age');
+Route::get('health/all_health_percentage_who_drink_alcohol_by_age', 'Endpoints\Health@health_percentage_who_drink_alcohol_by_age')->name('health_percentage_who_drink_alcohol_by_age');
 //Health
 //health_place_of_delivery @fredrick muiruri
-Route::get('Health/health_place_of_delivery', 'Endpoints\Health@health_place_of_delivery')->name('health_place_of_delivery');
+Route::get('health/all_health_place_of_delivery', 'Endpoints\Health@health_place_of_delivery')->name('health_place_of_delivery');
 //Health
 //health_prevalence_of_overweight_and_obesity @fredrick muiruri
-Route::get('Health/health_prevalence_of_overweight_and_obesity', 'Endpoints\Health@health_prevalence_of_overweight_and_obesity')->name('health_prevalence_of_overweight_and_obesity');
+Route::get('health/all_health_prevalence_of_overweight_and_obesity', 'Endpoints\Health@health_prevalence_of_overweight_and_obesity')->name('health_prevalence_of_overweight_and_obesity');
 //Health
 //health_registeredmedicalpersonnel @fredrick muiruri
-Route::get('Health/health_registeredmedicalpersonnel', 'Endpoints\Health@health_registeredmedicalpersonnel')->name('health_registeredmedicalpersonnel');
+Route::get('health/all_health_registeredmedicalpersonnel', 'Endpoints\Health@health_registeredmedicalpersonnel')->name('health_registeredmedicalpersonnel');
 //Health
 //health_registeredmedicalpersonnel_ids @fredrick muiruri
-Route::get('Health/health_registeredmedicalpersonnel_ids', 'Endpoints\Health@health_registeredmedicalpersonnel_ids')->name('health_registeredmedicalpersonnel_ids');
+Route::get('health/all_health_registeredmedicalpersonnel_ids', 'Endpoints\Health@health_registeredmedicalpersonnel_ids')->name('health_registeredmedicalpersonnel_ids');
 //Health
 //health_registered_active_nhif_members_by_county @fredrick muiruri
-Route::get('Health/health_registered_active_nhif_members_by_county', 'Endpoints\Health@health_registered_active_nhif_members_by_county')->name('health_registered_active_nhif_members_by_county');
+Route::get('health/all_health_registered_active_nhif_members_by_county', 'Endpoints\Health@health_registered_active_nhif_members_by_county')->name('health_registered_active_nhif_members_by_county');
 //Health
 //health_registered_active_nhif_members_nationally @fredrick muiruri
-Route::get('Health/health_registered_active_nhif_members_nationally', 'Endpoints\Health@health_registered_active_nhif_members_nationally')->name('health_registered_active_nhif_members_nationally');
+Route::get('health/all_health_registered_active_nhif_members_nationally', 'Endpoints\Health@health_registered_active_nhif_members_nationally')->name('health_registered_active_nhif_members_nationally');
 //Health
 //health_registered_medical_laboratories_by_counties @fredrick muiruri
-Route::get('Health/health_registered_medical_laboratories_by_counties', 'Endpoints\Health@health_registered_medical_laboratories_by_counties')->name('health_registered_medical_laboratories_by_counties');
+Route::get('health/all_health_registered_medical_laboratories_by_counties', 'Endpoints\Health@health_registered_medical_laboratories_by_counties')->name('health_registered_medical_laboratories_by_counties');
 //Health
 //health_sectors @fredrick muiruri
-Route::get('Health/health_sectors', 'Endpoints\Health@health_sectors')->name('health_sectors');
+Route::get('health/all_health_sectors', 'Endpoints\Health@health_sectors')->name('health_sectors');
 //Health
 //health_subcounty @fredrick muiruri
-Route::get('Health/health_subcounty', 'Endpoints\Health@health_subcounty')->name('health_subcounty');
+Route::get('health/all_health_subcounty', 'Endpoints\Health@health_subcounty')->name('health_subcounty');
 //Health
 //health_use_of_mosquito_nets_by_children @fredrick muiruri
-Route::get('Health/health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
+Route::get('health/all_health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 //Ict  ict_kihibs_households_owned_ict_equipment_services @david
 Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
   'Endpoints\Ict@get_ict_kihibs_households_owned_ict_equipment_services')->
@@ -1184,71 +1149,58 @@ Route::get('Ict/ict_kihibs_population_that_used_internet_by_purpose',
 Route::get('Ict/ict_kihibs_population_who_used_internet_by_place', 
   'Endpoints\Ict@get_ict_kihibs_population_who_used_internet_by_place')->
     name('ict_kihibs_population_who_used_internet_by_place');
-<<<<<<< HEAD
-=======
-    
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 
      //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
-
 
      //Poverty    poverty_consumption_expenditure_and_quintile_distribution @david
-Route::get('Poverty/poverty_consumption_expenditure_and_quintile_distribution', 
+Route::get('poverty/all_poverty_consumption_expenditure_and_quintile_distribution', 
   'Endpoints\poverty@get_poverty_consumption_expenditure_and_quintile_distribution')->
     name('poverty_consumption_expenditure_and_quintile_distribution');
 
        //Poverty    poverty_distribution_of_households_by_pointofpurchasedfooditems @david
-Route::get('Poverty/poverty_distribution_of_households_by_pointofpurchasedfooditems', 
+Route::get('poverty/all_poverty_distribution_of_households_by_pointofpurchasedfooditems', 
   'Endpoints\poverty@get_poverty_distribution_of_households_by_pointofpurchasedfooditems')->
     name('poverty_distribution_of_households_by_pointofpurchasedfooditems');
 
        //Poverty   poverty_distribution_of_household_food_consumption @david
-Route::get('Poverty/poverty_distribution_of_household_food_consumption', 
+Route::get('poverty/all_poverty_distribution_of_household_food_consumption', 
   'Endpoints\poverty@get_poverty_distribution_of_household_food_consumption')->
     name('poverty_distribution_of_household_food_consumption');
 
 
    //Poverty   poverty_food_and_non_food_expenditure_per_adult_equivalent @david
-Route::get('Poverty/poverty_food_and_non_food_expenditure_per_adult_equivalent', 
+Route::get('poverty/all_poverty_food_and_non_food_expenditure_per_adult_equivalent', 
   'Endpoints\poverty@get_poverty_food_and_non_food_expenditure_per_adult_equivalent')->
     name('poverty_food_and_non_food_expenditure_per_adult_equivalent');
 
 
      //Poverty   poverty_food_estimates_by_residence_and_county @david
-Route::get('Poverty/poverty_food_estimates_by_residence_and_county', 
+Route::get('poverty/all_poverty_food_estimates_by_residence_and_county', 
   'Endpoints\poverty@get_poverty_food_estimates_by_residence_and_county')->
     name('poverty_food_estimates_by_residence_and_county');
 
 
         //Poverty   poverty_hardcore_estimates_by_residence_and_county @david
-Route::get('Poverty/poverty_hardcore_estimates_by_residence_and_county', 
+Route::get('poverty/all_poverty_hardcore_estimates_by_residence_and_county', 
   'Endpoints\poverty@get_poverty_hardcore_estimates_by_residence_and_county')->
     name('poverty_hardcore_estimates_by_residence_and_county');
 
 
 
         //Poverty    poverty_overall_estimates_by_residence_and_county @david
-Route::get('Poverty/poverty_overall_estimates_by_residence_and_county', 
+Route::get('poverty/all_poverty_overall_estimates_by_residence_and_county', 
   'Endpoints\poverty@get_poverty_overall_estimates_by_residence_and_county')->
     name('poverty_overall_estimates_by_residence_and_county');
 
-
-
-=======
 //Nutrition
 //health_nutritional_status_of_children @fredrick muiruri
-Route::get('Nutrition/health_nutritional_status_of_children', 'Endpoints\Nutrition@health_nutritional_status_of_children')->name('health_nutritional_status_of_children');
+Route::get('nutrition/all_health_nutritional_status_of_children', 'Endpoints\Nutrition@health_nutritional_status_of_children')->name('health_nutritional_status_of_children');
 //Nutrition
 //health_nutritional_status_of_women @fredrick muiruri
-Route::get('Nutrition/health_nutritional_status_of_women', 'Endpoints\Nutrition@health_nutritional_status_of_women')->name('health_nutritional_status_of_women');
+Route::get('nutrition/all_health_nutritional_status_of_women', 'Endpoints\Nutrition@health_nutritional_status_of_women')->name('health_nutritional_status_of_women');
 //Housing
 //housing_conditions_kihibs_waste_disposal_method @fredrick muiruri
 Route::get('housing/all_housing_conditions_kihibs_waste_disposal_method', 'Endpoints\Housing@housing_conditions_kihibs_waste_disposal_method')->name('housing_conditions_kihibs_waste_disposal_method');
@@ -1273,11 +1225,9 @@ Route::get('housing/all_housing_conditions_kihibs_place_for_washing_hands_near_t
 Route::get('housing/all_housing_conditions_kihibs_owner_occupier_dwellings', 'Endpoints\Housing@housing_conditions_kihibs_owner_occupier_dwellings')->name('housing_conditions_kihibs_owner_occupier_dwellings');
 //Housing
 //housing_conditions_kihibs_methods_used_to_make_water_safer @fredrick muiruri
-<<<<<<< HEAD
 Route::get('housing/all_housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
-=======
+
 Route::get('Housing/housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 
 // @George Muchiri
 // housing_conditions_kihibs_hholds_by_habitable_rooms
@@ -1342,18 +1292,4 @@ Route::get('housing/all_housing_conditions_kihibs_main_toilet_facility',
 Route::get('housing/all_housing_conditions_kihibs_main_wall_material', 
 	'Endpoints\Housing@get_housing_conditions_kihibs_main_wall_material')->name(
 	'housing_conditions_kihibs_main_wall_material');
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b5e17f27bac0c047e1dda6d0ff7ebf0c65b7128e
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
->>>>>>> 25afb3c5954b0854707f6814138011e933b915d0
->>>>>>> 08c50ce06e3bf3c6433ec325ec51904f67151eef
->>>>>>> c478cfb18aabf8e099327cb240b7241ce4861643
->>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
