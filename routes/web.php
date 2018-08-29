@@ -17,6 +17,13 @@ Route::get('/', function () {
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> a3a5dbb78bcbfe740cbf415a2d5e12f394e242fb
 //@George Kagwe
 //route to fetch get_agriculture_area_under_sugarcane_harvested_production_avg_yield
 Route::get('agriculture/all_sugarcane_harvested', 'Endpoints\Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('Agriculture');
@@ -206,53 +213,53 @@ Route::get('manufacturing/all_quantum_indices_of_manufacturing_production',
 
 
   //Labour labour_average_wage_earnings_per_employee_private_sector  @david
-  Route::get('Labour/labour_average_wage_earnings_per_employee_private_sector', 
+  Route::get('labour/all_labour_average_wage_earnings_per_employee_private_sector', 
 	'Endpoints\Labour@get_labour_average_wage_earnings_per_employee_private_sector')->
     name('labour_average_wage_earnings_per_employee_private_sector');
 
 
  //Labour  labour_average_wage_earnings_per_employee_public_sector  @david
-  Route::get('Labour/labour_average_wage_earnings_per_employee_public_sector', 
+  Route::get('labour/all_labour_average_wage_earnings_per_employee_public_sector', 
 	'Endpoints\Labour@get_labour_average_wage_earnings_per_employee_public_sector')->
     name('labour_average_wage_earnings_per_employee_public_sector');
 
 
  //Labour  labour_employment_public_sector  @david
-  Route::get('Labour/labour_employment_public_sector', 
+  Route::get('labour/all_labour_employment_public_sector', 
 	'Endpoints\Labour@get_labour_employment_public_sector')->
     name('labour_employment_public_sector');
 
 
  //Labour  labour_memorandum_items_in_public_sector  @david
-  Route::get('Labour/labour_memorandum_items_in_public_sector', 
+  Route::get('labour/all_labour_memorandum_items_in_public_sector', 
 	'Endpoints\Labour@get_labour_memorandum_items_in_public_sector')->
     name('labour_memorandum_items_in_public_sector');
 
   //Labour  labour_sectors  @david
-  Route::get('Labour/labour_sectors', 
+  Route::get('labour/all_labour_sectors', 
 	'Endpoints\Labour@get_labour_sectors')->
     name('labour_sectors');
 
   // labour    labour_total_recorded_employment   @david
-    Route::get('Labour/labour_total_recorded_employment', 
+    Route::get('labour/all_labour_total_recorded_employment', 
 	'Endpoints\Labour@get_labour_total_recorded_employment')->
     name('labour_total_recorded_employment');
 
  // labour    labour_wage_employment_by_industry_and_sex   @david
-    Route::get('Labour/labour_wage_employment_by_industry_and_sex', 
+    Route::get('labour/all_labour_wage_employment_by_industry_and_sex', 
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_and_sex')->
     name('labour_wage_employment_by_industry_and_sex');
 
 
  // labour    labour_wage_employment_by_industry_in_private_sector   @david
-    Route::get('Labour/labour_wage_employment_by_industry_in_private_sector', 
+    Route::get('labour/all_labour_wage_employment_by_industry_in_private_sector', 
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_private_sector')->
     name(' labour_wage_employment_by_industry_in_private_sector');
 
 
 
  // labour   labour_wage_employment_by_industry_in_public_sector   @david
-    Route::get('Labour/labour_wage_employment_by_industry_in_public_sector', 
+    Route::get('labour/all_labour_wage_employment_by_industry_in_public_sector', 
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_public_sector')->
     name('labour_wage_employment_by_industry_in_public_sector');
 
@@ -882,6 +889,10 @@ Route::get('finance/all_finance_statement_of_national_government_operations',
 'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
 	'finance_statement_of_national_government_operations');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a3a5dbb78bcbfe740cbf415a2d5e12f394e242fb
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('cpi/all_annual_avg_retail_prices_of_certain_consumer_goods_in', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -911,48 +922,48 @@ Route::get('Administration/administrative_unit', 'Endpoints\Administration@get_a
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_balance_of_trade route
-Route::get('Trade/trade_and_commerce_balance_of_trade', 'Endpoints\Trade@get_trade_and_commerce_balance_of_trade')->name('trade_and_commerce_balance_of_trade');
+Route::get('trade/all_trade_and_commerce_balance_of_trade', 'Endpoints\Trade@get_trade_and_commerce_balance_of_trade')->name('trade_and_commerce_balance_of_trade');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_import_trade_africa_countries route
-Route::get('Trade/trade_and_commerce_import_trade_africa_countries', 'Endpoints\Trade@get_trade_and_commerce_import_trade_africa_countries')->name('trade_and_commerce_import_trade_africa_countries');
+Route::get('trade/all_trade_and_commerce_import_trade_africa_countries', 'Endpoints\Trade@get_trade_and_commerce_import_trade_africa_countries')->name('trade_and_commerce_import_trade_africa_countries');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_quantities_principal_domestic_exports route
-Route::get('Trade/trade_and_commerce_quantities_principal_domestic_exports', 'Endpoints\Trade@get_trade_and_commerce_quantities_principal_domestic_exports')->name('trade_and_commerce_quantities_principal_domestic_exports');
+Route::get('trade/all_trade_and_commerce_quantities_principal_domestic_exports', 'Endpoints\Trade@get_trade_and_commerce_quantities_principal_domestic_exports')->name('trade_and_commerce_quantities_principal_domestic_exports');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_quantities_principal_imports route
-Route::get('Trade/trade_and_commerce_quantities_principal_imports', 'Endpoints\Trade@get_trade_and_commerce_quantities_principal_imports')->name('trade_and_commerce_quantities_principal_imports');
+Route::get('trade/all_trade_and_commerce_quantities_principal_imports', 'Endpoints\Trade@get_trade_and_commerce_quantities_principal_imports')->name('trade_and_commerce_quantities_principal_imports');
 
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_revenue_collection_by_amount route
-Route::get('Trade/trade_and_commerce_revenue_collection_by_amount', 'Endpoints\Trade@get_trade_and_commerce_revenue_collection_by_amount')->name('trade_and_commerce_revenue_collection_by_amount');
+Route::get('trade/all_trade_and_commerce_revenue_collection_by_amount', 'Endpoints\Trade@get_trade_and_commerce_revenue_collection_by_amount')->name('trade_and_commerce_revenue_collection_by_amount');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_trading_centres route
-Route::get('Trade/trade_and_commerce_trading_centres', 'Endpoints\Trade@get_trade_and_commerce_trading_centres')->name('trade_and_commerce_trading_centres');
+Route::get('trade/all_trade_and_commerce_trading_centres', 'Endpoints\Trade@get_trade_and_commerce_trading_centres')->name('trade_and_commerce_trading_centres');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_value_of_total_exports_all_destinations route
-Route::get('Trade/trade_and_commerce_value_of_total_exports_all_destinations', 'Endpoints\Trade@get_trade_and_commerce_value_of_total_exports_all_destinations')->name('trade_and_commerce_value_of_total_exports_all_destinations');
+Route::get('trade/all_trade_and_commerce_value_of_total_exports_all_destinations', 'Endpoints\Trade@get_trade_and_commerce_value_of_total_exports_all_destinations')->name('trade_and_commerce_value_of_total_exports_all_destinations');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_value_of_total_exports_european_union route
-Route::get('Trade/trade_and_commerce_value_of_total_exports_european_union', 'Endpoints\Trade@get_trade_and_commerce_value_of_total_exports_european_union')->name('trade_and_commerce_value_of_total_exports_european_union');
+Route::get('trade/all_trade_and_commerce_value_of_total_exports_european_union', 'Endpoints\Trade@get_trade_and_commerce_value_of_total_exports_european_union')->name('trade_and_commerce_value_of_total_exports_european_union');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_value_total_exports_east_africa_communities route
-Route::get('Trade/trade_and_commerce_value_total_exports_east_africa_communities', 'Endpoints\Trade@get_trade_and_commerce_value_total_exports_east_africa_communities')->name('trade_and_commerce_value_total_exports_east_africa_communities');
+Route::get('trade/all_trade_and_commerce_value_total_exports_east_africa_communities', 'Endpoints\Trade@get_trade_and_commerce_value_total_exports_east_africa_communities')->name('trade_and_commerce_value_total_exports_east_africa_communities');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_values_of_principal_domestic_exports route
-Route::get('Trade/trade_and_commerce_values_of_principal_domestic_exports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_domestic_exports')->name('trade_and_commerce_values_of_principal_domestic_exports');
+Route::get('trade/all_trade_and_commerce_values_of_principal_domestic_exports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_domestic_exports')->name('trade_and_commerce_values_of_principal_domestic_exports');
 
 // @Charles Ndirangu
 // Trade  trade_and_commerce_values_of_principal_imports route
-Route::get('Trade/trade_and_commerce_values_of_principal_imports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_imports')->name('trade_and_commerce_values_of_principal_imports');
+Route::get('trade/all_trade_and_commerce_values_of_principal_imports', 'Endpoints\Trade@get_trade_and_commerce_values_of_principal_imports')->name('trade_and_commerce_values_of_principal_imports');
 
 //Building and Construction
 // @Charles Ndirangu
@@ -971,6 +982,14 @@ Route::get('building/all_quarterly_overal_construction_cost', 'Endpoints\Buildin
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('building/all_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> a3a5dbb78bcbfe740cbf415a2d5e12f394e242fb
 //Tourism
 // @Charles Ndirangu
 // Building  tourism_arrivals route
@@ -1098,7 +1117,11 @@ Route::get('health/all_health_sectors', 'Endpoints\Health@health_sectors')->name
 Route::get('health/all_health_subcounty', 'Endpoints\Health@health_subcounty')->name('health_subcounty');
 //Health
 //health_use_of_mosquito_nets_by_children @fredrick muiruri
+<<<<<<< HEAD
 Route::get('health/all_health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
+=======
+Route::get('Health/health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
+>>>>>>> a3a5dbb78bcbfe740cbf415a2d5e12f394e242fb
 
 //Ict  ict_kihibs_households_owned_ict_equipment_services @david
 Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
@@ -1154,6 +1177,11 @@ Route::get('Ict/ict_kihibs_population_who_used_internet_by_place',
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> a3a5dbb78bcbfe740cbf415a2d5e12f394e242fb
 
      //Poverty    poverty_consumption_expenditure_and_quintile_distribution @david
 Route::get('poverty/all_poverty_consumption_expenditure_and_quintile_distribution', 
@@ -1194,7 +1222,16 @@ Route::get('poverty/all_poverty_hardcore_estimates_by_residence_and_county',
 Route::get('poverty/all_poverty_overall_estimates_by_residence_and_county', 
   'Endpoints\poverty@get_poverty_overall_estimates_by_residence_and_county')->
     name('poverty_overall_estimates_by_residence_and_county');
+<<<<<<< HEAD
 
+
+<<<<<<< HEAD
+=======
+
+
+=======
+>>>>>>> dc59ea36d2a98c8d256ea9ebd284bd28fc7ef5eb
+>>>>>>> a3a5dbb78bcbfe740cbf415a2d5e12f394e242fb
 //Nutrition
 //health_nutritional_status_of_children @fredrick muiruri
 Route::get('nutrition/all_health_nutritional_status_of_children', 'Endpoints\Nutrition@health_nutritional_status_of_children')->name('health_nutritional_status_of_children');
@@ -1225,6 +1262,12 @@ Route::get('housing/all_housing_conditions_kihibs_place_for_washing_hands_near_t
 Route::get('housing/all_housing_conditions_kihibs_owner_occupier_dwellings', 'Endpoints\Housing@housing_conditions_kihibs_owner_occupier_dwellings')->name('housing_conditions_kihibs_owner_occupier_dwellings');
 //Housing
 //housing_conditions_kihibs_methods_used_to_make_water_safer @fredrick muiruri
+<<<<<<< HEAD
+=======
+
+Route::get('Housing/housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
+
+>>>>>>> a3a5dbb78bcbfe740cbf415a2d5e12f394e242fb
 Route::get('housing/all_housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
 
 Route::get('Housing/housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
@@ -1292,4 +1335,7 @@ Route::get('housing/all_housing_conditions_kihibs_main_toilet_facility',
 Route::get('housing/all_housing_conditions_kihibs_main_wall_material', 
 	'Endpoints\Housing@get_housing_conditions_kihibs_main_wall_material')->name(
 	'housing_conditions_kihibs_main_wall_material');
+<<<<<<< HEAD
 
+=======
+>>>>>>> a3a5dbb78bcbfe740cbf415a2d5e12f394e242fb
