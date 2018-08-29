@@ -17,6 +17,11 @@ Route::get('/', function () {
 
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 //@George Kagwe
 //route to fetch get_agriculture_area_under_sugarcane_harvested_production_avg_yield
 Route::get('agriculture/all_sugarcane_harvested', 'Endpoints\Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('Agriculture');
@@ -71,6 +76,15 @@ Route::get('agriculture/all_share_capital', 'Endpoints\Agriculture@agriculture_t
 
 Route::get('agriculture/all_agricultural_input', 'Endpoints\Agriculture@agriculture_valueofagriculturalinput')->name('Agriculture');
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
      'Endpoints\Health_Sectors@index')->
@@ -256,6 +270,13 @@ Route::get('manufacturing/all_quantum_indices_of_manufacturing_production',
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_public_sector')->
     name('labour_wage_employment_by_industry_in_public_sector');
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('education/all_diploma_degree', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -433,173 +454,173 @@ Route::get('governance/all_governance_cases_handled_by_ethics_commision', 'Endpo
 // @George Muchiri
 // @governance_cases_handled_by_various_courts
 
-Route::get('Governance/governance_cases_handled_by_various_courts', 'Endpoints\Governance@get_governance_cases_handled_by_various_courts')->name('governance_cases_handled_by_various_courts');
+Route::get('governance/all_governance_cases_handled_by_various_courts', 'Endpoints\Governance@get_governance_cases_handled_by_various_courts')->name('governance_cases_handled_by_various_courts');
 
 // @George Muchiri
 // @governance_convicted_prisoners_by_type_of_offence_and_sex
 
-Route::get('Governance/governance_convicted_prisoners_by_type_of_offence_and_sex', 'Endpoints\Governance@get_governance_convicted_prisoners_by_type_of_offence_and_sex')->name('governance_convicted_prisoners_by_type_of_offence_and_sex');
+Route::get('governance/all_governance_convicted_prisoners_by_type_of_offence_and_sex', 'Endpoints\Governance@get_governance_convicted_prisoners_by_type_of_offence_and_sex')->name('governance_convicted_prisoners_by_type_of_offence_and_sex');
 
 // @George Muchiri
 // @governance_convicted_prison_population_by_age_and_sex
 
-Route::get('Governance/governance_convicted_prison_population_by_age_and_sex', 'Endpoints\Governance@get_governance_convicted_prison_population_by_age_and_sex')->name('governance_convicted_prison_population_by_age_and_sex'); 
+Route::get('governance/all_governance_convicted_prison_population_by_age_and_sex', 'Endpoints\Governance@get_governance_convicted_prison_population_by_age_and_sex')->name('governance_convicted_prison_population_by_age_and_sex'); 
 
 
 
 // @George Muchiri
 // @governance_crimes_reported_to_police_by_command_stations
 
-Route::get('Governance/governance_crimes_reported_to_police_by_command_stations', 'Endpoints\Governance@get_governance_crimes_reported_to_police_by_command_stations')->name('governance_crimes_reported_to_police_by_command_stations'); 
-
+Route::get('governance/all_governance_crimes_reported_to_police_by_command_stations', 'Endpoints\Governance@get_governance_crimes_reported_to_police_by_command_stations')->name('governance_crimes_reported_to_police_by_command_stations'); 
 
 
 // @George Muchiri
 // @governance_daily_average_population_of_prisoners_by_sex
 
-Route::get('Governance/governance_daily_average_population_of_prisoners_by_sex', 'Endpoints\Governance@get_governance_daily_average_population_of_prisoners_by_sex')->name('governance_daily_average_population_of_prisoners_by_sex'); 
+Route::get('governance/all_governance_daily_average_population_of_prisoners_by_sex', 'Endpoints\Governance@get_governance_daily_average_population_of_prisoners_by_sex')->name('governance_daily_average_population_of_prisoners_by_sex'); 
 
 // @George Muchiri
 // @governance_environmental_crimes_reported_to_nema
 
-Route::get('Governance/governance_environmental_crimes_reported_to_nema', 'Endpoints\Governance@get_governance_environmental_crimes_reported_to_nema')->name('governance_environmental_crimes_reported_to_nema'); 
+Route::get('governance/all_governance_environmental_crimes_reported_to_nema', 'Endpoints\Governance@get_governance_environmental_crimes_reported_to_nema')->name('governance_environmental_crimes_reported_to_nema'); 
  
 
 
 // @George Muchiri
 // @governance_experienceof_domestic_violence_by_age
 
-Route::get('Governance/governance_experienceof_domestic_violence_by_age', 'Endpoints\Governance@get_governance_experienceof_domestic_violence_by_age')->name('governance_experienceof_domestic_violence_by_age'); 
+Route::get('governance/all_governance_experienceof_domestic_violence_by_age', 'Endpoints\Governance@get_governance_experienceof_domestic_violence_by_age')->name('governance_experienceof_domestic_violence_by_age'); 
 
 
 // @George Muchiri
 // @governance_experienceof_domestic_violence_by_marital_success
 
-Route::get('Governance/governance_experienceof_domestic_violence_by_marital_success', 'Endpoints\Governance@get_governance_experienceof_domestic_violence_by_marital_success')->name('governance_experienceof_domestic_violence_by_marital_success'); 
+Route::get('governance/all_governance_experienceof_domestic_violence_by_marital_success', 'Endpoints\Governance@get_governance_experienceof_domestic_violence_by_marital_success')->name('governance_experienceof_domestic_violence_by_marital_success'); 
 
 // @George Muchiri
 // @governance_experienceof_domestic_violence_by_residence
 
-Route::get('Governance/governance_experienceof_domestic_violence_by_residence', 'Endpoints\Governance@get_governance_experienceof_domestic_violence_by_residence')->name('
+Route::get('governance/all_governance_experienceof_domestic_violence_by_residence', 'Endpoints\Governance@get_governance_experienceof_domestic_violence_by_residence')->name('
 governance_experienceof_domestic_violence_by_residence'); 
 
 
 // @George Muchiri
 // @governance_firearms_and_ammunition_recovered_or_surrendered
 
-Route::get('Governance/governance_firearms_and_ammunition_recovered_or_surrendered', 'Endpoints\Governance@get_governance_firearms_and_ammunition_recovered_or_surrendered')->name('governance_firearms_and_ammunition_recovered_or_surrendered'); 
+Route::get('governance/all_governance_firearms_and_ammunition_recovered_or_surrendered', 'Endpoints\Governance@get_governance_firearms_and_ammunition_recovered_or_surrendered')->name('governance_firearms_and_ammunition_recovered_or_surrendered'); 
 
 
 // @George Muchiri
 // @governance_firearms_and_ammunition_recovered_or_surrendered
 
-Route::get('Governance/governance_identity_cards_made_processed_and_collected', 'Endpoints\Governance@get_governance_identity_cards_made_processed_and_collected')->name('governance_identity_cards_made_processed_and_collected');
+Route::get('governance/all_governance_identity_cards_made_processed_and_collected', 'Endpoints\Governance@get_governance_identity_cards_made_processed_and_collected')->name('governance_identity_cards_made_processed_and_collected');
 
 
 // @George Muchiri
 // @governance_knowledge_and_prevalence_of_female_circumcision 
 
-Route::get('Governance/governance_knowledge_and_prevalence_of_female_circumcision', 'Endpoints\Governance@get_governance_knowledge_and_prevalence_of_female_circumcision')->name('governance_knowledge_and_prevalence_of_female_circumcision');
+Route::get('governance/all_governance_knowledge_and_prevalence_of_female_circumcision', 'Endpoints\Governance@get_governance_knowledge_and_prevalence_of_female_circumcision')->name('governance_knowledge_and_prevalence_of_female_circumcision');
 
 // @George Muchiri
 // @governance_magistrates_judges_and_practicing_lawyers
 
-Route::get('Governance/governance_magistrates_judges_and_practicing_lawyers', 'Endpoints\Governance@get_governance_magistrates_judges_and_practicing_lawyers')->name('governance_magistrates_judges_and_practicing_lawyers');
+Route::get('governance/all_governance_magistrates_judges_and_practicing_lawyers', 'Endpoints\Governance@get_governance_magistrates_judges_and_practicing_lawyers')->name('governance_magistrates_judges_and_practicing_lawyers');
 
 // @George Muchiri
 // @governance_members_of_nationalassembly_and_senators
 
-Route::get('Governance/governance_members_of_nationalassembly_and_senators', 'Endpoints\Governance@get_governance_members_of_nationalassembly_and_senators')->name('governance_members_of_nationalassembly_and_senators');
+Route::get('governance/all_governance_members_of_nationalassembly_and_senators', 
+	'Endpoints\Governance@get_governance_members_of_nationalassembly_and_senators')->name('governance_members_of_nationalassembly_and_senators');
 
 // @George Muchiri
 // @governance_murder_cases_and_convictions_obtained_by_high_court
 
-Route::get('Governance/governance_murder_cases_and_convictions_obtained_by_high_court', 'Endpoints\Governance@get_governance_murder_cases_and_convictions_obtained_by_high_court')->name('governance_murder_cases_and_convictions_obtained_by_high_court');
+Route::get('governance/all_governance_murder_cases_and_convictions_obtained_by_high_court', 'Endpoints\Governance@get_governance_murder_cases_and_convictions_obtained_by_high_court')->name('governance_murder_cases_and_convictions_obtained_by_high_court');
 
 // @George Muchiri
 // @governance_number_of_police_prisons_and_probation_officers
 
-Route::get('Governance/governance_number_of_police_prisons_and_probation_officers', 'Endpoints\Governance@get_governance_number_of_police_prisons_and_probation_officers')->name('governance_number_of_police_prisons_and_probation_officers');
+Route::get('governance/all_governance_number_of_police_prisons_and_probation_officers', 'Endpoints\Governance@get_governance_number_of_police_prisons_and_probation_officers')->name('governance_number_of_police_prisons_and_probation_officers');
 
 // @George Muchiri
 // @governance_number_of_refugees_by_age_and_sex
 
-Route::get('Governance/governance_number_of_refugees_by_age_and_sex', 'Endpoints\Governance@get_governance_number_of_refugees_by_age_and_sex')->name('governance_number_of_refugees_by_age_and_sex');
+Route::get('governance/all_governance_number_of_refugees_by_age_and_sex', 'Endpoints\Governance@get_governance_number_of_refugees_by_age_and_sex')->name('governance_number_of_refugees_by_age_and_sex');
 
 
 // @George Muchiri
 // @governance_offences_committed_against_morality
-Route::get('Governance/governance_offences_committed_against_morality', 
+Route::get('governance/all_governance_offences_committed_against_morality', 
 'Endpoints\Governance@get_governance_offences_committed_against_morality')->name('governance_offences_committed_against_morality');
 
 
 
 // @George Muchiri
 // @governance_offence_by_sex_and_command_stations
-Route::get('Governance/governance_offence_by_sex_and_command_stations', 
+Route::get('governance/all_governance_offence_by_sex_and_command_stations', 
 'Endpoints\Governance@get_governance_offence_by_sex_and_command_stations')->name('governance_offence_by_sex_and_command_stations');
 
 
 // @George Muchiri
 // @get_governance_offenders_serving
-Route::get('Governance/governance_offenders_serving', 
+Route::get('governance/all_governance_offenders_serving', 
 'Endpoints\Governance@get_governance_offenders_serving')->name('governance_offenders_serving');
 
 
 // @George Muchiri
 // @get_governance_participation_in_key_decision_making_positions_by_sex
-Route::get('Governance/governance_participation_in_key_decision_making_positions_by_sex', 
+Route::get('governance/all_governance_participation_in_key_decision_making_positions_by_sex', 
 'Endpoints\Governance@get_governance_participation_in_key_decision_making_positions_by_sex')->name('governance_participation_in_key_decision_making_positions_by_sex');
 
 
 // @George Muchiri
 // @get_governance_passports_work_permits_and_foreigners_registered
-Route::get('Governance/governance_passports_work_permits_and_foreigners_registered', 
+Route::get('governance/all_governance_passports_work_permits_and_foreigners_registered', 
 'Endpoints\Governance@get_governance_passports_work_permits_and_foreigners_registered')->name('
 governance_passports_work_permits_and_foreigners_registered');
 
 
 // @George Muchiri
 // @get_governance_persons_reported_committed_offences_related_to_drugs
-Route::get('Governance/governance_persons_reported_committed_offences_related_to_drugs', 
+Route::get('governance/all_governance_persons_reported_committed_offences_related_to_drugs', 
 'Endpoints\Governance@get_governance_persons_reported_committed_offences_related_to_drugs')->name('governance_persons_reported_committed_offences_related_to_drugs');
 
 // @George Muchiri
 // @get_governance_persons_reported_tohave_committed_defilement
-Route::get('Governance/governance_persons_reported_tohave_committed_defilement', 
+Route::get('governance/all_governance_persons_reported_tohave_committed_defilement', 
 'Endpoints\Governance@get_governance_persons_reported_tohave_committed_defilement')->name('
 governance_persons_reported_tohave_committed_defilement');
 
 
 // @George Muchiri
 // @get_governance_persons_reported_tohave_committed_defilement
-Route::get('Governance/governance_persons_reported_tohave_committed_defilement', 
+Route::get('governance/all_governance_persons_reported_tohave_committed_defilement', 
 'Endpoints\Governance@get_governance_persons_reported_tohave_committed_defilement')->name('
 governance_persons_reported_tohave_committed_defilement');
 
 
 // @George Muchiri
 // @get_governance_persons_reported_tohave_committed_rape
-Route::get('Governance/governance_persons_reported_tohave_committed_rape', 
+Route::get('governance/all_governance_persons_reported_tohave_committed_rape', 
 'Endpoints\Governance@get_governance_persons_reported_tohave_committed_rape')->name('
 governance_persons_reported_tohave_committed_rape');
 
 
 // @George Muchiri
 // @get_governance_persons_reported_to_have_committed_homicide_by_sex
-Route::get('Governance/governance_persons_reported_to_have_committed_homicide_by_sex', 
+Route::get('governance/all_governance_persons_reported_to_have_committed_homicide_by_sex', 
 'Endpoints\Governance@get_governance_persons_reported_to_have_committed_homicide_by_sex')->name('governance_persons_reported_to_have_committed_homicide_by_sex');
 
 // @George Muchiri
 // @get_governance_persons_reported_to_have_committed_robbery_and_theft
-Route::get('Governance/governance_persons_reported_to_have_committed_robbery_and_theft', 
+Route::get('governance/all_governance_persons_reported_to_have_committed_robbery_and_theft', 
 'Endpoints\Governance@get_governance_persons_reported_to_have_committed_robbery_and_theft')->name('governance_persons_reported_to_have_committed_robbery_and_theft');
 
 
 
 // @George Muchiri
 // @get_governance_prevalence_female_circumcision_and_type
-Route::get('Governance/governance_prevalence_female_circumcision_and_type', 
+Route::get('governance/all_governance_prevalence_female_circumcision_and_type', 
 'Endpoints\Governance@get_governance_prevalence_female_circumcision_and_type')->name('
 governance_prevalence_female_circumcision_and_type');
 
@@ -607,13 +628,13 @@ governance_prevalence_female_circumcision_and_type');
 
 // @George Muchiri
 // @get_governance_prison_population_by_sentence_duration_and_sex
-Route::get('Governance/governance_prison_population_by_sentence_duration_and_sex', 
+Route::get('governance/all_governance_prison_population_by_sentence_duration_and_sex', 
 'Endpoints\Governance@get_governance_prison_population_by_sentence_duration_and_sex')->name('
 governance_prison_population_by_sentence_duration_and_sex');
 
 // @George Muchiri
 // @get_governance_prison_population_by_sentence_duration_and_sex
-Route::get('Governance/governance_prison_population_by_sentence_duration_and_sex', 
+Route::get('governance/all_governance_prison_population_by_sentence_duration_and_sex', 
 'Endpoints\Governance@get_governance_prison_population_by_sentence_duration_and_sex')->name('
 governance_prison_population_by_sentence_duration_and_sex');
 
@@ -621,13 +642,13 @@ governance_prison_population_by_sentence_duration_and_sex');
 
 // @George Muchiri
 // @get_governance_public_assets_traced_recovered_and_loss_averted
-Route::get('Governance/governance_public_assets_traced_recovered_and_loss_averted', 
+Route::get('governance/all_governance_public_assets_traced_recovered_and_loss_averted', 
 'Endpoints\Governance@get_governance_public_assets_traced_recovered_and_loss_averted')->name('governance_public_assets_traced_recovered_and_loss_averted');
 
 
 // @George Muchiri
 // @get_governance_registered_voters_by_county_and_by_sex
-Route::get('Governance/governance_registered_voters_by_county_and_by_sex', 
+Route::get('governance/all_governance_registered_voters_by_county_and_by_sex', 
 'Endpoints\Governance@get_governance_registered_voters_by_county_and_by_sex')->name('
 governance_registered_voters_by_county_and_by_sex');
 
@@ -635,7 +656,7 @@ governance_registered_voters_by_county_and_by_sex');
 
 // @George Muchiri
 // @get_governance_total_prisoners_committed_for_debt_bysex
-Route::get('Governance/governance_total_prisoners_committed_for_debt_bysex', 
+Route::get('governance/all_governance_total_prisoners_committed_for_debt_bysex', 
 'Endpoints\Governance@get_governance_total_prisoners_committed_for_debt_bysex')->name('
 governance_total_prisoners_committed_for_debt_bysex');
 
@@ -643,89 +664,125 @@ governance_total_prisoners_committed_for_debt_bysex');
 
 // @George Muchiri
 // @get_governance_women_groups_registration_contributions_uwezo_funds
-Route::get('Governance/governance_women_groups_registration_contributions_uwezo_funds', 
+Route::get('governance/all_governance_women_groups_registration_contributions_uwezo_funds', 
 'Endpoints\Governance@get_governance_women_groups_registration_contributions_uwezo_funds')->name('governance_women_groups_registration_contributions_uwezo_funds');
 
 
 // @George Muchiri
 // @get_governance_women_groups_registration_contributions_women_groups
-Route::get('Governance/governance_women_groups_registration_contributions_women_groups', 
+Route::get('governance/all_governance_women_groups_registration_contributions_women_groups', 
 'Endpoints\Governance@get_governance_women_groups_registration_contributions_women_groups')->name('governance_women_groups_registration_contributions_women_groups');
 
 // @George Muchiri
 // @get_governance_women_groups_registration_cont_women_enterprise_fund
-Route::get('Governance/governance_women_groups_registration_cont_women_enterprise_fund', 
+Route::get('governance/all_governance_women_groups_registration_cont_women_enterprise_fund', 
 'Endpoints\Governance@get_governance_women_groups_registration_cont_women_enterprise_fund')->name('governance_women_groups_registration_cont_women_enterprise_fund');
 
 // @George Muchiri
 // @get_population_by_sex_and_age_groups
-Route::get('Population/population_by_sex_and_age_groups', 
+Route::get('population/all_population_by_sex_and_age_groups', 
 'Endpoints\Population@get_population_by_sex_and_age_groups')->name('
 population_by_sex_and_age_groups');
 
 // @George Muchiri
 // @get_population_by_sex_and_school_attendance
 
-Route::get('Population/population_by_sex_and_school_attendance', 
+Route::get('population/all_population_by_sex_and_school_attendance', 
 'Endpoints\Population@get_population_by_sex_and_school_attendance')->name('population_by_sex_and_school_attendance');
 
 // @George Muchiri
 // @get_population_by_type_of_disability
 
-Route::get('Population/population_by_type_of_disability', 
+Route::get('population/all_population_by_type_of_disability', 
 'Endpoints\Population@get_population_by_type_of_disability')->name('population_by_type_of_disability');
 
 
 // @George Muchiri
 // @get_population_distribution_sex_number_households_area_density
 
-Route::get('Population/population_distribution_sex_number_households_area_density', 
+Route::get('population/all_population_distribution_sex_number_households_area_density', 
 'Endpoints\Population@get_population_distribution_sex_number_households_area_density')->name('population_distribution_sex_number_households_area_density');
 
 // @George Muchiri
 // @get_population_households_by_main_source_of_water
 
-Route::get('Population/population_households_by_main_source_of_water', 
+Route::get('population/all_population_households_by_main_source_of_water', 
 'Endpoints\Population@get_population_households_by_main_source_of_water')->name('population_households_by_main_source_of_water');
 
 // @George Muchiri
 // @get_population_households_type_floor_material_main_dwelling_unit
 
-Route::get('Population/population_households_type_floor_material_main_dwelling_unit', 
+Route::get('population/all_population_households_type_floor_material_main_dwelling_unit', 
 'Endpoints\Population@get_population_households_type_floor_material_main_dwelling_unit')->name('population_households_type_floor_material_main_dwelling_unit');
 
 
 // @George Muchiri
 // @get_population_percentage_households_ownership_household_assets
 
-Route::get('Population/population_percentage_households_ownership_household_assets', 
+Route::get('population/all_population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
 
 // @George Muchiri
 // @get_population_populationbysexhouseholdsdensityandcensusyears
 
-Route::get('Population/population_populationbysexhouseholdsdensityandcensusyears', 
+Route::get('population/all_population_populationbysexhouseholdsdensityandcensusyears', 
 'Endpoints\Population@get_population_populationbysexhouseholdsdensityandcensusyears')->name('population_populationbysexhouseholdsdensityandcensusyears');
 
 
 // @George Muchiri
 // @get_population_populationprojectionsbyselectedagegroup
 
-Route::get('Population/population_populationprojectionsbyselectedagegroup', 
+Route::get('population/all_population_populationprojectionsbyselectedagegroup', 
 'Endpoints\Population@get_population_populationprojectionsbyselectedagegroup')->name('population_populationprojectionsbyselectedagegroup');
 
 
 // @George Muchiri
-// @get_population_populationprojectionsbyspecialagegroups
+// @get_population_kihibs_by_broad_age_group
 
-Route::get('Population/population_populationprojectionsbyspecialagegroups', 
-'Endpoints\Population@get_population_populationprojectionsbyspecialagegroups')->name('population_populationprojectionsbyspecialagegroups');
+Route::get('population/all_population_kihibs_by_broad_age_group', 
+'Endpoints\Population@get_population_kihibs_by_broad_age_group')->name('population_kihibs_by_broad_age_group');
 
+
+// @George Muchiri
+// @get_population_kihibs_children_under_18_by_orphanhood
+
+Route::get('population/all_population_kihibs_children_under_18_by_orphanhood', 
+'Endpoints\Population@get_population_kihibs_children_under_18_by_orphanhood')->name('population_kihibs_children_under_18_by_orphanhood');
+
+
+// @George Muchiri
+// @get_population_kihibs_distribution_by_sex
+
+Route::get('population/all_population_kihibs_distribution_by_sex', 
+'Endpoints\Population@get_population_kihibs_distribution_by_sex')->name('population_kihibs_distribution_by_sex');
+
+
+
+// @George Muchiri
+// @get_population_kihibs_distribution_of_households_by_size
+
+Route::get('population/all_population_kihibs_distribution_of_households_by_size', 
+'Endpoints\Population@get_population_kihibs_distribution_of_households_by_size')->name('population_kihibs_distribution_of_households_by_size');
+
+
+// @George Muchiri
+// @get_population_kihibs_hholds_by_sex_of_household_head
+
+Route::get('population/all_population_kihibs_hholds_by_sex_of_household_head', 
+'Endpoints\Population@get_population_kihibs_hholds_by_sex_of_household_head')->name('population_kihibs_hholds_by_sex_of_household_head');
+
+
+
+// @George Muchiri
+// @get_population_kihibs_marital_status_above_18_years
+
+Route::get('population/all_population_kihibs_marital_status_above_18_years', 
+'Endpoints\Population@get_population_kihibs_marital_status_above_18_years')->name('population_kihibs_marital_status_above_18_years');
 
 // @George Muchiri
 // @get_finance_cdf_allocation_by_constituency
 
-Route::get('Finance/finance_cdf_allocation_by_constituency', 
+Route::get('finance/all_finance_cdf_allocation_by_constituency', 
 'Endpoints\Finance@get_finance_cdf_allocation_by_constituency')->name('finance_cdf_allocation_by_constituency');
 
 // @George Muchiri
@@ -737,20 +794,20 @@ Route::get('Finance/finance_classification_national_government_expenditure_funct
 // @George Muchiri
 // @get_finance_county_budget_allocation
 
-Route::get('Finance/finance_county_budget_allocation', 
+Route::get('finance/all_finance_county_budget_allocation', 
 'Endpoints\Finance@get_finance_county_budget_allocation')->name('finance_county_budget_allocation');
 
 // @George Muchiri
 // @get_finance_county_expenditure
 
-Route::get('Finance/finance_county_expenditure', 
+Route::get('finance/all_finance_county_expenditure', 
 'Endpoints\Finance@get_finance_county_expenditure')->name('finance_county_expenditure');
 
 
 // @George Muchiri
 // @get_finance_county_revenue
 
-Route::get('Finance/finance_county_revenue', 
+Route::get('finance/all_finance_county_revenue', 
 'Endpoints\Finance@get_finance_county_revenue')->name('finance_county_revenue');
 
 
@@ -770,13 +827,13 @@ Route::get('Finance/finance_economic_classification_of_county_government_expendi
 // @George Muchiri
 // @get_finance_economic_classification_revenue
 
-Route::get('Finance/finance_economic_classification_revenue', 
+Route::get('finance/all_economic_revenue', 
 'Endpoints\Finance@get_finance_economic_classification_revenue')->name('finance_economic_classification_revenue');
 
 // @George Muchiri
 // @get_finance_excise_revenue_commodity
 
-Route::get('Finance/finance_excise_revenue_commodity', 
+Route::get('finance/all_excise_revenue', 
 'Endpoints\Finance@get_finance_excise_revenue_commodity')->name(
 	'finance_excise_revenue_commodity');
 
@@ -813,21 +870,21 @@ Route::get('Finance/finance_money_banking_institutions',
 // @George Muchiri
 // @get_finance_national_government_expenditure
 
-Route::get('Finance/finance_national_government_expenditure', 
+Route::get('finance/all_national_expenditure', 
 'Endpoints\Finance@get_finance_national_government_expenditure')->name(
 	'finance_national_government_expenditure');
 
 // @George Muchiri
 // @get_finance_national_government_expenditure_purpose
 
-Route::get('Finance/finance_national_government_expenditure_purpose', 
+Route::get('finance/all_finance_national_government_expenditure_purpose', 
 'Endpoints\Finance@get_finance_national_government_expenditure_purpose')->name(
 	'finance_national_government_expenditure_purpose');
 
 // @George Muchiri
 // @get_ finance_outstanding_debt_international_organization
 
-Route::get('Finance/finance_outstanding_debt_international_organization', 
+Route::get('finance/all_finance_outstanding_debt_international_organization', 
 'Endpoints\Finance@get_finance_outstanding_debt_international_organization')->name(
 	'finance_outstanding_debt_international_organization');
 
@@ -835,17 +892,21 @@ Route::get('Finance/finance_outstanding_debt_international_organization',
 // @George Muchiri
 // @get_finance_outstanding_debt_lending_country
 
-Route::get('Finance/finance_outstanding_debt_lending_country', 
+Route::get('finance/all_finance_outstanding_debt_lending_country', 
 'Endpoints\Finance@get_finance_outstanding_debt_lending_country')->name(
 	'finance_outstanding_debt_lending_country');
 
 // @George Muchiri
 // @get_finance_statement_of_national_government_operations
 
-Route::get('Finance/finance_statement_of_national_government_operations', 
+Route::get('finance/all_finance_statement_of_national_government_operations', 
 'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
 	'finance_statement_of_national_government_operations');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('cpi/all_annual_avg_retail_prices_of_certain_consumer_goods_in', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -935,44 +996,51 @@ Route::get('building/all_quarterly_overal_construction_cost', 'Endpoints\Buildin
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('building/all_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 //Tourism
 // @Charles Ndirangu
 // Building  tourism_arrivals route
-Route::get('Tourism/tourism_arrivals', 'Endpoints\Tourism@get_tourism_arrivals')->name('tourism_arrivals');
+Route::get('tourism/tourism_arrivals', 'Endpoints\Tourism@get_tourism_arrivals')->name('tourism_arrivals');
 
 // @Charles Ndirangu
 // Building  tourism_conferences route
-Route::get('Tourism/tourism_conferences', 'Endpoints\Tourism@get_tourism_conferences')->name('tourism_conferences');
+Route::get('tourism/all_tourism_conferences', 'Endpoints\Tourism@get_tourism_conferences')->name('tourism_conferences');
 
 // @Charles Ndirangu
 // Building  tourism_departures route
-Route::get('Tourism/tourism_departures', 'Endpoints\Tourism@get_tourism_departures')->name('tourism_departures');
+Route::get('tourism/all_tourism_departures', 'Endpoints\Tourism@get_tourism_departures')->name('tourism_departures');
 
 
 // @Charles Ndirangu
 // Building  tourism_earnings route
-Route::get('Tourism/tourism_earnings', 'Endpoints\Tourism@get_tourism_earnings')->name('tourism_earnings');
+Route::get('tourism/all_tourism_earnings', 'Endpoints\Tourism@get_tourism_earnings')->name('tourism_earnings');
 
 // @Charles Ndirangu
 // Building  tourism_hotel_occupancy_by_residence route
-Route::get('Tourism/tourism_hotel_occupancy_by_residence', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_residence')->name('tourism_hotel_occupancy_by_residence');
+Route::get('tourism/all_tourism_hotel_occupancy_by_residence', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_residence')->name('tourism_hotel_occupancy_by_residence');
 
 // @Charles Ndirangu
 // Building  tourism_hotel_occupancy_by_zone route
-Route::get('Tourism/tourism_hotel_occupancy_by_zone', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_zone')->name('tourism_hotel_occupancy_by_zone');
+Route::get('tourism/all_tourism_hotel_occupancy_by_zone', 'Endpoints\Tourism@get_tourism_hotel_occupancy_by_zone')->name('tourism_hotel_occupancy_by_zone');
 
 
 // @Charles Ndirangu
 // Building  tourism_population_proportion_that_took_trip route
-Route::get('Tourism/tourism_population_proportion_that_took_trip', 'Endpoints\Tourism@get_tourism_population_proportion_that_took_trip')->name('tourism_population_proportion_that_took_trip');
+Route::get('tourism/all_tourism_population_proportion_that_took_trip', 'Endpoints\Tourism@get_tourism_population_proportion_that_took_trip')->name('tourism_population_proportion_that_took_trip');
 
 // @Charles Ndirangu
 // Building  tourism_visitor_to_parks route
-Route::get('Tourism/tourism_visitor_to_parks', 'Endpoints\Tourism@get_tourism_visitor_to_parks')->name('tourism_visitor_to_parks');
+Route::get('tourism/all_tourism_visitor_to_parks', 'Endpoints\Tourism@get_tourism_visitor_to_parks')->name('tourism_visitor_to_parks');
 
 // @Charles Ndirangu
 // Building  tourism_visitors_to_museums route
-Route::get('Tourism/tourism_visitors_to_museums', 'Endpoints\Tourism@get_tourism_visitors_to_museums')->name('tourism_visitors_to_museums');
+Route::get('tourism/all_tourism_visitors_to_museums', 'Endpoints\Tourism@get_tourism_visitors_to_museums')->name('tourism_visitors_to_museums');
+
 
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri
@@ -1063,6 +1131,10 @@ Route::get('Health/health_subcounty', 'Endpoints\Health@health_subcounty')->name
 //health_use_of_mosquito_nets_by_children @fredrick muiruri
 Route::get('Health/health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 //Ict  ict_kihibs_households_owned_ict_equipment_services @david
 Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
   'Endpoints\Ict@get_ict_kihibs_households_owned_ict_equipment_services')->
@@ -1112,12 +1184,65 @@ Route::get('Ict/ict_kihibs_population_that_used_internet_by_purpose',
 Route::get('Ict/ict_kihibs_population_who_used_internet_by_place', 
   'Endpoints\Ict@get_ict_kihibs_population_who_used_internet_by_place')->
     name('ict_kihibs_population_who_used_internet_by_place');
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 
      //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
     name(' ict_kihibs_population_withmobilephone_andaveragesims');
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
+
+
+     //Poverty    poverty_consumption_expenditure_and_quintile_distribution @david
+Route::get('Poverty/poverty_consumption_expenditure_and_quintile_distribution', 
+  'Endpoints\poverty@get_poverty_consumption_expenditure_and_quintile_distribution')->
+    name('poverty_consumption_expenditure_and_quintile_distribution');
+
+       //Poverty    poverty_distribution_of_households_by_pointofpurchasedfooditems @david
+Route::get('Poverty/poverty_distribution_of_households_by_pointofpurchasedfooditems', 
+  'Endpoints\poverty@get_poverty_distribution_of_households_by_pointofpurchasedfooditems')->
+    name('poverty_distribution_of_households_by_pointofpurchasedfooditems');
+
+       //Poverty   poverty_distribution_of_household_food_consumption @david
+Route::get('Poverty/poverty_distribution_of_household_food_consumption', 
+  'Endpoints\poverty@get_poverty_distribution_of_household_food_consumption')->
+    name('poverty_distribution_of_household_food_consumption');
+
+
+   //Poverty   poverty_food_and_non_food_expenditure_per_adult_equivalent @david
+Route::get('Poverty/poverty_food_and_non_food_expenditure_per_adult_equivalent', 
+  'Endpoints\poverty@get_poverty_food_and_non_food_expenditure_per_adult_equivalent')->
+    name('poverty_food_and_non_food_expenditure_per_adult_equivalent');
+
+
+     //Poverty   poverty_food_estimates_by_residence_and_county @david
+Route::get('Poverty/poverty_food_estimates_by_residence_and_county', 
+  'Endpoints\poverty@get_poverty_food_estimates_by_residence_and_county')->
+    name('poverty_food_estimates_by_residence_and_county');
+
+
+        //Poverty   poverty_hardcore_estimates_by_residence_and_county @david
+Route::get('Poverty/poverty_hardcore_estimates_by_residence_and_county', 
+  'Endpoints\poverty@get_poverty_hardcore_estimates_by_residence_and_county')->
+    name('poverty_hardcore_estimates_by_residence_and_county');
+
+
+
+        //Poverty    poverty_overall_estimates_by_residence_and_county @david
+Route::get('Poverty/poverty_overall_estimates_by_residence_and_county', 
+  'Endpoints\poverty@get_poverty_overall_estimates_by_residence_and_county')->
+    name('poverty_overall_estimates_by_residence_and_county');
+
+
+
+=======
 //Nutrition
 //health_nutritional_status_of_children @fredrick muiruri
 Route::get('Nutrition/health_nutritional_status_of_children', 'Endpoints\Nutrition@health_nutritional_status_of_children')->name('health_nutritional_status_of_children');
@@ -1148,7 +1273,11 @@ Route::get('housing/all_housing_conditions_kihibs_place_for_washing_hands_near_t
 Route::get('housing/all_housing_conditions_kihibs_owner_occupier_dwellings', 'Endpoints\Housing@housing_conditions_kihibs_owner_occupier_dwellings')->name('housing_conditions_kihibs_owner_occupier_dwellings');
 //Housing
 //housing_conditions_kihibs_methods_used_to_make_water_safer @fredrick muiruri
+<<<<<<< HEAD
 Route::get('housing/all_housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
+=======
+Route::get('Housing/housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa
 
 // @George Muchiri
 // housing_conditions_kihibs_hholds_by_habitable_rooms
@@ -1213,3 +1342,18 @@ Route::get('housing/all_housing_conditions_kihibs_main_toilet_facility',
 Route::get('housing/all_housing_conditions_kihibs_main_wall_material', 
 	'Endpoints\Housing@get_housing_conditions_kihibs_main_wall_material')->name(
 	'housing_conditions_kihibs_main_wall_material');
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b5e17f27bac0c047e1dda6d0ff7ebf0c65b7128e
+>>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
+>>>>>>> 25afb3c5954b0854707f6814138011e933b915d0
+>>>>>>> 08c50ce06e3bf3c6433ec325ec51904f67151eef
+>>>>>>> c478cfb18aabf8e099327cb240b7241ce4861643
+>>>>>>> 0631930643a9d62e71044eaf73098d1fbb0981fa

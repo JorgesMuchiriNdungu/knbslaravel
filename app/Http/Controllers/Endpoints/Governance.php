@@ -659,7 +659,7 @@ class Governance extends Controller
 
 
     //@George Muchiri 
-    //get governance_magistrates_judges_and_practicing_lawyers
+    //get governance_knowledge_and_prevalence_of_female_circumcision
 
     public function get_governance_knowledge_and_prevalence_of_female_circumcision(){
     
@@ -754,6 +754,63 @@ class Governance extends Controller
 
 
     } 
+
+
+
+
+       // @George Muchiri 
+       // get governance_members_of_nationalassembly_and_senators
+
+    public function get_governance_members_of_nationalassembly_and_senators(){
+    
+           $data= DB::table('governance_members_of_nationalassembly_and_senators')->get();
+
+         
+				 
+		
+			 
+			$series1 = array();
+			$series1['name'] = 'Status';
+			
+			$series2 = array();
+			$series2['name'] = 'Men';
+
+            $series3 = array();
+			$series3['name'] = 'Women';
+
+   			$series4 = array();
+			$series4['name'] = 'Total';
+
+
+   		    $series5 = array();
+			$series5['name'] = 'Women Percentage';
+
+		
+
+			 
+			foreach ($data as $row)
+			{
+			
+			$series1['data'][] = $row->status;
+			$series2['data'][] = $row->men;
+			$series3['data'][] = $row->women;
+			$series4['data'][] = $row->total;
+			$series5['data'][] = $row->women_percentage;		
+			}
+			 
+			$result = array();
+		
+			array_push($result,$series1);
+			array_push($result,$series2);
+			array_push($result,$series3);
+			array_push($result,$series4);
+			array_push($result,$series5);
+					
+			print json_encode($result, JSON_NUMERIC_CHECK);
+
+
+    } 
+
 
     // @George Muchiri 
     // get governance_murder_cases_and_convictions_obtained_by_high_court
