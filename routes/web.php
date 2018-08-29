@@ -18,8 +18,6 @@ Route::get('/', function () {
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 
 
-<<<<<<< HEAD
-=======
 //@George Kagwe
 //route to fetch get_agriculture_area_under_sugarcane_harvested_production_avg_yield
 Route::get('agriculture/all_sugarcane_harvested', 'Endpoints\Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('Agriculture');
@@ -80,7 +78,7 @@ Route::get('agriculture/all_agricultural_input', 'Endpoints\Agriculture@agricult
 
 
 
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
+
 // Health Sectors shows all the tables and all the apis @George Kagwe
 Route::get('health/all_sectors', 
      'Endpoints\Health_Sectors@index')->
@@ -266,15 +264,13 @@ Route::get('manufacturing/all_quantum_indices_of_manufacturing_production',
 	'Endpoints\Labour@get_labour_wage_employment_by_industry_in_public_sector')->
     name('labour_wage_employment_by_industry_in_public_sector');
 
-<<<<<<< HEAD
-=======
 
 
 
 
 
 
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
+
 //Education
 //education_approved_degree_diploma_programs @fredrick muiruri
 Route::get('education/all_diploma_degree', 'Endpoints\Education@education_approved_degree_diploma_programs')->name('education_approved_degree_diploma_programs');
@@ -720,10 +716,8 @@ Route::get('population/all_population_households_type_floor_material_main_dwelli
 Route::get('population/all_population_percentage_households_ownership_household_assets', 
 'Endpoints\Population@get_population_percentage_households_ownership_household_assets')->name('population_percentage_households_ownership_household_assets');
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
+
 // @George Muchiri
 // @get_population_populationbysexhouseholdsdensityandcensusyears
 
@@ -869,10 +863,7 @@ Route::get('finance/all_finance_statement_of_national_government_operations',
 'Endpoints\Finance@get_finance_statement_of_national_government_operations')->name(
 	'finance_statement_of_national_government_operations');
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 // @Charles Ndirangu
 // CPI get cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya route
 Route::get('cpi/all_annual_avg_retail_prices_of_certain_consumer_goods_in', 'Endpoints\CPI@get_cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->name('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya');
@@ -962,8 +953,7 @@ Route::get('building/all_quarterly_overal_construction_cost', 'Endpoints\Buildin
 // Building  building_and_construction_quarterly_residential_bulding_cost route
 Route::get('building/all_quarterly_residential_bulding_cost', 'Endpoints\Building@get_building_and_construction_quarterly_residential_bulding_cost')->name('building_and_construction_quarterly_residential_bulding_cost');
 
-<<<<<<< HEAD
-=======
+
 
 
 
@@ -1006,7 +996,6 @@ Route::get('tourism/all_tourism_visitor_to_parks', 'Endpoints\Tourism@get_touris
 // Building  tourism_visitors_to_museums route
 Route::get('tourism/all_tourism_visitors_to_museums', 'Endpoints\Tourism@get_tourism_visitors_to_museums')->name('tourism_visitors_to_museums');
 
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 //Health
 //health_kihibs_received_free_medical_services @fredrick muiruri
 Route::get('Health/health_kihibs_received_free_medical_services', 'Endpoints\Health@health_kihibs_received_free_medical_services')->name('health_kihibs_received_free_medical_services');
@@ -1095,11 +1084,7 @@ Route::get('Health/health_subcounty', 'Endpoints\Health@health_subcounty')->name
 //Health
 //health_use_of_mosquito_nets_by_children @fredrick muiruri
 Route::get('Health/health_use_of_mosquito_nets_by_children', 'Endpoints\Health@health_use_of_mosquito_nets_by_children')->name('health_use_of_mosquito_nets_by_children');
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
 
 //Ict  ict_kihibs_households_owned_ict_equipment_services @david
 Route::get('Ict/ict_kihibs_households_owned_ict_equipment_services', 
@@ -1151,10 +1136,8 @@ Route::get('Ict/ict_kihibs_population_who_used_internet_by_place',
   'Endpoints\Ict@get_ict_kihibs_population_who_used_internet_by_place')->
     name('ict_kihibs_population_who_used_internet_by_place');
     
-<<<<<<< HEAD
-=======
 
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
+
      //Ict     ict_kihibs_population_withmobilephone_andaveragesims @david
 Route::get('Ict/ict_kihibs_population_withmobilephone_andaveragesims', 
   'Endpoints\Ict@get_ict_kihibs_population_withmobilephone_andaveragesims')->
@@ -1191,8 +1174,6 @@ Route::get('Housing/housing_conditions_kihibs_owner_occupier_dwellings', 'Endpoi
 //Housing
 //housing_conditions_kihibs_methods_used_to_make_water_safer @fredrick muiruri
 Route::get('Housing/housing_conditions_kihibs_methods_used_to_make_water_safer', 'Endpoints\Housing@housing_conditions_kihibs_methods_used_to_make_water_safer')->name('housing_conditions_kihibs_methods_used_to_make_water_safer');
-=======
-<<<<<<< HEAD
 
 // @George Muchiri
 // housing_conditions_kihibs_hholds_by_habitable_rooms
@@ -1258,9 +1239,3 @@ Route::get('Housing/housing_conditions_kihibs_main_wall_material',
 	'Endpoints\Housing@get_housing_conditions_kihibs_main_wall_material')->name(
 	'housing_conditions_kihibs_main_wall_material');
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b5e17f27bac0c047e1dda6d0ff7ebf0c65b7128e
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
->>>>>>> 25afb3c5954b0854707f6814138011e933b915d0
