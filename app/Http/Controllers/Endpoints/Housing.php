@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Endpoints;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
+he
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
@@ -67,7 +67,7 @@ class Housing extends Controller
 		}
 			 
 			$result = array();
-=======
+
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
@@ -152,7 +152,7 @@ class Housing extends Controller
 			 
 			$result = array();
 		
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
+
 			array_push($result,$county);
 			array_push($result,$series1);
 			array_push($result,$series2);
@@ -164,7 +164,7 @@ class Housing extends Controller
 			array_push($result,$series8);
 			array_push($result,$series9);
 			array_push($result,$series10);
-<<<<<<< HEAD
+
 			array_push($result,$series11);
 					
 			print json_encode($result, JSON_NUMERIC_CHECK);
@@ -208,7 +208,7 @@ class Housing extends Controller
 		}
 			 
 			$result = array();
-=======
+
 
 			
 					
@@ -274,7 +274,7 @@ class Housing extends Controller
 			 
 			$result = array();
 		
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
+
 			array_push($result,$county);
 			array_push($result,$series1);
 			array_push($result,$series2);
@@ -282,8 +282,7 @@ class Housing extends Controller
 			array_push($result,$series4);
 			array_push($result,$series5);
 			array_push($result,$series6);
-<<<<<<< HEAD
-					
+	
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
     
@@ -321,7 +320,7 @@ class Housing extends Controller
 		}
 			 
 			$result = array();
-=======
+
 	
 
 			
@@ -511,7 +510,7 @@ class Housing extends Controller
 			array_push($result,$series3);
 			array_push($result,$series4);
 			array_push($result,$series5);
-<<<<<<< HEAD
+
 					
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
@@ -546,7 +545,7 @@ class Housing extends Controller
 		}
 			 
 			$result = array();
-=======
+
 			array_push($result,$series6);
 			array_push($result,$series7);
 			array_push($result,$other);
@@ -791,7 +790,7 @@ class Housing extends Controller
 		}
 			 
 			$result = array();
-=======
+
 			array_push($result,$series5);
 			array_push($result,$series6);
 			array_push($result,$series7);
@@ -933,7 +932,7 @@ class Housing extends Controller
 			$series4['data'][] = $row->households;								
 		}
 			$result = array();
-=======
+
 			array_push($result,$series5);
 			array_push($result,$series6);
 			array_push($result,$series7);
@@ -1114,7 +1113,7 @@ class Housing extends Controller
 		}
 			 
 			$result = array();
-=======
+
 			array_push($result,$series5);
 			array_push($result,$series6);
 			array_push($result,$series7);
@@ -1287,7 +1286,7 @@ class Housing extends Controller
 			$series8['data'][] = $row->households;								
 		} 
 			$result = array();
-=======
+
 			array_push($result,$series5);
 			array_push($result,$series6);
 			array_push($result,$series7);
@@ -1387,13 +1386,13 @@ class Housing extends Controller
 			 
 			$result = array();
 		
->>>>>>> 14b336a324ac27adf8072ea4ff64707667a55dc4
+
 			array_push($result,$county);
 			array_push($result,$series1);
 			array_push($result,$series2);
 			array_push($result,$series3);
 			array_push($result,$series4);
-<<<<<<< HEAD
+
 		    array_push($result,$series5);
             array_push($result,$series6);
             array_push($result,$series7);
@@ -1402,7 +1401,7 @@ class Housing extends Controller
 			print json_encode($result, JSON_NUMERIC_CHECK);
     }
 
-=======
+
 			array_push($result,$series5);
 			array_push($result,$series6);
 			array_push($result,$series7);
