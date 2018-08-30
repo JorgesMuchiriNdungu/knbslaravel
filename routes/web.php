@@ -15,10 +15,17 @@ Route::get('/', function () {
     return view('layouts.admin');
 });
 
+//Begining of crud functions
+//Route::get('Agriculture/sugar_yield/{id}', array('as' => 'search_id', 'uses' =>'Forms\Agriculture@show'));
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
+Route::resource('agriculture','Forms\Agriculture');
+Route::get('agriculture/sugar_yield/{id}', array('as' => 'fetchSugar', 'uses' => 'Forms\Agriculture@show'));
+
+Route::post('agriculture/store', array('as' => 'storeSugar', 'uses' => 'Forms\Agriculture@store'));
+Route::post('agriculture/update', array('as' => 'updateSugar', 'uses' => 'Forms\Agriculture@update'));
 
 
-
+//End of crud functions
 
 
 //@George Kagwe
