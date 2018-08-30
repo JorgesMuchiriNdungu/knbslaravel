@@ -971,7 +971,6 @@ $result = array();
 			array_push($result,$series2);
 			array_push($result,$series3);
 			array_push($result,$series4);
-
 		    array_push($result,$series5);
             array_push($result,$series6);
             array_push($result,$series7);
@@ -1504,7 +1503,6 @@ $result = array();
 			array_push($result,$series2);
 			array_push($result,$series3);
 			array_push($result,$series4);
-
 		    array_push($result,$series5);
             array_push($result,$series6);
             array_push($result,$series7);
