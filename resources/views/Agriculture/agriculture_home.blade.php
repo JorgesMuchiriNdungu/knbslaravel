@@ -52,7 +52,7 @@
               <div class="menu_section">
                
                 <ul class="nav side-menu">
-                    <li><a href="{{ route('Agriculture/home') }}"><i class="fa fa-money"></i>Public Finance</a></li>
+                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Public Finance</a></li>
                     <li><a href="general_elements.html"><i class="fa fa-money"></i>Education</a></li>
                     <li><a href="general_elements.html"><i class="fa fa-money"></i>Public Health</a></li>
                      <li><a href="general_elements.html"><i class="fa fa-money"></i>Agriculture</a></li>

@@ -117,7 +117,7 @@ class Agriculture extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
         
        
@@ -135,7 +135,9 @@ class Agriculture extends Controller
             return response()->json(['errors'=>$validator->errors()->all()]);
         }
         else{
-            $sugar = new Sugar_Harvested();
+         
+            $sugar =Sugar_Harvested::find($request->id);
+            
             $sugar->area_under_cane_ha =$request->area_under_cane_ha;
             $sugar->area_harvested_ha=$request->area_harvested_ha;
             $sugar->production_tonnes=$request->production_tonnes;

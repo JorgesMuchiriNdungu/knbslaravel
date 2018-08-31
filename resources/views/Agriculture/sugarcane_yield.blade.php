@@ -17,7 +17,50 @@
 
     <title>Sugarcane Yields</title>
 
-    </style>
+    <style>
+
+    #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #560027;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: : 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+</style>
 
 </head>
 
@@ -32,6 +75,7 @@
                                 
                                 
                 <div class="container" style="background:#ffffff">
+                  <div id="snackbar">Success</div>
 
                   <div class="row">
                      <div class="col-lg-12">
@@ -201,7 +245,7 @@
                           success: function(data)
                           {
 
-                              $('[name="id"]').val(data.id);
+                              $('[name="id"]').val(data.area_id);
                               $('[name="area_under_cane_ha"]').val(data.area_under_cane_ha);
                               $('[name="area_harvested_ha"]').val(data.area_harvested_ha);
                               $('[name="production_tonnes"]').val(data.production_tonnes);
@@ -223,6 +267,7 @@
                       function save()
                       {
                         var url;
+
                         if(save_method == 'add')
                         {
                             url = "{{ route('storeSugar') }}";
@@ -230,18 +275,16 @@
                         }
                         else
                         {
-                           url = "{{ route('updateSugar') }}";
+                           
+                          //  url = '{{ route("updateSugar", ":id") }}';
+                          // url=url.replace(':id', $('[name="id"]').val(data.area_id));
+                          url = "{{ route('updateSugar') }}";
                         }
                           
-                          // console.log({area_under_cane_ha:area_under_cane_ha,
-                          //             area_harvested_ha:area_harvested_ha,
-                          //             production_tonnes:production_tonnes,
-                          //             average_yield_tonnes_per_ha:average_yield_tonnes_per_ha,
-                          //             year:year}
-
-                          //             );
+                      
                          // ajax adding data to database
                          var data = $("#form").serialize();
+                         console.log(data);
 
                             $.ajax({
                               headers: {
@@ -253,18 +296,9 @@
                               dataType: "JSON",
                               success: function(result)
                               {
-                              //    console.log($('#form').serialize());
-                              //    //if success close modal and reload ajax table
-                              //    $('#modal_form').modal('hide');
-                              //   location.reload();// for reload a page
-                              // },
-                              // error: function (jqXHR, textStatus, errorThrown,error)
-                              // {
-                              //    alert('error');
-                                 
-                              // }
+                       
                               if(result.errors)
-                    {
+                                  {
                         jQuery('.alert-danger').html('');
 
                         jQuery.each(result.errors, function(key, value){
@@ -279,6 +313,7 @@
                          $('#myModal').modal('hide');
                          $('#modal_form').modal('hide');
                          location.reload();// for reload a page
+                         myFunction();
                     }
 
 
@@ -308,6 +343,12 @@
                         }
                       }
 
+                      function myFunction() {
+                              var x = document.getElementById("snackbar");
+                              x.className = "show";
+                              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+                       }
+
             </script>
 
               <!-- Bootstrap modal -->
@@ -320,7 +361,7 @@
                   </div>
                   <div class="modal-body form">
                       <form action="#" id="form" class="form-horizontal">
-                        <div class="alert alert-danger" style="display:none"></div
+                        <div class="alert alert-danger" style="display:none"></div>
                             <input type="hidden" value="" name="id"/>
                             <div class="form-body">
                               
