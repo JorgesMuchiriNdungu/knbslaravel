@@ -3,77 +3,160 @@
 namespace App\Http\Controllers\Forms;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Input;
+use Validator;
+use Response;
+use App\Sugar_Harvested;
+use View;
 
 class Agriculture extends Controller
 {
-  protected $rules =
-    [
-        'title' => 'required|min:2|max:32|regex:/^[a-z ,.\'-]+$/i',
-        'content' => 'required|min:2|max:128|regex:/^[a-z ,.\'-]+$/i'
-    ];
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
 
+    protected $rules =
+    [
+      'area_under_cane_ha'=>'required|numeric',
+      'area_harvested_ha'=>'required|numeric',
+      'production_tonnes'=>'required|numeric',
+      'average_yield_tonnes_per_ha'=>'required|numeric',
+      'year'=>'required|numeric'
+    ];
     public function index()
     {
-        // $posts = Post::all();
+        //fetch all records
 
-        $data = DB::table('cpi_annual_avg_retail_prices_of_certain_consumer_goods_in_kenya')->get();
+        $Sugar_Harvested =Sugar_Harvested::all();
+        
+        return view('agriculture.sugarcane_yield',['post' =>$Sugar_Harvested]);
 
-        return view('agriculture.sugarcane_yield', ['posts' => $data]);
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {
-        $validator = Validator::make(Input::all(), $this->rules);
-        if ($validator->fails()) {
-            return Response::json(array('errors' => $validator->getMessageBag()->toArray()));
-        } else {
-            $post = new Post();
-            $post->title = $request->title;
-            $post->content = $request->content;
-            $post->save();
-            return response()->json($post);
+        
+       
+
+        $validator = \Validator::make($request->all(), [
+          'area_under_cane_ha'=>'required|numeric',
+          'area_harvested_ha'=>'required|numeric',
+          'production_tonnes'=>'required|numeric',
+          'average_yield_tonnes_per_ha'=>'required|numeric',
+          'year'=>'required|numeric'
+        ]);
+        
+        if ($validator->fails())
+        {
+            return response()->json(['errors'=>$validator->errors()->all()]);
+        }
+        else{
+            $sugar = new Sugar_Harvested();
+            $sugar->area_under_cane_ha =$request->area_under_cane_ha;
+            $sugar->area_harvested_ha=$request->area_harvested_ha;
+            $sugar->production_tonnes=$request->production_tonnes;
+            $sugar->average_yield_tonnes_per_ha=$request->average_yield_tonnes_per_ha;
+            $sugar->year=$request->year;
+            $sugar->save();
+             return response()->json($sugar);
+           echo json_encode(array("status" => TRUE));
+
         }
     }
 
-    public function show($id)
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($area_id)
     {
-        $post = Post::findOrFail($id);
+     
+         // $Sugar_Harvested = Sugar_Harvested::where("area_id",$area_id)->first();
+         $Sugar_Harvested = Sugar_Harvested::findOrfail($area_id);
 
-        return view('post.show', ['post' => $post]);
+  
+          echo json_encode($Sugar_Harvested);        
     }
 
-    public function update(Request $request, $id)
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
     {
-        $validator = Validator::make(Input::all(), $this->rules);
-        if ($validator->fails()) {
-            return Response::json(array('errors' => $validator->getMessageBag()->toArray()));
-        } else {
-            $post = Post::findOrFail($id);
-            $post->title = $request->title;
-            $post->content = $request->content;
-            $post->save();
-            return response()->json($post);
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request)
+    {
+        
+       
+
+        $validator = \Validator::make($request->all(), [
+          'area_under_cane_ha'=>'required|numeric',
+          'area_harvested_ha'=>'required|numeric',
+          'production_tonnes'=>'required|numeric',
+          'average_yield_tonnes_per_ha'=>'required|numeric',
+          'year'=>'required|numeric'
+        ]);
+        
+        if ($validator->fails())
+        {
+            return response()->json(['errors'=>$validator->errors()->all()]);
         }
-    }
+        else{
+         
+            $sugar =Sugar_Harvested::find($request->id);
+            
+            $sugar->area_under_cane_ha =$request->area_under_cane_ha;
+            $sugar->area_harvested_ha=$request->area_harvested_ha;
+            $sugar->production_tonnes=$request->production_tonnes;
+            $sugar->average_yield_tonnes_per_ha=$request->average_yield_tonnes_per_ha;
+            $sugar->year=$request->year;
+            $sugar->save();
+             return response()->json($sugar);
+           echo json_encode(array("status" => TRUE));
 
+        }    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function destroy($id)
     {
-        $post = Post::findOrFail($id);
-        $post->delete();
-
-        return response()->json($post);
-    }
-
-    public function changeStatus() 
-    {
-        $id = Input::get('id');
-
-        $post = Post::findOrFail($id);
-        $post->is_published = !$post->is_published;
-        $post->save();
-
-        return response()->json($post);
+        //
     }
 }
