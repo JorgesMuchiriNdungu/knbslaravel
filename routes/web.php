@@ -14,8 +14,27 @@
 Route::get('/', function () {
     return view('layouts.admin');
 });
-//load agriculture page
+//load home pages
+Route::get('Finance/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Finance/home');
+Route::get('Education/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Education/home');
+Route::get('Health/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Health/home');
+Route::get('Population/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Population/home');
 Route::get('Agriculture/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Agriculture/home');
+Route::get('Governance/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Governance/home');
+Route::get('ICT/home', 'Forms\Agriculture\Agriculture@national_tables')->name('ICT/home');
+Route::get('Environment/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Environment/home');
+Route::get('Energy/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Energy/home');
+Route::get('Labour/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Labour/home');
+Route::get('Trade/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Trade/home');
+Route::get('Tourism/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Tourism/home');
+Route::get('CPI/home', 'Forms\Agriculture\Agriculture@national_tables')->name('CPI/home');
+Route::get('Administrative/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Administrative/home');
+Route::get('Building/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Building/home');
+Route::get('Money/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Money/home');
+Route::get('Transport/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Transport/home');
+Route::get('Manufacturing/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Manufacturing/home');
+Route::get('Poverty/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Poverty/home');
+
 //Begining of crud functions
 //Route::get('Agriculture/sugar_yield/{id}', array('as' => 'search_id', 'uses' =>'Forms\Agriculture@show'));
 Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');

@@ -12,7 +12,7 @@ class Agriculture extends Controller
 
     public function national_tables(){
     	$data_national = DB::table('health_sectors')
-               ->where('coverage',  '=', 'national')
+               ->orderBy('coverage',  '=', 'ASC')
             	->where('sector_name',  '=', 'Agriculture')
                 ->get();
 
@@ -22,8 +22,8 @@ class Agriculture extends Controller
                 ->get();
 
         return view('agriculture.agriculture_home',
-        	        ['national' =>$data_national],
-        	        ['county' =>$data_county]
+        	        ['datasets' =>$data_national]
+
         	      );
     	
     }

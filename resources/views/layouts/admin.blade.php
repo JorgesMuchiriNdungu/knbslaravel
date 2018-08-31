@@ -52,25 +52,25 @@
               <div class="menu_section">
                
                 <ul class="nav side-menu">
-                    <li><a href="{{ route('Agriculture/home') }}"><i class="fa fa-money"></i>Public Finance</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Education</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Public Health</a></li>
-                     <li><a href="general_elements.html"><i class="fa fa-money"></i>Agriculture</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Population</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Governance</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>ICT</a></li>
-                     <li><a href="general_elements.html"><i class="fa fa-money"></i>Environment And <br>Natural Resources</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Manufacturng</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Energy</a></li>
-                     <li><a href="general_elements.html"><i class="fa fa-money"></i>Labour</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Consumer Price Index</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>AQdministrative and Political</a></li>
-                     <li><a href="general_elements.html"><i class="fa fa-money"></i>Trade</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Tourism</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Building and Construction</a></li>
-                    <li><a href="general_elements.html"><i class="fa fa-money"></i>Money and Banking</a></li>
-                     <li><a href="general_elements.html"><i class="fa fa-money"></i>Transport</a></li>
-                     <li><a href="general_elements.html"><i class="fa fa-money"></i>Poverty</a></li>
+                    <li><a href="{{ route('Finance/home') }}"><i class="fa fa-money"></i>Public Finance</a></li>
+                    <li><a href="{{ route('Education/home') }}"><i class="fa fa-money"></i>Education</a></li>
+                    <li><a href="{{ route('Health/home') }}"><i class="fa fa-money"></i>Public Health</a></li>
+                     <li><a href="{{ route('Agriculture/home') }}"><i class="fa fa-money"></i>Agriculture</a></li>
+                    <li><a href="{{ route('Population/home') }}"><i class="fa fa-money"></i>Population</a></li>
+                    <li><a href="{{ route('Governance/home') }}"><i class="fa fa-money"></i>Governance</a></li>
+                    <li><a href="{{ route('ICT/home') }}"><i class="fa fa-money"></i>ICT</a></li>
+                     <li><a href="{{ route('Environment/home') }}"><i class="fa fa-money"></i>Environment And <br>Natural Resources</a></li>
+                    <li><a href="{{ route('Manufacturing/home') }}"><i class="fa fa-money"></i>Manufacturng</a></li>
+                    <li><a href="{{ route('Energy/home') }}"><i class="fa fa-money"></i>Energy</a></li>
+                     <li><a href="{{ route('Labour/home') }}"><i class="fa fa-money"></i>Labour</a></li>
+                    <li><a href="{{ route('CPI/home') }}"><i class="fa fa-money"></i>Consumer Price Index</a></li>
+                    <li><a href="{{ route('Administrative/home') }}"><i class="fa fa-money"></i>Administrative and Political</a></li>
+                     <li><a href="{{ route('Trade/home') }}"><i class="fa fa-money"></i>Trade</a></li>
+                    <li><a href="{{ route('Tourism/home') }}"><i class="fa fa-money"></i>Tourism</a></li>
+                    <li><a href="{{ route('Building/home') }}"><i class="fa fa-money"></i>Building and Construction</a></li>
+                    <li><a href="{{ route('Money/home') }}"><i class="fa fa-money"></i>Money and Banking</a></li>
+                     <li><a href="{{ route('Transport/home') }}"><i class="fa fa-money"></i>Transport</a></li>
+                     <li><a href="{{ route('Poverty/home') }}"><i class="fa fa-money"></i>Poverty</a></li>
                 </ul>
               </div>
               
