@@ -14,39 +14,51 @@
 Route::get('/', function () {
     return view('layouts.admin');
 });
-//load home pages
-Route::get('Finance/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Finance/home');
-Route::get('Education/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Education/home');
-Route::get('Health/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Health/home');
-Route::get('Population/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Population/home');
-Route::get('Agriculture/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Agriculture/home');
-Route::get('Governance/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Governance/home');
-Route::get('ICT/home', 'Forms\Agriculture\Agriculture@national_tables')->name('ICT/home');
-Route::get('Environment/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Environment/home');
-Route::get('Energy/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Energy/home');
-Route::get('Labour/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Labour/home');
-Route::get('Trade/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Trade/home');
-Route::get('Tourism/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Tourism/home');
-Route::get('CPI/home', 'Forms\Agriculture\Agriculture@national_tables')->name('CPI/home');
-Route::get('Administrative/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Administrative/home');
-Route::get('Building/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Building/home');
-Route::get('Money/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Money/home');
-Route::get('Transport/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Transport/home');
-Route::get('Manufacturing/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Manufacturing/home');
-Route::get('Poverty/home', 'Forms\Agriculture\Agriculture@national_tables')->name('Poverty/home');
+//load home pages for each sector
+Route::get('Finance/home', 'Forms\AllFormsController@finance')->name('Finance/home');
+Route::get('Education/home', 'Forms\AllFormsController@education')->name('Education/home');
+Route::get('Health/home', 'Forms\AllFormsController@health')->name('Health/home');
+Route::get('Population/home', 'Forms\AllFormsController@population')->name('Population/home');
+Route::get('Agriculture/home', 'Forms\AllFormsController@agriculture')->name('Agriculture/home');
+Route::get('Governance/home', 'Forms\AllFormsController@governance')->name('Governance/home');
+Route::get('ICT/home', 'Forms\AllFormsController@ict')->name('ICT/home');
+Route::get('Environment/home', 'Forms\AllFormsController@environment')->name('Environment/home');
+Route::get('Energy/home', 'Forms\AllFormsController@energy')->name('Energy/home');
+Route::get('Labour/home', 'Forms\AllFormsController@labour')->name('Labour/home');
+Route::get('Trade/home', 'Forms\AllFormsController@trade')->name('Trade/home');
+Route::get('Tourism/home', 'Forms\AllFormsController@tourism')->name('Tourism/home');
+Route::get('CPI/home', 'Forms\AllFormsController@cpi')->name('CPI/home');
+Route::get('Administrative/home', 'Forms\AllFormsController@administrative')->name('Administrative/home');
+Route::get('Building/home', 'Forms\AllFormsController@building')->name('Building/home');
+Route::get('Money/home', 'Forms\AllFormsController@money')->name('Money/home');
+Route::get('Transport/home', 'Forms\AllFormsController@transport')->name('Transport/home');
+Route::get('Manufacturing/home', 'Forms\AllFormsController@manufacturing')->name('Manufacturing/home');
+
+Route::get('Poverty/home', 'Forms\AllFormsController@poverty')->name('Poverty/home');
 
 //Begining of crud functions
 //Route::get('Agriculture/sugar_yield/{id}', array('as' => 'search_id', 'uses' =>'Forms\Agriculture@show'));
-Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
-Route::resource('agriculture','Forms\Agriculture');
-Route::get('agriculture/sugar_yield/{id}', array('as' => 'fetchSugar', 'uses' => 'Forms\Agriculture@show'));
+// Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
+// Route::resource('agriculture','Forms\Agriculture');
+// Route::get('agriculture/sugar_yield/{id}', array('as' => 'fetchSugar', 'uses' => 'Forms\Agirculture\Agriculture@show'));
+
+Route::get('agriculture_area_under_sugarcane_harvested_production_avg_yield/', 'Forms\Agriculture\Agriculture_Sugar@index')->name('agriculture_area_under_sugarcane_harvested_production_avg_yield');
+Route::get('agriculture/sugar_yield/{id}', array('as' => 'fetchSugar', 'uses' => 'Forms\Agriculture\Agriculture_Sugar@show'));
 
 
-Route::post('agriculture/store', array('as' => 'storeSugar', 'uses' => 'Forms\Agriculture@store'));
-Route::post('agriculture/update', array('as' => 'updateSugar', 'uses' => 'Forms\Agriculture@update'));
+Route::post('agriculture/store', array('as' => 'storeSugar', 'uses' => 'Forms\Agriculture\Agriculture_Sugar@store'));
+Route::post('agriculture/update', array('as' => 'updateSugar', 'uses' => 'Forms\Agriculture\Agriculture_Sugar@update'));
 
 
-//End of crud functions
+//End of loading various sectors
+
+// Begin loading various forms here as per the menu of the admin page
+
+    //1. finance classification of revenue
+    
+    Route::get('ClassifficationOfRevenue/', 'Forms\Finance\ClassifficationOfRevenue@index')->name('ClassifficationOfRevenue');
+
+      
 
 
 
