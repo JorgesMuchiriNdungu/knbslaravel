@@ -31,12 +31,19 @@ Route::get('Building/home', 'Forms\AllFormsController@building')->name('Building
 Route::get('Money/home', 'Forms\AllFormsController@money')->name('Money/home');
 Route::get('Transport/home', 'Forms\AllFormsController@transport')->name('Transport/home');
 Route::get('Manufacturing/home', 'Forms\AllFormsController@manufacturing')->name('Manufacturing/home');
+<<<<<<< HEAD
 Route::get('Poverty/home', 'Forms\AllFormsController@poverty')->name('Poverty/home');
+=======
+
+Route::get('Poverty/home', 'Forms\AllFormsController@poverty')->name('Poverty/home');
+
+>>>>>>> 6bab588b7290adcef04e70f08c58e1347bdc75e3
 //Begining of crud functions
 //Route::get('Agriculture/sugar_yield/{id}', array('as' => 'search_id', 'uses' =>'Forms\Agriculture@show'));
 // Route::get('Agriculture/', 'Forms\Agriculture@index')->name('Agriculture');
 // Route::resource('agriculture','Forms\Agriculture');
 // Route::get('agriculture/sugar_yield/{id}', array('as' => 'fetchSugar', 'uses' => 'Forms\Agirculture\Agriculture@show'));
+<<<<<<< HEAD
 Route::get('agriculture_area_under_sugarcane_harvested_production_avg_yield/', 'Forms\Agriculture\Agriculture_Sugar@index')->name('agriculture_area_under_sugarcane_harvested_production_avg_yield');
 Route::get('agriculture/sugar_yield/{id}', array('as' => 'fetchSugar', 'uses' => 'Forms\Agriculture\Agriculture_Sugar@show'));
 // Route::post('agriculture/store', array('as' => 'storeSugar', 'uses' => 'Forms\Agriculture@store'));
@@ -49,6 +56,32 @@ Route::post('agriculture/update', array('as' => 'updateSugar', 'uses' => 'Forms\
     
     Route::get('ClassifficationOfRevenue/', 'Forms\Finance\ClassifficationOfRevenue@index')->name('ClassifficationOfRevenue');
       
+=======
+
+Route::get('agriculture_area_under_sugarcane_harvested_production_avg_yield/', 'Forms\Agriculture\Agriculture_Sugar@index')->name('agriculture_area_under_sugarcane_harvested_production_avg_yield');
+Route::get('agriculture/sugar_yield/{id}', array('as' => 'fetchSugar', 'uses' => 'Forms\Agriculture\Agriculture_Sugar@show'));
+
+
+
+// Route::post('agriculture/store', array('as' => 'storeSugar', 'uses' => 'Forms\Agriculture@store'));
+// Route::post('agriculture/update', array('as' => 'updateSugar', 'uses' => 'Forms\Agriculture@update'));
+
+Route::post('agriculture/store', array('as' => 'storeSugar', 'uses' => 'Forms\Agriculture\Agriculture_Sugar@store'));
+Route::post('agriculture/update', array('as' => 'updateSugar', 'uses' => 'Forms\Agriculture\Agriculture_Sugar@update'));
+
+
+//End of loading various sectors
+
+// Begin loading various forms here as per the menu of the admin page
+
+    //1. finance classification of revenue
+    
+    Route::get('ClassifficationOfRevenue/', 'Forms\Finance\ClassifficationOfRevenue@index')->name('ClassifficationOfRevenue');
+
+      
+
+
+>>>>>>> 6bab588b7290adcef04e70f08c58e1347bdc75e3
 //@George Kagwe
 //route to fetch get_agriculture_area_under_sugarcane_harvested_production_avg_yield
 Route::get('agriculture/all_sugarcane_harvested', 'Endpoints\Agriculture@get_agriculture_area_under_sugarcane_harvested_production_avg_yield')->name('Agriculture');
